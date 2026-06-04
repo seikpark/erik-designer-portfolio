@@ -2363,7 +2363,7 @@ body[data-page] :focus-visible {
   }
 
   .rail-nav {
-    min-width: 520px;
+    min-width: 420px;
     justify-content: flex-start;
     gap: 22px;
   }
