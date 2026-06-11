@@ -3186,26 +3186,30 @@ body.sidebar-collapsed .medium-sidebar {
 
 .profile-intro-header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 6px 16px;
   margin: 0 0 8px;
 }
 
 .profile-intro-header .profile-intro-title {
+  flex: 0 0 auto;
   margin-bottom: 0;
 }
 
 .profile-intro-tags {
   display: flex;
+  flex: 0 0 auto;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 6px 10px;
+  max-width: 100%;
   color: #242424;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.35;
-  text-align: right;
+  text-align: left;
 }
 
 .profile-intro-tags span + span::before {
@@ -3612,17 +3616,6 @@ body.sidebar-collapsed .medium-sidebar {
 
   .profile-story-grid {
     grid-template-columns: 1fr;
-  }
-
-  .profile-intro-header {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 6px;
-  }
-
-  .profile-intro-tags {
-    justify-content: flex-start;
-    text-align: left;
   }
 
   .work-feed.is-tile-view {
