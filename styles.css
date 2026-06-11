@@ -1971,133 +1971,13 @@ body.sidebar-collapsed .medium-sidebar {
 
 .nav-icon {
   position: relative;
+  display: block;
   flex: 0 0 auto;
   width: 22px;
   height: 22px;
   color: currentColor;
-}
-
-.home-icon::before {
-  position: absolute;
-  inset: 7px 3px 2px;
-  border: 1.4px solid currentColor;
-  border-top: 0;
-  content: "";
-}
-
-.home-icon::after {
-  position: absolute;
-  left: 3px;
-  top: 2px;
-  width: 15px;
-  height: 15px;
-  border-left: 1.4px solid currentColor;
-  border-top: 1.4px solid currentColor;
-  content: "";
-  transform: rotate(45deg);
-}
-
-.book-icon::before {
-  position: absolute;
-  inset: 1px 4px 1px 3px;
-  border: 1.4px solid currentColor;
-  border-radius: 2px;
-  content: "";
-}
-
-.book-icon::after {
-  position: absolute;
-  right: 5px;
-  top: 1px;
-  width: 6px;
-  height: 10px;
-  border-left: 1.4px solid currentColor;
-  border-bottom: 1.4px solid currentColor;
-  content: "";
-}
-
-.user-icon::before {
-  position: absolute;
-  left: 7px;
-  top: 1px;
-  width: 8px;
-  height: 8px;
-  border: 1.4px solid currentColor;
-  border-radius: 50%;
-  content: "";
-}
-
-.user-icon::after {
-  position: absolute;
-  left: 3px;
-  bottom: 1px;
-  width: 16px;
-  height: 10px;
-  border: 1.4px solid currentColor;
-  border-bottom: 0;
-  border-radius: 12px 12px 0 0;
-  content: "";
-}
-
-.story-icon::before {
-  position: absolute;
-  inset: 1px 4px;
-  border: 1.4px solid currentColor;
-  content: "";
-}
-
-.story-icon::after {
-  position: absolute;
-  left: 8px;
-  top: 7px;
-  width: 7px;
-  height: 1px;
-  background: currentColor;
-  box-shadow: 0 5px 0 currentColor;
-  content: "";
-}
-
-.stats-icon::before {
-  position: absolute;
-  left: 2px;
-  bottom: 2px;
-  width: 4px;
-  height: 8px;
-  border: 1.4px solid currentColor;
-  content: "";
-}
-
-.stats-icon::after {
-  position: absolute;
-  left: 9px;
-  bottom: 2px;
-  width: 4px;
-  height: 14px;
-  border: 1.4px solid currentColor;
-  box-shadow: 7px -5px 0 -1.4px #ffffff, 7px -5px 0 0 currentColor;
-  content: "";
-}
-
-.rail-nav a.is-active .book-icon::before,
-.rail-nav a.is-active .user-icon::before,
-.rail-nav a.is-active .user-icon::after,
-.rail-nav a.is-active .story-icon::before,
-.rail-nav a.is-active .stats-icon::before,
-.rail-nav a.is-active .stats-icon::after {
-  background: currentColor;
-}
-
-.rail-nav a.is-active .book-icon::after {
-  border-color: #ffffff;
-}
-
-.rail-nav a.is-active .story-icon::after {
-  background: #ffffff;
-  box-shadow: 0 5px 0 #ffffff;
-}
-
-.rail-nav a.is-active .stats-icon::after {
-  box-shadow: 7px -5px 0 0 currentColor;
+  object-fit: contain;
+  pointer-events: none;
 }
 
 .sidebar-divider {

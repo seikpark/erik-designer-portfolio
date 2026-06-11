@@ -9,6 +9,26 @@ navLinks.forEach((link) => {
   link.classList.toggle("is-active", link.dataset.nav === currentPage);
 });
 
+const setNavIconState = () => {
+  navLinks.forEach((link) => {
+    const icon = link.querySelector(".nav-icon");
+    const src = icon?.getAttribute("src");
+
+    if (!icon || !src) {
+      return;
+    }
+
+    const defaultSrc = icon.dataset.defaultSrc || src.replace("_filled.svg", ".svg");
+    const activeSrc = icon.dataset.activeSrc || defaultSrc.replace(".svg", "_filled.svg");
+
+    icon.dataset.defaultSrc = defaultSrc;
+    icon.dataset.activeSrc = activeSrc;
+    icon.setAttribute("src", link.classList.contains("is-active") ? activeSrc : defaultSrc);
+  });
+};
+
+setNavIconState();
+
 const setActiveNav = () => {
   const offset = window.scrollY + 140;
   let activeId = sections[0]?.id;
@@ -22,6 +42,8 @@ const setActiveNav = () => {
   pageNavLinks.forEach((link) => {
     link.classList.toggle("is-active", link.getAttribute("href") === `#${activeId}`);
   });
+
+  setNavIconState();
 };
 
 const copyButtons = document.querySelectorAll("[data-copy-email]");
