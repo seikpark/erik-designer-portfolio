@@ -55,18 +55,63 @@ const menuButton = document.querySelector(".menu-button");
 const recommendationRails = Array.from(document.querySelectorAll(".recommendation-rail"));
 
 if (menuButton) {
+  const mobileMenuQuery = window.matchMedia("(max-width: 940px)");
+
   const setSidebarCollapsed = (isCollapsed) => {
+    document.body.classList.remove("menu-open");
     document.body.classList.toggle("sidebar-collapsed", isCollapsed);
     menuButton.setAttribute("aria-expanded", String(!isCollapsed));
     menuButton.setAttribute("aria-label", isCollapsed ? "Show menu" : "Hide menu");
   };
 
+  const setMobileMenuOpen = (isOpen) => {
+    document.body.classList.remove("sidebar-collapsed");
+    document.body.classList.toggle("menu-open", isOpen);
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+    menuButton.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+  };
+
+  const syncMenuMode = () => {
+    if (mobileMenuQuery.matches) {
+      setMobileMenuOpen(false);
+      return;
+    }
+
+    setSidebarCollapsed(false);
+  };
+
   menuButton.setAttribute("aria-controls", "portfolio-sidebar");
-  setSidebarCollapsed(false);
+  syncMenuMode();
 
   menuButton.addEventListener("click", () => {
+    if (mobileMenuQuery.matches) {
+      setMobileMenuOpen(!document.body.classList.contains("menu-open"));
+      return;
+    }
+
     setSidebarCollapsed(!document.body.classList.contains("sidebar-collapsed"));
   });
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      if (mobileMenuQuery.matches) {
+        setMobileMenuOpen(false);
+      }
+    });
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && document.body.classList.contains("menu-open")) {
+      setMobileMenuOpen(false);
+      menuButton.focus();
+    }
+  });
+
+  if (mobileMenuQuery.addEventListener) {
+    mobileMenuQuery.addEventListener("change", syncMenuMode);
+  } else {
+    mobileMenuQuery.addListener(syncMenuMode);
+  }
 }
 
 copyButtons.forEach((button) => {

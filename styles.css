@@ -1285,7 +1285,8 @@ body[data-page] :focus-visible {
 }
 
 .menu-button {
-  gap: 0;
+  align-content: center;
+  gap: 4px;
 }
 
 .menu-button span {
@@ -1293,6 +1294,22 @@ body[data-page] :focus-visible {
   width: 16px;
   height: 1px;
   background: currentColor;
+  transition:
+    opacity 180ms ease,
+    transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
+  transform-origin: center;
+}
+
+body.menu-open .menu-button span:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+}
+
+body.menu-open .menu-button span:nth-child(2) {
+  opacity: 0;
+}
+
+body.menu-open .menu-button span:nth-child(3) {
+  transform: translateY(-5px) rotate(-45deg);
 }
 
 .medium-wordmark {
@@ -3451,33 +3468,49 @@ body.sidebar-collapsed .medium-sidebar {
     display: none;
   }
 
+  body.menu-open {
+    overflow: hidden;
+  }
+
+  .medium-topbar {
+    z-index: 100;
+  }
+
   .medium-shell {
     display: block;
   }
 
   .medium-sidebar {
-    position: sticky;
-    top: 62px;
-    z-index: 70;
+    position: fixed;
+    inset: 62px 0 0;
+    z-index: 90;
     width: 100%;
-    max-height: 180px;
-    height: auto;
+    max-height: none;
+    height: calc(100dvh - 62px);
     border-right: 0;
-    border-bottom: 1px solid var(--medium-line);
-    padding: 12px 20px;
+    border-bottom: 0;
+    padding: 34px 28px;
     transition:
-      transform 560ms cubic-bezier(0.22, 1, 0.36, 1),
-      max-height 560ms cubic-bezier(0.22, 1, 0.36, 1),
-      padding 560ms cubic-bezier(0.22, 1, 0.36, 1),
-      border-color 560ms cubic-bezier(0.22, 1, 0.36, 1),
-      visibility 0ms linear 0ms;
+      opacity 220ms ease,
+      transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+      visibility 0ms linear 320ms;
+    opacity: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    pointer-events: none;
+    transform: translateY(-10px);
+    visibility: hidden;
   }
 
-  body.sidebar-collapsed .medium-sidebar {
-    max-height: 0;
-    border-bottom-color: transparent;
-    padding-top: 0;
-    padding-bottom: 0;
+  body.menu-open .medium-sidebar {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition:
+      opacity 180ms ease,
+      transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+      visibility 0ms linear 0ms;
+    visibility: visible;
   }
 
   .medium-sidebar > * {
@@ -3485,15 +3518,21 @@ body.sidebar-collapsed .medium-sidebar {
   }
 
   .rail-nav {
-    display: flex;
-    justify-content: space-between;
-    gap: 12px;
+    display: grid;
+    justify-content: stretch;
+    gap: 4px;
   }
 
   .rail-nav a,
   .rail-nav .nav-disabled {
-    font-size: 0.82rem;
-    gap: 8px;
+    min-height: 58px;
+    gap: 14px;
+    font-size: 1.24rem;
+  }
+
+  .rail-nav a.is-active::before {
+    left: -12px;
+    height: 30px;
   }
 
   .rail-nav .nav-label {
@@ -3502,12 +3541,13 @@ body.sidebar-collapsed .medium-sidebar {
 
   .rail-nav .nav-status {
     display: inline-flex;
-    font-size: 9px;
+    margin-left: auto;
+    font-size: 10px;
   }
 
   .nav-icon {
-    width: 19px;
-    height: 19px;
+    width: 24px;
+    height: 24px;
   }
 
   .feed-layout {
@@ -3530,42 +3570,32 @@ body.sidebar-collapsed .medium-sidebar {
     height: auto;
   }
 
-  .recommendation-rail {
-    position: static;
-    border-left: 0;
-    border-top: 1px solid var(--medium-line);
-    padding: 38px 28px 58px;
+  .recommendation-rail,
+  .article-side {
+    display: none;
   }
 
   .detail-layout {
     display: block;
     padding: 38px 28px 62px;
   }
-
-  .article-side {
-    border-left: 0;
-    border-top: 1px solid var(--medium-line);
-    margin-top: 42px;
-    padding: 34px 0 0;
-  }
-
-  .article-side .rail-section {
-    position: static;
-  }
 }
 
 @media (max-width: 680px) {
   .medium-topbar {
     min-height: 58px;
-    gap: 10px;
-    padding: 0 18px;
+    gap: 8px;
+    padding: 0 14px;
   }
 
   .medium-wordmark {
-    font-size: 1.184rem;
+    flex: 0 0 auto;
+    font-size: 1.04rem;
   }
 
   .miner-moment {
+    flex: 1 1 auto;
+    min-width: 0;
     height: 58px;
     gap: 0;
   }
@@ -3586,7 +3616,13 @@ body.sidebar-collapsed .medium-sidebar {
   }
 
   .miner-bubble {
-    display: none;
+    display: inline-flex;
+    flex: 1 1 112px;
+    width: auto;
+    min-width: 82px;
+    max-width: 132px;
+    height: 30px;
+    font-size: 0.54rem;
   }
 
   .icon-button {
@@ -3598,9 +3634,24 @@ body.sidebar-collapsed .medium-sidebar {
     width: 15px;
   }
 
-  .topbar-left,
+  .topbar-left {
+    flex: 1 1 auto;
+    min-width: 0;
+    gap: 8px;
+  }
+
   .topbar-actions {
-    gap: 11px;
+    flex: 0 0 auto;
+    gap: 8px;
+  }
+
+  .miner-bubble span {
+    left: 5px;
+    max-width: calc(100% - 10px);
+    min-height: 24px;
+    overflow: hidden;
+    padding: 0 7px;
+    text-overflow: ellipsis;
   }
 
   .app-button,
@@ -3609,14 +3660,14 @@ body.sidebar-collapsed .medium-sidebar {
   }
 
   .medium-sidebar {
-    top: 58px;
-    overflow-x: auto;
+    inset: 58px 0 0;
+    height: calc(100dvh - 58px);
+    padding: 30px 22px;
   }
 
   .rail-nav {
-    min-width: 420px;
-    justify-content: flex-start;
-    gap: 22px;
+    min-width: 0;
+    gap: 4px;
   }
 
   .story-feed {
@@ -3701,10 +3752,6 @@ body.sidebar-collapsed .medium-sidebar {
     font-size: 1rem;
   }
 
-  .recommendation-rail {
-    padding: 34px 18px 46px;
-  }
-
   .topic-cloud a,
   .topic-cloud span {
     min-height: 38px;
@@ -3728,7 +3775,7 @@ body.sidebar-collapsed .medium-sidebar {
 
   .work-feed.is-tile-view {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2px;
   }
 
