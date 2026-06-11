@@ -3259,6 +3259,22 @@ body.sidebar-collapsed .medium-sidebar {
   margin-bottom: 0;
 }
 
+.profile-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 2px;
+  margin-top: 14px;
+}
+
+.profile-photo-grid span,
+.profile-photo-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #f2f2f2;
+  object-fit: cover;
+}
+
 .profile-story-grid {
   display: grid;
   grid-template-columns: 1fr;
