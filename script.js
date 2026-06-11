@@ -5,6 +5,24 @@ const sections = pageNavLinks
   .map((link) => document.querySelector(link.getAttribute("href")))
   .filter(Boolean);
 
+if (window.location.protocol === "file:") {
+  const cleanRoutes = {
+    "/projects/": "projects/index.html",
+    "/about/": "about/index.html",
+  };
+  const nestedDirectories = new Set(["about", "cases", "pages", "projects"]);
+  const currentDirectory = window.location.pathname.split("/").slice(0, -1).pop();
+  const isNestedFile = nestedDirectories.has(currentDirectory);
+
+  document.querySelectorAll("a[href='/projects/'], a[href='/about/']").forEach((link) => {
+    const target = cleanRoutes[link.getAttribute("href")];
+    const targetDirectory = target.split("/")[0];
+    const localHref = currentDirectory === targetDirectory ? "index.html" : `${isNestedFile ? "../" : ""}${target}`;
+
+    link.setAttribute("href", localHref);
+  });
+}
+
 navLinks.forEach((link) => {
   link.classList.toggle("is-active", link.dataset.nav === currentPage);
 });
