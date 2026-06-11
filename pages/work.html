@@ -10,55 +10,42 @@
   <body data-page="work">
     <header class="medium-topbar" aria-label="Global header">
       <div class="topbar-left">
-        <button class="icon-button menu-button" type="button" aria-label="Open menu"><span></span><span></span></button>
+        <button class="icon-button menu-button" type="button" aria-label="Open menu"><span></span><span></span><span></span></button>
         <a class="medium-wordmark" href="../index.html" aria-label="Erik Park work">Erik Park</a>
+        <span class="miner-moment" aria-hidden="true"><span class="pixel-miner"><img src="../assets/download.gif" alt=""></span><span class="miner-bubble"><span>I dig great UX.</span><span>I ship clean flows.</span><span>I make AI clear.</span><span>I tame messy work.</span><span>I find product gold.</span><span>I polish every pixel.</span><span>I move teams forward.</span><span>I turn chaos into plans.</span><span>I build what works.</span><span>I solve fast.</span></span></span>
       </div>
       <div class="topbar-actions">
-        <a class="app-button" href="mailto:erik.likeblue@gmail.com">Get in touch</a>
-        <a class="write-link" href="work.html"><span aria-hidden="true"></span>Work</a>
+        <a class="app-button" href="mailto:erik.likeblue@gmail.com?subject=Portfolio%20inquiry&body=Hi%20Erik%2C%0A%0A">Contact</a>
         <a class="avatar-button" href="about.html" aria-label="About Erik">EP</a>
       </div>
     </header>
 
     <div class="medium-shell">
-      <aside class="medium-sidebar" aria-label="Portfolio navigation">
+      <aside class="medium-sidebar" id="portfolio-sidebar" aria-label="Portfolio navigation">
         <nav class="rail-nav site-nav" aria-label="Primary navigation">
-          <a data-nav="work" href="work.html"><span class="nav-icon book-icon" aria-hidden="true"></span>Work</a>
-          <a data-nav="about" href="about.html"><span class="nav-icon user-icon" aria-hidden="true"></span>Profile</a>
-          <a data-nav="workshop" href="workshop.html"><span class="nav-icon story-icon" aria-hidden="true"></span>Workshop</a>
-          <a data-nav="ai" href="ai.html"><span class="nav-icon stats-icon" aria-hidden="true"></span>AI</a>
+          <a data-nav="work" href="../index.html"><span class="nav-icon book-icon" aria-hidden="true"></span>Projects</a>
+          <a data-nav="about" href="about.html"><span class="nav-icon user-icon" aria-hidden="true"></span>About me</a>
+          <span class="nav-disabled" aria-disabled="true"><span class="nav-icon story-icon" aria-hidden="true"></span><span class="nav-label">Workshop</span><span class="nav-status">Under construction</span></span>
+          <span class="nav-disabled" aria-disabled="true"><span class="nav-icon stats-icon" aria-hidden="true"></span><span class="nav-label">AI</span><span class="nav-status">Under construction</span></span>
         </nav>
         <div class="sidebar-divider"></div>
-        <section class="following-card" aria-labelledby="following-title">
-          <h2 id="following-title">Following</h2>
+        <section class="following-card">
           <a href="about.html"><span class="mini-avatar">EP</span>Erik Park</a>
-          <p>Case studies on product strategy, design operations, and AI UX.</p>
-          <a class="underlined-link" href="about.html">About Erik</a>
+          <p><span class="profile-title-strong">Senior Product Designer</span><br>Product Manager<br>10+ Launched Services</p>
+          <a class="sidebar-link" href="https://www.linkedin.com/in/eriklikeblue" target="_blank" rel="noreferrer"><img class="sidebar-link-icon" src="../assets/LinkedIn.svg" alt="">LinkedIn</a>
+          <a class="sidebar-link" href="../assets/Erik_Park_Resume.pdf" target="_blank" rel="noreferrer"><img class="sidebar-link-icon" src="../assets/Doc.svg" alt="">Resume</a>
         </section>
       </aside>
 
       <main class="medium-main">
-        <div class="member-banner">
-          <span aria-hidden="true">*</span>
-          <p>Selected work across AI, enterprise delivery, agency systems, and product simplification.</p>
-          <a href="about.html">Work with Erik</a>
-          <button type="button" aria-label="Dismiss">x</button>
-        </div>
-
         <div class="feed-layout">
-          <section class="story-feed" aria-labelledby="work-title">
-            <header class="publication-header">
-              <p class="medium-kicker">Work</p>
-              <h1 id="work-title">Portfolio case studies from product strategy, design operations, and UX delivery.</h1>
-              <p>Each story opens into a focused case-study detail page.</p>
-              <div class="inline-stat-row" aria-label="Portfolio proof points">
-                <span>30+ products</span>
-                <span>8 years</span>
-                <span>$1.2M+ delivery</span>
-                <span>40% retention lift</span>
+          <section class="story-feed work-feed" aria-label="Work" data-work-feed>
+            <div class="work-view-toolbar" aria-label="Work view options">
+              <div class="work-view-toggle" role="group" aria-label="Change work view">
+                <button class="is-active" type="button" data-work-view="list" aria-pressed="true">List</button>
+                <button type="button" data-work-view="tiles" aria-pressed="false">Tiles</button>
               </div>
-            </header>
-
+            </div>
             <article class="feed-story compact-story">
               <div class="story-copy">
                 <p class="story-source"><span class="source-badge ai">AI</span>In Artificial Corner by Erik Park · 2025-2026</p>
@@ -98,23 +85,204 @@
               </div>
               <a class="story-thumb retention-thumb" href="../cases/butler.html" aria-label="Read Butler case study"><strong>+40%</strong></a>
             </article>
+
+            <article class="feed-story compact-story">
+              <div class="story-copy">
+                <p class="story-source"><span class="source-badge ai">AI</span>Concept Project · 2026</p>
+                <h2>AI Research Notes: insight clustering workspace</h2>
+                <p class="story-deck">A synthetic workspace for turning interview notes into themes, risks, and product decisions.</p>
+                <div class="story-actions"><span class="spark">*</span><span>AI research</span><span>Insight ops</span></div>
+              </div>
+              <div class="story-thumb concept-thumb concept-thumb-ai"><span>05</span></div>
+            </article>
+
+            <article class="feed-story compact-story">
+              <div class="story-copy">
+                <p class="story-source"><span class="source-badge ux">UX</span>Concept Project · 2026</p>
+                <h2>Smart Collar Onboarding: first-week setup flow</h2>
+                <p class="story-deck">A guided onboarding concept for pairing, pet profiling, alerts, and trust-building education.</p>
+                <div class="story-actions"><span class="spark">*</span><span>Onboarding</span><span>Pet tech</span></div>
+              </div>
+              <div class="story-thumb concept-thumb concept-thumb-mobile"><span>06</span></div>
+            </article>
+
+            <article class="feed-story compact-story">
+              <div class="story-copy">
+                <p class="story-source"><span class="source-badge pd">PD</span>Concept Project · 2026</p>
+                <h2>Clinic Scheduling Flow: appointment conflict resolver</h2>
+                <p class="story-deck">A scheduling workflow for reducing back-and-forth between staff, patients, and providers.</p>
+                <div class="story-actions"><span class="spark">*</span><span>Scheduling</span><span>Service design</span></div>
+              </div>
+              <div class="story-thumb concept-thumb concept-thumb-grid"><span>07</span></div>
+            </article>
+
+            <article class="feed-story compact-story">
+              <div class="story-copy">
+                <p class="story-source"><span class="source-badge ds">DS</span>Concept Project · 2025</p>
+                <h2>Creator Analytics Dashboard: signal-first reporting</h2>
+                <p class="story-deck">A dashboard concept focused on momentum, retention, and content experiments.</p>
+                <div class="story-actions"><span class="spark">*</span><span>Analytics</span><span>Dashboard UX</span></div>
+              </div>
+              <div class="story-thumb concept-thumb concept-thumb-chart"><span>08</span></div>
+            </article>
+
+            <article class="feed-story compact-story">
+              <div class="story-copy">
+                <p class="story-source"><span class="source-badge ops">PM</span>Concept Project · 2025</p>
+                <h2>Construction QA Mobile App: field issue capture</h2>
+                <p class="story-deck">A mobile workflow for logging site issues, assigning owners, and tracking closeout status.</p>
+                <div class="story-actions"><span class="spark">*</span><span>Field ops</span><span>Mobile UX</span></div>
+              </div>
+              <div class="story-thumb concept-thumb concept-thumb-stack"><span>09</span></div>
+            </article>
+
+            <article class="feed-story compact-story">
+              <div class="story-copy">
+                <p class="story-source"><span class="source-badge ux">UX</span>Concept Project · 2025</p>
+                <h2>Local Commerce Checkout: fewer decisions to purchase</h2>
+                <p class="story-deck">A checkout redesign concept for product bundles, delivery options, and payment confidence.</p>
+                <div class="story-actions"><span class="spark">*</span><span>Commerce</span><span>Conversion UX</span></div>
+              </div>
+              <div class="story-thumb concept-thumb concept-thumb-mobile"><span>10</span></div>
+            </article>
+
+            <article class="feed-story compact-story">
+              <div class="story-copy">
+                <p class="story-source"><span class="source-badge pd">PD</span>Concept Project · 2025</p>
+                <h2>Event Mentoring Portal: matching mentors and attendees</h2>
+                <p class="story-deck">A lightweight event portal for profiles, session matching, reminders, and post-event feedback.</p>
+                <div class="story-actions"><span class="spark">*</span><span>Community</span><span>Matching flow</span></div>
+              </div>
+              <div class="story-thumb concept-thumb concept-thumb-grid"><span>11</span></div>
+            </article>
+
+            <article class="feed-story compact-story">
+              <div class="story-copy">
+                <p class="story-source"><span class="source-badge ds">DS</span>Concept Project · 2024</p>
+                <h2>Design Token Migration: multi-brand UI cleanup</h2>
+                <p class="story-deck">A systems project concept for consolidating tokens, component states, and adoption guidance.</p>
+                <div class="story-actions"><span class="spark">*</span><span>Design systems</span><span>Governance</span></div>
+              </div>
+              <div class="story-thumb concept-thumb concept-thumb-stack"><span>12</span></div>
+            </article>
+
+            <article class="feed-story compact-story">
+              <div class="story-copy">
+                <p class="story-source"><span class="source-badge ops">PM</span>Concept Project · 2024</p>
+                <h2>Restaurant Ops Dashboard: prep, staffing, and waste</h2>
+                <p class="story-deck">An operations dashboard concept for daily prep planning, labor signals, and inventory waste.</p>
+                <div class="story-actions"><span class="spark">*</span><span>Ops dashboard</span><span>Planning</span></div>
+              </div>
+              <div class="story-thumb concept-thumb concept-thumb-chart"><span>13</span></div>
+            </article>
+
+            <article class="feed-story compact-story">
+              <div class="story-copy">
+                <p class="story-source"><span class="source-badge pd">PD</span>Concept Project · 2024</p>
+                <h2>CRM Pipeline Cleanup: focused sales tasking</h2>
+                <p class="story-deck">A CRM workflow concept that surfaces stalled deals, next actions, and owner accountability.</p>
+                <div class="story-actions"><span class="spark">*</span><span>CRM UX</span><span>Workflow</span></div>
+              </div>
+              <div class="story-thumb concept-thumb concept-thumb-grid"><span>14</span></div>
+            </article>
+
+            <article class="feed-story compact-story">
+              <div class="story-copy">
+                <p class="story-source"><span class="source-badge ds">DS</span>Concept Project · 2024</p>
+                <h2>Finance Approval Flow: exception-first review</h2>
+                <p class="story-deck">An approval queue concept that separates routine requests from risky exceptions.</p>
+                <div class="story-actions"><span class="spark">*</span><span>Enterprise UX</span><span>Approvals</span></div>
+              </div>
+              <div class="story-thumb concept-thumb concept-thumb-stack"><span>15</span></div>
+            </article>
+
+            <article class="feed-story compact-story">
+              <div class="story-copy">
+                <p class="story-source"><span class="source-badge ux">UX</span>Concept Project · 2023</p>
+                <h2>Health Habit Companion: calm progress tracking</h2>
+                <p class="story-deck">A habit product concept focused on recovery, consistency, and low-pressure progress cues.</p>
+                <div class="story-actions"><span class="spark">*</span><span>Health UX</span><span>Behavior design</span></div>
+              </div>
+              <div class="story-thumb concept-thumb concept-thumb-mobile"><span>16</span></div>
+            </article>
+
+            <article class="feed-story compact-story">
+              <div class="story-copy">
+                <p class="story-source"><span class="source-badge ops">PM</span>Concept Project · 2023</p>
+                <h2>Education Cohort Tracker: learner risk signals</h2>
+                <p class="story-deck">A cohort management concept for attendance, submissions, coaching notes, and intervention timing.</p>
+                <div class="story-actions"><span class="spark">*</span><span>Edtech</span><span>Risk signals</span></div>
+              </div>
+              <div class="story-thumb concept-thumb concept-thumb-chart"><span>17</span></div>
+            </article>
+
+            <article class="feed-story compact-story">
+              <div class="story-copy">
+                <p class="story-source"><span class="source-badge ai">AI</span>Concept Project · 2023</p>
+                <h2>Support Inbox Triage: AI-assisted routing</h2>
+                <p class="story-deck">A support operations concept for intent detection, priority scoring, and response handoff.</p>
+                <div class="story-actions"><span class="spark">*</span><span>AI support</span><span>Triage</span></div>
+              </div>
+              <div class="story-thumb concept-thumb concept-thumb-ai"><span>18</span></div>
+            </article>
+
+            <article class="feed-story compact-story">
+              <div class="story-copy">
+                <p class="story-source"><span class="source-badge pd">PD</span>Concept Project · 2023</p>
+                <h2>Inventory Forecast Tool: clearer reorder decisions</h2>
+                <p class="story-deck">A forecasting concept for comparing demand, stock risk, supplier lead time, and reorder timing.</p>
+                <div class="story-actions"><span class="spark">*</span><span>Forecasting</span><span>Decision UX</span></div>
+              </div>
+              <div class="story-thumb concept-thumb concept-thumb-stack"><span>19</span></div>
+            </article>
           </section>
 
           <aside class="recommendation-rail" aria-label="Recommendations">
             <section class="rail-section">
-              <h2>Staff Picks</h2>
-              <article><p>In AI Product</p><h3><a href="../cases/bero-ai.html">Making behavior data readable for pet owners</a></h3><span>* Featured</span></article>
-              <article><p>In Delivery Systems</p><h3><a href="../cases/rise-partners.html">Turning agency work into a repeatable system</a></h3><span>2d ago</span></article>
-              <a class="muted-link" href="../index.html">Back to first screen</a>
+              <h2>Design workshop</h2>
+              <article class="workshop-event" data-construction="Under construction"><p class="support-label"><span class="support-avatars" role="img" aria-label="Event participants"><span class="support-icon support-icon-photo"></span><span class="support-icon support-icon-kdnew">K</span><span class="support-icon support-icon-ai">AI</span></span><a class="support-link" href="https://www.linkedin.com/company/kidp/" target="_blank" rel="noreferrer">Supported by <span class="support-name">KDNEW</span></a></p><h3>AI & Design: The New Workflow, Lovable mini hackathon.</h3><span class="event-date">Mar 2026</span></article>
+              <article class="workshop-event" data-construction="Under construction"><p class="support-label"><span class="support-avatars" role="img" aria-label="Event participants"><span class="support-icon support-icon-photo"></span><span class="support-icon support-icon-lovable">L</span><span class="support-icon support-icon-ux">UX</span></span><a class="support-link" href="https://www.linkedin.com/company/lovable-dev/" target="_blank" rel="noreferrer">Supported by <span class="support-name">Lovable</span></a></p><h3>Portfolio Roast: Practical Portfolio Interview & Feedback Session</h3><span class="event-date">Nov 2025</span></article>
+              <article class="workshop-event" data-construction="Under construction"><p class="support-label"><span class="support-avatars" role="img" aria-label="Event participants"><span class="support-icon support-icon-kdd-logo"></span></span><a class="support-link" href="https://www.linkedin.com/company/vancouver-kdd/posts/?feedView=all" target="_blank" rel="noreferrer">Organized by <span class="support-name">Vancouver KDD</span></a></p><h3>5th Annual KDD Korean Tech Conference 2025: Career Mentoring</h3><span class="event-date">Aug 2025</span></article>
             </section>
             <section class="rail-section">
-              <h2>Recommended topics</h2>
+              <h2>Recommendations</h2>
+              <article class="testimonial-card">
+                <a class="testimonial-person" href="https://www.linkedin.com/in/sungeunim/" target="_blank" rel="noreferrer"><span class="testimonial-avatar" aria-hidden="true">SI</span><p><span>Sungeun Im</span><span>Global Business Specialist</span></p></a>
+                <details>
+                  <summary>Erik was a great product design manager as a project leader.</summary>
+                  <span>He tried always his best to suit his clients' needs by reflecting their guidelines. He is also a person with caring for his peers when they need help. I had a great fun working with Erik and I recommend Erik to new employers!</span>
+                </details>
+              </article>
+              <article class="testimonial-card">
+                <a class="testimonial-person" href="https://linkedin.com/in/victor95" target="_blank" rel="noreferrer"><span class="testimonial-avatar" aria-hidden="true">VN</span><p><span>Viet Nguyen Quoc</span><span>UI/UX Designer</span></p></a>
+                <details>
+                  <summary>I had the pleasure of working with Erik at Brickmate.</summary>
+                  <span>He consistently delivered exceptional results while fostering collaboration and maintaining clear communication. His ability to navigate challenges, align stakeholders, and lead teams effectively makes him a true asset to any organization.</span>
+                </details>
+              </article>
+              <article class="testimonial-card">
+                <a class="testimonial-person" href="https://www.linkedin.com/in/yurim-c-856192253/" target="_blank" rel="noreferrer"><span class="testimonial-avatar" aria-hidden="true">YC</span><p><span>Yurim Choi</span><span>Product Manager</span></p></a>
+                <details>
+                  <summary>With his UX/UI design experiences, he guided project managers.</summary>
+                  <span>He has supported project managers while communicating with the design team for the project. He has been the best consensus builder internally through professional feedbacks in the loop of developing wireframes and final design. His excelling design skills would have great impact on the collaborative environment.</span>
+                </details>
+              </article>
+            </section>
+            <section class="rail-section">
+              <h2>Skills</h2>
               <div class="topic-cloud">
-                <a href="ai.html">AI UX</a>
-                <a href="workshop.html">Workshops</a>
-                <a href="about.html">Design Ops</a>
-                <a href="../cases/butler.html">Retention</a>
+                <span>Product Strategy</span>
+                <span>UX Strategy</span>
+                <span>UI Design</span>
+                <span>AI Product Planning</span>
+                <span>Project Management</span>
               </div>
+              <div class="rail-credit-links" aria-label="Profile links">
+                <a href="mailto:erik.likeblue@gmail.com">Email</a>
+                <a href="http://linkedin.com/in/eriklikeblue" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a href="../assets/Erik_Park_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+              </div>
+              <p class="rail-credit">Designed and coded by Erik</p>
             </section>
           </aside>
         </div>
