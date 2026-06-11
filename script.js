@@ -505,9 +505,11 @@ recommendationRails.forEach((rail) => {
       let endHeight = 0;
 
       if (isOpening) {
+        details.classList.remove("is-closing");
         details.open = true;
         endHeight = details.offsetHeight;
       } else {
+        details.classList.add("is-closing");
         details.open = false;
         endHeight = details.offsetHeight;
         details.open = true;
@@ -519,6 +521,7 @@ recommendationRails.forEach((rail) => {
         }
 
         details.classList.remove("is-animating");
+        details.classList.remove("is-closing");
         details.style.height = "";
         window.requestAnimationFrame(refreshRailPosition);
       };

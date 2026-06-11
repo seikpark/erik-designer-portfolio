@@ -2713,9 +2713,11 @@ body.sidebar-collapsed .medium-sidebar {
 
 .testimonial-card summary {
   position: relative;
-  display: block;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 12px;
+  align-items: start;
+  column-gap: 12px;
   margin: 0 0 10px;
-  padding-right: 22px;
   color: #6b6b6b;
   cursor: pointer;
   font-size: 14px;
@@ -2725,7 +2727,13 @@ body.sidebar-collapsed .medium-sidebar {
   list-style: none;
 }
 
-.testimonial-card details:not([open]) summary {
+.testimonial-summary-text {
+  display: block;
+  min-width: 0;
+}
+
+.testimonial-card details:not([open]) .testimonial-summary-text,
+.testimonial-card details.is-closing .testimonial-summary-text {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -2736,19 +2744,19 @@ body.sidebar-collapsed .medium-sidebar {
 }
 
 .testimonial-card summary::after {
-  position: absolute;
-  right: 0;
-  top: 0.61em;
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+  margin-top: calc((1.22em - 10px) / 2);
   width: 10px;
   height: 10px;
   background:
     linear-gradient(var(--medium-muted), var(--medium-muted)) center / 10px 1px no-repeat,
     linear-gradient(var(--medium-muted), var(--medium-muted)) center / 1px 10px no-repeat;
   content: "";
-  transform: translateY(-50%);
 }
 
-.testimonial-card details[open] summary::after {
+.testimonial-card details[open]:not(.is-closing) summary::after {
   background: linear-gradient(var(--medium-muted), var(--medium-muted)) center / 10px 1px no-repeat;
 }
 
