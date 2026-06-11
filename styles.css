@@ -3356,9 +3356,10 @@ body.sidebar-collapsed .medium-sidebar {
 
 .detail-layout {
   display: grid;
-  grid-template-columns: minmax(0, 820px) 300px;
-  gap: 54px;
-  max-width: 1180px;
+  grid-template-columns: minmax(0, 680px);
+  justify-content: center;
+  gap: 0;
+  max-width: 792px;
   margin: 0 auto;
   padding: 58px 56px 78px;
 }
@@ -3372,18 +3373,18 @@ body.sidebar-collapsed .medium-sidebar {
 }
 
 .article-header h1 {
-  max-width: 820px;
+  max-width: 680px;
   margin: 0 0 18px;
   color: var(--medium-ink);
-  font-size: clamp(2.3rem, 5vw, 4.4rem);
+  font-size: 32px;
   line-height: 1.05;
   letter-spacing: -0.05em;
 }
 
 .article-header .story-deck {
-  max-width: 760px;
+  max-width: 680px;
   margin-bottom: 26px;
-  font-size: clamp(1.16rem, 2vw, 1.55rem);
+  font-size: 18px;
   line-height: 1.3;
 }
 
@@ -3398,24 +3399,6 @@ body.sidebar-collapsed .medium-sidebar {
 
 .article-byline strong {
   color: var(--medium-ink);
-}
-
-.article-toolbar {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  border-top: 1px solid var(--medium-line);
-  border-bottom: 1px solid var(--medium-line);
-  margin-bottom: 42px;
-  padding: 16px 0;
-  color: var(--medium-muted);
-  font-size: 0.95rem;
-}
-
-.article-toolbar div {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
 }
 
 .article-cover {
@@ -3433,6 +3416,67 @@ body.sidebar-collapsed .medium-sidebar {
   min-height: 330px;
 }
 
+.case-image-placeholder {
+  display: grid;
+  min-height: 260px;
+  align-content: end;
+  gap: 12px;
+  margin: 24px 0 0;
+  border: 1px dashed #b8b8b8;
+  border-radius: 4px;
+  background:
+    linear-gradient(90deg, rgba(36, 36, 36, 0.05) 1px, transparent 1px),
+    linear-gradient(rgba(36, 36, 36, 0.05) 1px, transparent 1px),
+    #f7f7f5;
+  background-size: 28px 28px;
+  padding: 20px;
+}
+
+.case-image-placeholder-cover {
+  min-height: 360px;
+  margin: 0 0 45px;
+}
+
+.case-image-placeholder-wide {
+  min-height: 320px;
+}
+
+.case-image-placeholder-tall {
+  min-height: 420px;
+}
+
+.case-image-kicker {
+  width: fit-content;
+  border: 1px solid #d4d4d4;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #5f5f5f;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  padding: 7px 10px;
+  text-transform: uppercase;
+}
+
+.case-image-placeholder figcaption {
+  display: grid;
+  gap: 6px;
+  max-width: 640px;
+}
+
+.case-image-placeholder strong {
+  color: #242424;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.case-image-placeholder span:not(.case-image-kicker) {
+  color: #4f4f4f;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .case-detail-section {
   border-top: 1px solid var(--medium-line);
   padding: 32px 0;
@@ -3441,7 +3485,7 @@ body.sidebar-collapsed .medium-sidebar {
 .case-detail-section h2 {
   margin: 0 0 14px;
   color: var(--medium-ink);
-  font-size: 1.65rem;
+  font-size: 20px;
   line-height: 1.18;
   letter-spacing: -0.02em;
 }
@@ -3449,7 +3493,7 @@ body.sidebar-collapsed .medium-sidebar {
 .case-detail-section p,
 .case-detail-section li {
   color: #3f3f3f;
-  font-size: 1.08rem;
+  font-size: 16px;
   line-height: 1.62;
 }
 
@@ -3485,16 +3529,6 @@ body.sidebar-collapsed .medium-sidebar {
   padding: 0 18px;
   font-size: 0.95rem;
   font-weight: 700;
-}
-
-.article-side {
-  border-left: 1px solid var(--medium-line);
-  padding-left: 32px;
-}
-
-.article-side .rail-section {
-  position: sticky;
-  top: 102px;
 }
 
 @media (max-width: 1180px) {
@@ -3650,8 +3684,7 @@ body.sidebar-collapsed .medium-sidebar {
     height: auto;
   }
 
-  .recommendation-rail,
-  .article-side {
+  .recommendation-rail {
     display: none;
   }
 
@@ -3842,7 +3875,7 @@ body.sidebar-collapsed .medium-sidebar {
   }
 
   .article-header h1 {
-    font-size: 2.15rem;
+    font-size: 32px;
   }
 
   .compact-story,
@@ -3885,11 +3918,18 @@ body.sidebar-collapsed .medium-sidebar {
     min-height: 230px;
   }
 
-  .article-toolbar {
-    display: block;
+  .case-image-placeholder {
+    min-height: 220px;
+    padding: 16px;
   }
 
-  .article-toolbar div + div {
-    margin-top: 12px;
+  .case-image-placeholder-cover,
+  .case-image-placeholder-wide {
+    min-height: 260px;
   }
+
+  .case-image-placeholder-tall {
+    min-height: 320px;
+  }
+
 }
