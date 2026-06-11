@@ -2186,6 +2186,10 @@ body.sidebar-collapsed .medium-sidebar {
   cursor: pointer;
 }
 
+.feed-story[data-construction]:hover {
+  cursor: help;
+}
+
 .feed-story:first-of-type {
   padding-top: 15px;
 }
@@ -2225,6 +2229,10 @@ body.sidebar-collapsed .medium-sidebar {
 
 .source-badge.pd {
   background: var(--medium-accent-dark);
+}
+
+.source-badge.soon {
+  background: var(--project-color, var(--medium-ink));
 }
 
 .feed-story h2 {
@@ -2516,6 +2524,66 @@ body.sidebar-collapsed .medium-sidebar {
   font-size: 15px;
   font-weight: 800;
   line-height: 1.15;
+}
+
+.upcoming-project-story {
+  outline: none;
+}
+
+.upcoming-project-story:focus-visible {
+  outline: 2px solid var(--project-color, var(--medium-ink));
+  outline-offset: 5px;
+}
+
+.construction-project-thumb,
+.project-placeholder-thumb {
+  --thumb-reveal-color: var(--project-color, #d8d8d8);
+  align-content: end;
+  justify-items: start;
+  gap: 10px;
+  border: 1px solid rgba(36, 36, 36, 0.14);
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.22) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.18) 1px, transparent 1px),
+    var(--project-color, #d8d8d8);
+  background-size: 22px 22px;
+  color: #242424;
+  padding: 14px;
+}
+
+.construction-project-thumb span,
+.project-placeholder-thumb span {
+  width: fit-content;
+  max-width: 100%;
+  border: 1px solid rgba(36, 36, 36, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #242424;
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  overflow: hidden;
+  padding: 7px 9px;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.construction-project-thumb strong,
+.project-placeholder-thumb strong {
+  display: block;
+  max-width: 100%;
+  border: 1px solid rgba(36, 36, 36, 0.16);
+  background: rgba(255, 255, 255, 0.9);
+  color: #242424;
+  font-size: 14px;
+  font-weight: 850;
+  line-height: 1.12;
+  overflow: hidden;
+  padding: 7px 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .board-thumb {
@@ -4044,6 +4112,25 @@ body.sidebar-collapsed .medium-sidebar {
 
   .tile-placeholder-thumb strong {
     font-size: 12px;
+  }
+
+  .construction-project-thumb,
+  .project-placeholder-thumb {
+    gap: 8px;
+    background-size: 18px 18px;
+    padding: 10px;
+  }
+
+  .construction-project-thumb span,
+  .project-placeholder-thumb span {
+    font-size: 7px;
+    padding: 6px 7px;
+  }
+
+  .construction-project-thumb strong,
+  .project-placeholder-thumb strong {
+    font-size: 11px;
+    padding: 6px 7px;
   }
 
   .work-feed.is-tile-view {

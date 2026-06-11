@@ -67,8 +67,127 @@ const setActiveNav = () => {
 const copyButtons = document.querySelectorAll("[data-copy-email]");
 const contactButtons = Array.from(document.querySelectorAll(".app-button[href^='mailto:']"));
 const workFeeds = Array.from(document.querySelectorAll("[data-work-feed]"));
+const upcomingProjects = [
+  { title: "Butler", color: "#2e5e8f" },
+  { title: "iToo", color: "#be5b3a" },
+  { title: "Design ops", color: "#3f6f57" },
+  { title: "SM meta passport", color: "#7256a5" },
+  { title: "Smile Me", color: "#d8a71d" },
+  { title: "YZYZ", color: "#1f8277" },
+  { title: "Photoism", color: "#242424" },
+  { title: "Samsung", color: "#2d5fbd" },
+  { title: "KT", color: "#c33a36" },
+  { title: "Money pop", color: "#2f8f5b" },
+  { title: "Vivid Plus", color: "#c94f8a" },
+  { title: "Duit", color: "#58606a" },
+  { title: "Hide me please", color: "#7a6b58" },
+  { title: "Beautigo", color: "#c1775b" },
+  { title: "Seoul National University", color: "#1a4f8a" },
+  { title: "Coin Wallet", color: "#b58a19" },
+  { title: "KG", color: "#535353" },
+  { title: "Canbu", color: "#4d7b66" },
+  { title: "Pawdle", color: "#6d8c42" },
+];
+
+const getProjectInitials = (title) => {
+  const words = title.split(/\s+/).filter(Boolean);
+
+  if (words.length === 1) {
+    return title.slice(0, 2).toUpperCase();
+  }
+
+  return words
+    .slice(0, 2)
+    .map((word) => word[0])
+    .join("")
+    .toUpperCase();
+};
+
+const createProjectThumb = (project, className, label) => {
+  const thumb = document.createElement("div");
+  thumb.className = className;
+  thumb.setAttribute("aria-hidden", "true");
+
+  const labelElement = document.createElement("span");
+  labelElement.textContent = label;
+
+  const titleElement = document.createElement("strong");
+  titleElement.textContent = project.title;
+
+  thumb.append(labelElement, titleElement);
+  return thumb;
+};
+
+const renderUpcomingProjects = () => {
+  workFeeds.forEach((feed) => {
+    const fragment = document.createDocumentFragment();
+    const existingTitles = new Set(
+      Array.from(feed.querySelectorAll(".feed-story h2")).map((title) => title.textContent.trim()),
+    );
+
+    upcomingProjects.forEach((project) => {
+      if (existingTitles.has(project.title)) {
+        return;
+      }
+
+      const story = document.createElement("article");
+      story.className = "feed-story compact-story upcoming-project-story";
+      story.dataset.construction = "Under construction";
+      story.style.setProperty("--project-color", project.color);
+      story.style.setProperty("--thumb-reveal-color", project.color);
+      story.tabIndex = 0;
+      story.setAttribute("aria-label", `${project.title} case study under construction`);
+
+      const copy = document.createElement("div");
+      copy.className = "story-copy";
+
+      const source = document.createElement("p");
+      source.className = "story-source";
+
+      const badge = document.createElement("span");
+      badge.className = "source-badge soon";
+      badge.textContent = getProjectInitials(project.title);
+      source.append(badge, "Coming soon");
+
+      const title = document.createElement("h2");
+      title.textContent = project.title;
+
+      const deck = document.createElement("p");
+      deck.className = "story-deck";
+      deck.textContent = "Case study is being prepared.";
+
+      const actions = document.createElement("div");
+      actions.className = "story-actions";
+
+      const spark = document.createElement("span");
+      spark.className = "spark";
+      spark.textContent = "*";
+
+      const caseStudy = document.createElement("span");
+      caseStudy.textContent = "Case study";
+
+      const status = document.createElement("span");
+      status.textContent = "Under construction";
+
+      actions.append(spark, caseStudy, status);
+      copy.append(source, title, deck, actions);
+
+      story.append(
+        copy,
+        createProjectThumb(project, "story-thumb construction-project-thumb list-story-thumb", "Coming soon"),
+        createProjectThumb(project, "story-thumb project-placeholder-thumb tile-story-thumb", "Under construction"),
+      );
+      fragment.append(story);
+    });
+
+    feed.append(fragment);
+  });
+};
+
+renderUpcomingProjects();
+
 const feedStories = Array.from(document.querySelectorAll(".feed-story"));
-const workshopEvents = Array.from(document.querySelectorAll(".workshop-event"));
+const constructionTargets = Array.from(document.querySelectorAll("[data-construction]"));
 const menuButton = document.querySelector(".menu-button");
 const recommendationRails = Array.from(document.querySelectorAll(".recommendation-rail"));
 
@@ -335,7 +454,7 @@ if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
   window.addEventListener("scroll", clearHoverIntent, { passive: true });
 }
 
-if (workshopEvents.length > 0) {
+if (constructionTargets.length > 0) {
   const constructionTooltip = document.createElement("div");
   constructionTooltip.className = "construction-tooltip";
   constructionTooltip.setAttribute("aria-hidden", "true");
@@ -367,7 +486,7 @@ if (workshopEvents.length > 0) {
     constructionTooltip.classList.remove("is-visible");
   };
 
-  workshopEvents.forEach((eventCard) => {
+  constructionTargets.forEach((eventCard) => {
     eventCard.addEventListener("mouseenter", (event) => showConstructionTooltip(event, eventCard));
     eventCard.addEventListener("mousemove", moveConstructionTooltip);
     eventCard.addEventListener("mouseleave", hideConstructionTooltip);
