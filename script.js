@@ -226,12 +226,53 @@ const menuButton = document.querySelector(".menu-button");
 const recommendationRails = Array.from(document.querySelectorAll(".recommendation-rail"));
 const thumbVideos = Array.from(document.querySelectorAll(".bero-video-thumb video"));
 
+const getFeedStoryLink = (story) => {
+  const link = story.querySelector(".story-copy h2 a, .story-actions a, .story-thumb[href]");
+  const href = link?.getAttribute("href") || "";
+
+  if (!link || href.startsWith("mailto:") || href.startsWith("tel:") || href.startsWith("#")) {
+    return null;
+  }
+
+  return link;
+};
+
 feedStories.forEach((story) => {
   const title = story.querySelector("h2")?.textContent.trim();
+  const link = getFeedStoryLink(story);
 
   if (title) {
     story.dataset.tileTitle = title;
   }
+
+  if (!link) {
+    return;
+  }
+
+  story.tabIndex = 0;
+  story.setAttribute("role", "link");
+  story.setAttribute("aria-label", link.textContent.trim() || "Open case study");
+
+  story.addEventListener("click", (event) => {
+    if (event.target.closest("a, button, input, textarea, select, summary, details")) {
+      return;
+    }
+
+    window.location.href = link.href;
+  });
+
+  story.addEventListener("keydown", (event) => {
+    if (event.key !== "Enter" && event.key !== " ") {
+      return;
+    }
+
+    if (event.target.closest("a, button, input, textarea, select, summary, details")) {
+      return;
+    }
+
+    event.preventDefault();
+    window.location.href = link.href;
+  });
 });
 
 const playThumbVideo = (video) => {
@@ -491,17 +532,6 @@ if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
   let activeStory = null;
   let activeLink = null;
 
-  const getStoryLink = (story) => {
-    const link = story.querySelector(".story-copy h2 a, .story-actions a, .story-thumb[href]");
-    const href = link?.getAttribute("href") || "";
-
-    if (!link || href.startsWith("mailto:") || href.startsWith("tel:") || href.startsWith("#")) {
-      return null;
-    }
-
-    return link;
-  };
-
   const moveBubble = (event) => {
     hoverBubble.style.left = `${event.clientX + 16}px`;
     hoverBubble.style.top = `${event.clientY + 16}px`;
@@ -524,7 +554,7 @@ if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
         return;
       }
 
-      const link = getStoryLink(story);
+      const link = getFeedStoryLink(story);
 
       if (!link) {
         return;
