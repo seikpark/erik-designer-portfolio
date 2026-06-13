@@ -4,6 +4,45 @@ const pageNavLinks = navLinks.filter((link) => link.getAttribute("href")?.starts
 const sections = pageNavLinks
   .map((link) => document.querySelector(link.getAttribute("href")))
   .filter(Boolean);
+const mediaCopyTargets = "img, picture, svg, canvas, video";
+const editableTargets = "input, textarea, [contenteditable='true']";
+const closestFromEvent = (event, selector) => {
+  const target = event.target;
+
+  return target instanceof Element ? target.closest(selector) : null;
+};
+
+document.addEventListener("copy", (event) => {
+  event.preventDefault();
+});
+
+document.addEventListener("cut", (event) => {
+  event.preventDefault();
+});
+
+document.addEventListener("contextmenu", (event) => {
+  event.preventDefault();
+});
+
+document.addEventListener("dragstart", (event) => {
+  if (closestFromEvent(event, mediaCopyTargets)) {
+    event.preventDefault();
+  }
+});
+
+document.addEventListener("selectstart", (event) => {
+  if (!closestFromEvent(event, editableTargets)) {
+    event.preventDefault();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  const key = event.key.toLowerCase();
+
+  if ((event.metaKey || event.ctrlKey) && ["a", "c", "x"].includes(key)) {
+    event.preventDefault();
+  }
+});
 
 if (window.location.protocol === "file:") {
   const cleanRoutes = {
@@ -159,17 +198,13 @@ const renderUpcomingProjects = () => {
       const actions = document.createElement("div");
       actions.className = "story-actions";
 
-      const spark = document.createElement("span");
-      spark.className = "spark";
-      spark.textContent = "*";
-
       const caseStudy = document.createElement("span");
       caseStudy.textContent = "Case study";
 
       const status = document.createElement("span");
       status.textContent = "Under construction";
 
-      actions.append(spark, caseStudy, status);
+      actions.append(caseStudy, status);
       copy.append(source, title, deck, actions);
 
       story.append(
@@ -190,6 +225,86 @@ const feedStories = Array.from(document.querySelectorAll(".feed-story"));
 const constructionTargets = Array.from(document.querySelectorAll("[data-construction]"));
 const menuButton = document.querySelector(".menu-button");
 const recommendationRails = Array.from(document.querySelectorAll(".recommendation-rail"));
+const thumbVideos = Array.from(document.querySelectorAll(".bero-video-thumb video"));
+
+feedStories.forEach((story) => {
+  const title = story.querySelector("h2")?.textContent.trim();
+
+  if (title) {
+    story.dataset.tileTitle = title;
+  }
+});
+
+const playThumbVideo = (video) => {
+  video.muted = true;
+  video.loop = true;
+  video.playsInline = true;
+
+  const playPromise = video.play();
+
+  if (playPromise?.catch) {
+    playPromise.catch(() => {});
+  }
+};
+
+const syncThumbVideos = () => {
+  thumbVideos.forEach((video) => {
+    const rect = video.getBoundingClientRect();
+    const isVisible =
+      rect.width > 0 &&
+      rect.height > 0 &&
+      rect.bottom > 0 &&
+      rect.right > 0 &&
+      rect.top < window.innerHeight &&
+      rect.left < window.innerWidth;
+
+    if (isVisible) {
+      playThumbVideo(video);
+    }
+  });
+};
+
+if (thumbVideos.length > 0) {
+  if ("IntersectionObserver" in window) {
+    const videoObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const video = entry.target;
+
+          if (entry.isIntersecting) {
+            playThumbVideo(video);
+          } else {
+            video.pause();
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      },
+    );
+
+    thumbVideos.forEach((video) => videoObserver.observe(video));
+  } else {
+    syncThumbVideos();
+    window.addEventListener("scroll", syncThumbVideos, { passive: true });
+  }
+
+  thumbVideos.forEach((video) => {
+    video.addEventListener("pause", () => {
+      if (!document.hidden) {
+        window.requestAnimationFrame(() => syncThumbVideos());
+      }
+    });
+  });
+
+  window.addEventListener("pageshow", syncThumbVideos);
+  window.addEventListener("focus", syncThumbVideos);
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) {
+      syncThumbVideos();
+    }
+  });
+}
 
 if (menuButton) {
   const mobileMenuQuery = window.matchMedia("(max-width: 940px)");
@@ -348,6 +463,8 @@ workFeeds.forEach((feed) => {
       button.classList.toggle("is-active", isActive);
       button.setAttribute("aria-pressed", String(isActive));
     });
+
+    window.requestAnimationFrame(syncThumbVideos);
   };
 
   viewButtons.forEach((button) => {
