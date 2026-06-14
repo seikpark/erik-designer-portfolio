@@ -107,16 +107,8 @@ const copyButtons = document.querySelectorAll("[data-copy-email]");
 const contactButtons = Array.from(document.querySelectorAll(".app-button[href^='mailto:']"));
 const workFeeds = Array.from(document.querySelectorAll("[data-work-feed]"));
 const upcomingProjects = [
-  { title: "Photoism", color: "#242424" },
-  { title: "Samsung", color: "#2d5fbd" },
   { title: "KT", color: "#c33a36" },
-  { title: "Money pop", color: "#2f8f5b" },
-  { title: "Vivid Plus", color: "#c94f8a" },
   { title: "Duit", color: "#58606a" },
-  { title: "Hide me please", color: "#7a6b58" },
-  { title: "Beautigo", color: "#c1775b" },
-  { title: "Seoul National University", color: "#1a4f8a" },
-  { title: "Coin Wallet", color: "#b58a19" },
   { title: "KG", color: "#535353" },
   { title: "Canbu", color: "#4d7b66" },
   { title: "Pawdle", color: "#6d8c42" },
