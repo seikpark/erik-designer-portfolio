@@ -2289,6 +2289,15 @@ body.sidebar-collapsed .medium-sidebar {
   background: #654cff;
 }
 
+.source-badge.smileme {
+  background: #ffc844;
+  color: #242424;
+}
+
+.source-badge.yzyz {
+  background: #1f8277;
+}
+
 .feed-story h2 {
   margin: 0 0 10px;
   color: var(--medium-ink);
@@ -2636,6 +2645,74 @@ body.sidebar-collapsed .medium-sidebar {
 }
 
 .butler-image-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.itoo-image-thumb {
+  --thumb-reveal-color: #3f4b70;
+  align-content: stretch;
+  justify-items: stretch;
+  border: 0;
+  background: #3f4b70;
+  padding: 0;
+  text-decoration: none;
+}
+
+.itoo-image-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sm-meta-image-thumb {
+  --thumb-reveal-color: #7256a5;
+  align-content: stretch;
+  justify-items: stretch;
+  border: 0;
+  background: #f4f0ff;
+  padding: 0;
+  text-decoration: none;
+}
+
+.sm-meta-image-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.smileme-image-thumb {
+  --thumb-reveal-color: #ffc844;
+  align-content: stretch;
+  justify-items: stretch;
+  border: 0;
+  background: #ffc844;
+  padding: 0;
+  text-decoration: none;
+}
+
+.smileme-image-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.yzyz-image-thumb {
+  --thumb-reveal-color: #1f8277;
+  align-content: stretch;
+  justify-items: stretch;
+  border: 0;
+  background: #1f8277;
+  padding: 0;
+  text-decoration: none;
+}
+
+.yzyz-image-thumb img {
   display: block;
   width: 100%;
   height: 100%;

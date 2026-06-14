@@ -107,11 +107,6 @@ const copyButtons = document.querySelectorAll("[data-copy-email]");
 const contactButtons = Array.from(document.querySelectorAll(".app-button[href^='mailto:']"));
 const workFeeds = Array.from(document.querySelectorAll("[data-work-feed]"));
 const upcomingProjects = [
-  { title: "iToo", color: "#be5b3a" },
-  { title: "Design ops", color: "#3f6f57" },
-  { title: "SM meta passport", color: "#7256a5" },
-  { title: "Smile Me", color: "#d8a71d" },
-  { title: "YZYZ", color: "#1f8277" },
   { title: "Photoism", color: "#242424" },
   { title: "Samsung", color: "#2d5fbd" },
   { title: "KT", color: "#c33a36" },
