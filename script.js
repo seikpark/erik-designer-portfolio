@@ -106,13 +106,7 @@ const setActiveNav = () => {
 const copyButtons = document.querySelectorAll("[data-copy-email]");
 const contactButtons = Array.from(document.querySelectorAll(".app-button[href^='mailto:']"));
 const workFeeds = Array.from(document.querySelectorAll("[data-work-feed]"));
-const upcomingProjects = [
-  { title: "KT", color: "#c33a36" },
-  { title: "Duit", color: "#58606a" },
-  { title: "KG", color: "#535353" },
-  { title: "Canbu", color: "#4d7b66" },
-  { title: "Pawdle", color: "#6d8c42" },
-];
+const upcomingProjects = [];
 
 const getProjectInitials = (title) => {
   const words = title.split(/\s+/).filter(Boolean);
