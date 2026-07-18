@@ -1,0 +1,891 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blue slime header animation</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --page-background: transparent;
+        --cycle-duration: 3.4s;
+        --look-duration: 9s;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        background: var(--page-background);
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      main {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        place-items: center;
+      }
+
+      .character-button {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: transparent;
+        pointer-events: none;
+      }
+
+      .character-button:focus-visible {
+        outline: 3px solid #88caff;
+        outline-offset: 6px;
+      }
+
+      .slime-motion {
+        display: block;
+        width: 100%;
+        height: 100%;
+        transform-origin: 50% 76.25%;
+        animation: slime-squash var(--cycle-duration) linear infinite;
+        will-change: transform;
+      }
+
+      .slime-3d {
+        display: block;
+        width: 100%;
+        height: 100%;
+        transform-origin: 50% 52%;
+        animation: head-look var(--look-duration) ease-in-out infinite;
+        will-change: transform;
+      }
+
+      .gaze {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: gaze-look var(--look-duration) ease-in-out infinite;
+        will-change: transform;
+      }
+
+      .eyes {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: eye-blink var(--cycle-duration) linear infinite;
+        will-change: transform;
+      }
+
+      .eye {
+        transform-box: fill-box;
+        transform-origin: center;
+        will-change: transform;
+      }
+
+      .shine {
+        animation: shine-settle var(--cycle-duration) linear infinite;
+      }
+
+      .surface-light,
+      .surface-shadow {
+        transform-box: fill-box;
+        transform-origin: center;
+        will-change: transform, opacity;
+      }
+
+      .surface-light {
+        animation: surface-light-look var(--look-duration) ease-in-out infinite;
+      }
+
+      .surface-shadow {
+        animation: surface-shadow-look var(--look-duration) ease-in-out infinite;
+      }
+
+      .outline-blur {
+        transform-box: fill-box;
+        transform-origin: center;
+        mix-blend-mode: screen;
+        animation: outline-breathe 5.8s ease-in-out infinite alternate;
+        will-change: transform, opacity;
+      }
+
+      .liquid-glass-rim {
+        mix-blend-mode: screen;
+      }
+
+      .glass-rim-caustic {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: glass-caustic-orbit 7.2s linear infinite;
+        will-change: transform, opacity;
+      }
+
+      .glass-rim-caustic--inner {
+        animation-name: glass-caustic-counter;
+        animation-duration: 9.4s;
+      }
+
+      .inner-aura {
+        transform-box: fill-box;
+        transform-origin: center;
+        will-change: transform, opacity;
+      }
+
+      .inner-aura--cyan {
+        animation: aura-cyan-flow 2.8s ease-in-out infinite alternate;
+      }
+
+      .inner-aura--violet {
+        animation: aura-violet-flow 3.4s ease-in-out infinite alternate-reverse;
+      }
+
+      .inner-aura--teal {
+        animation: aura-teal-flow 3.1s ease-in-out infinite alternate;
+      }
+
+      .bubble {
+        transform-box: fill-box;
+        transform-origin: center;
+        fill: rgb(222 253 255 / 28%);
+        stroke: rgb(245 255 255 / 82%);
+        stroke-width: 1.25;
+        animation: bubble-rise-pop var(--bubble-duration) cubic-bezier(0.18, 0.72, 0.32, 1) var(--bubble-delay) infinite;
+        will-change: transform, opacity;
+      }
+
+      .liquid-slosh {
+        transform-box: view-box;
+        transform-origin: 160px 166px;
+        animation: liquid-slosh 4.8s ease-in-out infinite;
+        will-change: transform;
+      }
+
+      .liquid-surface {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: liquid-wave 2.2s ease-in-out infinite alternate;
+        will-change: transform, opacity;
+      }
+
+      .character-button[aria-pressed="true"] * {
+        animation-play-state: paused;
+      }
+
+      .status {
+        min-width: 86px;
+        padding: 7px 12px;
+        border: 1px solid rgb(255 255 255 / 14%);
+        border-radius: 999px;
+        color: rgb(255 255 255 / 72%);
+        background: rgb(255 255 255 / 6%);
+        font-size: 13px;
+        line-height: 1;
+        text-align: center;
+        user-select: none;
+      }
+
+      @keyframes slime-squash {
+        0%,
+        17%,
+        38%,
+        100% {
+          transform: translateY(0) scaleX(1) scaleY(1);
+        }
+
+        20% {
+          transform: translateY(1px) scaleX(1.025) scaleY(0.965);
+        }
+
+        24% {
+          transform: translateY(2px) scaleX(1.095) scaleY(0.84);
+        }
+
+        28% {
+          transform: translateY(-1px) scaleX(0.965) scaleY(1.075);
+        }
+
+        32% {
+          transform: translateY(0) scaleX(1.025) scaleY(0.975);
+        }
+
+        35% {
+          transform: translateY(0) scaleX(0.992) scaleY(1.012);
+        }
+      }
+
+      @keyframes head-look {
+        0%,
+        8%,
+        96%,
+        100% {
+          transform: translate3d(0, 0, 0) scale(1);
+        }
+
+        14%,
+        24% {
+          transform: translate3d(-2px, 0, 0) scale(1.012);
+        }
+
+        31%,
+        41% {
+          transform: translate3d(2px, 0, 0) scale(1.012);
+        }
+
+        48%,
+        58% {
+          transform: translate3d(0, -2px, 0) scale(1.018);
+        }
+
+        65%,
+        75% {
+          transform: translate3d(-2px, 2px, 0) scale(1.01);
+        }
+
+        82%,
+        91% {
+          transform: translate3d(2px, -2px, 0) scale(1.014);
+        }
+      }
+
+      @keyframes gaze-look {
+        0%,
+        8%,
+        96%,
+        100% {
+          transform: translate(0, 0) scale(1);
+        }
+
+        14%,
+        24% {
+          transform: translate(-15px, 1px) scaleX(0.78) scaleY(0.97);
+        }
+
+        31%,
+        41% {
+          transform: translate(15px, 1px) scaleX(0.78) scaleY(0.97);
+        }
+
+        48%,
+        58% {
+          transform: translate(0, -10px) scaleX(0.93) scaleY(0.9);
+        }
+
+        65%,
+        75% {
+          transform: translate(-10px, 8px) scaleX(0.84) scaleY(0.92);
+        }
+
+        82%,
+        91% {
+          transform: translate(11px, -7px) scaleX(0.84) scaleY(0.92);
+        }
+      }
+
+      @keyframes eye-blink {
+        0%,
+        55%,
+        59%,
+        100% {
+          transform: scaleY(1);
+        }
+
+        56.2% {
+          transform: scaleY(0.16);
+        }
+
+        57.2% {
+          transform: scaleY(0.06);
+        }
+
+        58.1% {
+          transform: scaleY(0.3);
+        }
+      }
+
+      @keyframes shine-settle {
+        0%,
+        17%,
+        38%,
+        100% {
+          opacity: 0.28;
+        }
+
+        24% {
+          opacity: 0.21;
+        }
+
+        28% {
+          opacity: 0.34;
+        }
+      }
+
+      @keyframes surface-light-look {
+        0%,
+        8%,
+        96%,
+        100% {
+          opacity: 0.42;
+          transform: translate(0, 0) scale(1);
+        }
+
+        14%,
+        24% {
+          opacity: 0.54;
+          transform: translate(17px, 2px) scale(1.05);
+        }
+
+        31%,
+        41% {
+          opacity: 0.54;
+          transform: translate(-17px, 2px) scale(1.05);
+        }
+
+        48%,
+        58% {
+          opacity: 0.58;
+          transform: translate(0, 14px) scale(1.08);
+        }
+
+        65%,
+        75% {
+          opacity: 0.46;
+          transform: translate(11px, -12px) scale(0.98);
+        }
+
+        82%,
+        91% {
+          opacity: 0.56;
+          transform: translate(-13px, 10px) scale(1.06);
+        }
+      }
+
+      @keyframes surface-shadow-look {
+        0%,
+        8%,
+        96%,
+        100% {
+          opacity: 0.34;
+          transform: translate(0, 0) scale(1);
+        }
+
+        14%,
+        24% {
+          opacity: 0.48;
+          transform: translate(-17px, 1px) scale(1.08);
+        }
+
+        31%,
+        41% {
+          opacity: 0.48;
+          transform: translate(17px, 1px) scale(1.08);
+        }
+
+        48%,
+        58% {
+          opacity: 0.42;
+          transform: translate(0, -13px) scale(1.05);
+        }
+
+        65%,
+        75% {
+          opacity: 0.5;
+          transform: translate(-12px, 12px) scale(1.1);
+        }
+
+        82%,
+        91% {
+          opacity: 0.46;
+          transform: translate(14px, -10px) scale(1.07);
+        }
+      }
+
+      @keyframes aura-cyan-flow {
+        0% {
+          opacity: 0.82;
+          transform: translate(-34px, 15px) rotate(-12deg) scale(1.08);
+        }
+
+        48% {
+          opacity: 0.96;
+          transform: translate(8px, -19px) rotate(9deg) scale(1.32);
+        }
+
+        100% {
+          opacity: 0.76;
+          transform: translate(42px, 18px) rotate(18deg) scale(1.16);
+        }
+      }
+
+      @keyframes aura-violet-flow {
+        0% {
+          opacity: 0.76;
+          transform: translate(36px, -24px) rotate(12deg) scale(1.12);
+        }
+
+        52% {
+          opacity: 0.94;
+          transform: translate(-23px, 8px) rotate(-16deg) scale(1.34);
+        }
+
+        100% {
+          opacity: 0.8;
+          transform: translate(-38px, 24px) rotate(-6deg) scale(1.15);
+        }
+      }
+
+      @keyframes aura-teal-flow {
+        0% {
+          opacity: 0.62;
+          transform: translate(38px, 26px) rotate(8deg) scale(1.06);
+        }
+
+        50% {
+          opacity: 0.86;
+          transform: translate(-18px, -13px) rotate(-11deg) scale(1.3);
+        }
+
+        100% {
+          opacity: 0.7;
+          transform: translate(-34px, 18px) rotate(5deg) scale(1.12);
+        }
+      }
+
+      @keyframes outline-breathe {
+        0% {
+          opacity: 0.2;
+          transform: scale(0.985);
+        }
+
+        48% {
+          opacity: 0.42;
+          transform: scale(1.012);
+        }
+
+        100% {
+          opacity: 0.26;
+          transform: scale(1.025);
+        }
+      }
+
+      @keyframes glass-caustic-orbit {
+        0% {
+          opacity: 0.62;
+          transform: rotate(-132deg);
+        }
+
+        50% {
+          opacity: 0.96;
+        }
+
+        100% {
+          opacity: 0.62;
+          transform: rotate(228deg);
+        }
+      }
+
+      @keyframes glass-caustic-counter {
+        0% {
+          opacity: 0.48;
+          transform: rotate(46deg);
+        }
+
+        50% {
+          opacity: 0.82;
+        }
+
+        100% {
+          opacity: 0.48;
+          transform: rotate(-314deg);
+        }
+      }
+
+      @keyframes bubble-rise-pop {
+        0% {
+          opacity: 0;
+          transform: translate(0, 5px) scale(0.15);
+        }
+
+        10% {
+          opacity: 0.3;
+          transform: translate(0, 2px) scale(0.48);
+        }
+
+        20% {
+          opacity: 0.72;
+          transform: translate(0, 0) scale(0.88);
+        }
+
+        72% {
+          opacity: 0.74;
+          transform: translate(var(--bubble-drift), var(--bubble-rise)) scale(1);
+        }
+
+        84% {
+          opacity: 0.92;
+          transform: translate(var(--bubble-drift), var(--bubble-rise)) scale(1.15);
+        }
+
+        91%,
+        100% {
+          opacity: 0;
+          transform: translate(var(--bubble-drift), var(--bubble-rise)) scale(2.1);
+        }
+      }
+
+      @keyframes liquid-slosh {
+        0%,
+        100% {
+          transform: translateY(1px) rotate(-2.2deg);
+        }
+
+        25% {
+          transform: translateY(-1px) rotate(2.8deg);
+        }
+
+        50% {
+          transform: translateY(1.5px) rotate(-1.4deg);
+        }
+
+        75% {
+          transform: translateY(-0.5px) rotate(2.2deg);
+        }
+      }
+
+      @keyframes liquid-wave {
+        0% {
+          opacity: 0.62;
+          transform: translateX(-5px) scaleY(0.92);
+        }
+
+        100% {
+          opacity: 0.94;
+          transform: translateX(5px) scaleY(1.08);
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .slime-3d,
+        .slime-motion,
+        .gaze,
+        .eyes,
+        .eye,
+        .shine,
+        .surface-light,
+        .surface-shadow,
+        .outline-blur,
+        .glass-rim-caustic,
+        .liquid-slosh,
+        .liquid-surface,
+        .inner-aura {
+          animation: none;
+        }
+
+        .bubble {
+          animation: none;
+          opacity: 0;
+        }
+
+        .status {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="character-button" aria-hidden="true">
+        <span class="slime-3d">
+          <svg
+            class="slime-motion"
+            viewBox="0 0 320 320"
+            role="img"
+            aria-labelledby="slime-title slime-description"
+          >
+          <title id="slime-title">파란 슬라임 캐릭터</title>
+          <desc id="slime-description">여러 곳을 바라보며 몸 안의 그라데이션과 탄산 버블이 움직이는 파란 슬라임 캐릭터</desc>
+
+          <defs>
+            <linearGradient id="liquid-glass-rim" x1="0.12" y1="0.08" x2="0.88" y2="0.94">
+              <stop offset="0" stop-color="#ffffff" stop-opacity="0.52" />
+              <stop offset="0.18" stop-color="#c9f7ff" stop-opacity="0.16" />
+              <stop offset="0.46" stop-color="#7fdaff" stop-opacity="0.06" />
+              <stop offset="0.72" stop-color="#a8bdff" stop-opacity="0.14" />
+              <stop offset="1" stop-color="#ffffff" stop-opacity="0.42" />
+            </linearGradient>
+
+            <linearGradient id="liquid-glass-highlight" x1="0.1" y1="0.06" x2="0.92" y2="0.95">
+              <stop offset="0" stop-color="#ffffff" stop-opacity="0.94" />
+              <stop offset="0.24" stop-color="#d9fbff" stop-opacity="0.34" />
+              <stop offset="0.5" stop-color="#8edfff" stop-opacity="0.08" />
+              <stop offset="0.78" stop-color="#b7c9ff" stop-opacity="0.26" />
+              <stop offset="1" stop-color="#ffffff" stop-opacity="0.82" />
+            </linearGradient>
+
+            <linearGradient id="liquid-glass-depth" x1="0.18" y1="0.08" x2="0.8" y2="0.94">
+              <stop offset="0" stop-color="#ffffff" stop-opacity="0.18" />
+              <stop offset="0.45" stop-color="#4969aa" stop-opacity="0.06" />
+              <stop offset="0.78" stop-color="#172b66" stop-opacity="0.46" />
+              <stop offset="1" stop-color="#071434" stop-opacity="0.62" />
+            </linearGradient>
+
+            <radialGradient id="body" cx="42%" cy="28%" r="82%">
+              <stop offset="0" stop-color="#5fbff7" />
+              <stop offset="0.42" stop-color="#4388eb" />
+              <stop offset="0.78" stop-color="#3859d5" />
+              <stop offset="1" stop-color="#2e47bd" />
+            </radialGradient>
+
+            <linearGradient id="glass-body" x1="0" y1="0" x2="0.85" y2="1">
+              <stop offset="0" stop-color="#bfefff" stop-opacity="0.48" />
+              <stop offset="0.42" stop-color="#5c8fc6" stop-opacity="0.38" />
+              <stop offset="1" stop-color="#2c447e" stop-opacity="0.58" />
+            </linearGradient>
+
+            <linearGradient id="lower-glow" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#b8e4ff" stop-opacity="0" />
+              <stop offset="1" stop-color="#b8e4ff" stop-opacity="0.48" />
+            </linearGradient>
+
+            <radialGradient id="upper-shine" cx="0.5" cy="0" r="1">
+              <stop offset="0" stop-color="#ffffff" stop-opacity="0.64" />
+              <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+            </radialGradient>
+
+            <radialGradient id="aura-cyan" cx="50%" cy="50%" r="50%">
+              <stop offset="0" stop-color="#16f0ef" stop-opacity="1" />
+              <stop offset="0.5" stop-color="#22dff5" stop-opacity="0.92" />
+              <stop offset="1" stop-color="#49cbff" stop-opacity="0" />
+            </radialGradient>
+
+            <radialGradient id="aura-violet" cx="50%" cy="50%" r="50%">
+              <stop offset="0" stop-color="#ad68ff" stop-opacity="1" />
+              <stop offset="0.48" stop-color="#7955ff" stop-opacity="0.9" />
+              <stop offset="1" stop-color="#574ce9" stop-opacity="0" />
+            </radialGradient>
+
+            <radialGradient id="aura-teal" cx="50%" cy="50%" r="50%">
+              <stop offset="0" stop-color="#53f0db" stop-opacity="0.96" />
+              <stop offset="0.48" stop-color="#2bcbd0" stop-opacity="0.82" />
+              <stop offset="1" stop-color="#25a7c8" stop-opacity="0" />
+            </radialGradient>
+
+            <radialGradient id="depth-shadow" cx="50%" cy="50%" r="50%">
+              <stop offset="0" stop-color="#1a2a8f" stop-opacity="0.72" />
+              <stop offset="0.52" stop-color="#2534a8" stop-opacity="0.38" />
+              <stop offset="1" stop-color="#2639b5" stop-opacity="0" />
+            </radialGradient>
+
+            <radialGradient id="sphere-edge-shade" cx="34%" cy="24%" r="78%">
+              <stop offset="0" stop-color="#ffffff" stop-opacity="0.12" />
+              <stop offset="0.46" stop-color="#6edfff" stop-opacity="0.02" />
+              <stop offset="0.72" stop-color="#263e98" stop-opacity="0.08" />
+              <stop offset="0.88" stop-color="#142968" stop-opacity="0.28" />
+              <stop offset="1" stop-color="#071538" stop-opacity="0.62" />
+            </radialGradient>
+
+            <clipPath id="body-clip">
+              <circle cx="160" cy="166" r="74" />
+            </clipPath>
+
+            <clipPath id="liquid-fill-clip" clipPathUnits="userSpaceOnUse">
+              <path d="M64 122C84 115 104 129 124 122S164 115 184 122S224 129 256 122L256 260L64 260Z" />
+            </clipPath>
+
+            <filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="170%">
+              <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.38" />
+            </filter>
+
+            <filter id="inner-blur" x="20" y="25" width="280" height="280" filterUnits="userSpaceOnUse">
+              <feGaussianBlur stdDeviation="19" />
+            </filter>
+
+            <filter id="outline-soft-blur" x="45" y="50" width="230" height="235" filterUnits="userSpaceOnUse">
+              <feGaussianBlur stdDeviation="5.5" />
+            </filter>
+
+            <filter id="liquid-glass-refraction" x="60" y="66" width="200" height="200" filterUnits="userSpaceOnUse">
+              <feTurbulence type="fractalNoise" baseFrequency="0.018 0.032" numOctaves="2" seed="8" result="glass-noise" />
+              <feDisplacementMap in="SourceGraphic" in2="glass-noise" scale="1.8" xChannelSelector="R" yChannelSelector="B" result="refracted" />
+              <feGaussianBlur in="refracted" stdDeviation="0.32" result="soft-refraction" />
+              <feMerge>
+                <feMergeNode in="soft-refraction" />
+                <feMergeNode in="refracted" />
+              </feMerge>
+            </filter>
+
+            <filter id="eye-glow" x="100" y="112" width="120" height="90" filterUnits="userSpaceOnUse">
+              <feGaussianBlur stdDeviation="5" />
+            </filter>
+
+            <filter id="bubble-glow" x="60" y="65" width="200" height="200" filterUnits="userSpaceOnUse">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="1.4" result="bubble-blur" />
+              <feMerge>
+                <feMergeNode in="bubble-blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+
+          </defs>
+
+          <g filter="url(#soft-shadow)">
+            <g class="liquid-glass-rim" aria-hidden="true">
+              <circle
+                class="outline-blur"
+                cx="160"
+                cy="166"
+                r="82"
+                fill="none"
+                stroke="#d5f8ff"
+                stroke-opacity="0.72"
+                stroke-width="7"
+                filter="url(#outline-soft-blur)"
+              />
+              <circle
+                cx="160"
+                cy="166"
+                r="82"
+                fill="url(#liquid-glass-rim)"
+                stroke="url(#liquid-glass-highlight)"
+                stroke-width="1.8"
+                filter="url(#liquid-glass-refraction)"
+              />
+              <circle cx="160" cy="166" r="77.5" fill="none" stroke="url(#liquid-glass-depth)" stroke-width="7" opacity="0.72" />
+              <circle
+                class="glass-rim-caustic"
+                cx="160"
+                cy="166"
+                r="80.5"
+                fill="none"
+                stroke="url(#liquid-glass-highlight)"
+                stroke-width="3.4"
+                stroke-linecap="round"
+                stroke-dasharray="96 410"
+              />
+              <circle
+                class="glass-rim-caustic glass-rim-caustic--inner"
+                cx="160"
+                cy="166"
+                r="75.8"
+                fill="none"
+                stroke="#efffff"
+                stroke-opacity="0.72"
+                stroke-width="1.4"
+                stroke-linecap="round"
+                stroke-dasharray="58 418"
+              />
+            </g>
+            <circle cx="160" cy="166" r="74" fill="url(#glass-body)" />
+            <circle cx="160" cy="166" r="73" fill="none" stroke="#e8fbff" stroke-opacity="0.34" stroke-width="1.5" />
+
+            <g clip-path="url(#body-clip)">
+              <g class="liquid-slosh">
+                <g clip-path="url(#liquid-fill-clip)">
+                  <rect x="64" y="78" width="192" height="182" fill="url(#body)" />
+              <ellipse
+                class="inner-aura inner-aura--cyan"
+                cx="106"
+                cy="151"
+                rx="82"
+                ry="70"
+                fill="url(#aura-cyan)"
+                filter="url(#inner-blur)"
+              />
+              <ellipse
+                class="inner-aura inner-aura--violet"
+                cx="193"
+                cy="142"
+                rx="86"
+                ry="73"
+                fill="url(#aura-violet)"
+                filter="url(#inner-blur)"
+              />
+              <ellipse
+                class="inner-aura inner-aura--teal"
+                cx="190"
+                cy="213"
+                rx="80"
+                ry="61"
+                fill="url(#aura-teal)"
+                filter="url(#inner-blur)"
+              />
+              <ellipse cx="160" cy="221" rx="62" ry="35" fill="url(#lower-glow)" opacity="0.55" />
+
+              <g filter="url(#bubble-glow)" aria-hidden="true">
+                <circle class="bubble" cx="105" cy="210" r="3.5" style="--bubble-rise: -86px; --bubble-drift: 8px; --bubble-duration: 2.8s; --bubble-delay: -0.2s" />
+                <circle class="bubble" cx="123" cy="225" r="2" style="--bubble-rise: -112px; --bubble-drift: -10px; --bubble-duration: 3.7s; --bubble-delay: -1.3s" />
+                <circle class="bubble" cx="148" cy="218" r="4.5" style="--bubble-rise: -78px; --bubble-drift: 13px; --bubble-duration: 2.9s; --bubble-delay: -2.1s" />
+                <circle class="bubble" cx="174" cy="226" r="2.5" style="--bubble-rise: -105px; --bubble-drift: -7px; --bubble-duration: 3.4s; --bubble-delay: -0.7s" />
+                <circle class="bubble" cx="200" cy="212" r="3" style="--bubble-rise: -92px; --bubble-drift: 12px; --bubble-duration: 2.6s; --bubble-delay: -1.8s" />
+                <circle class="bubble" cx="215" cy="196" r="1.8" style="--bubble-rise: -70px; --bubble-drift: -8px; --bubble-duration: 2.4s; --bubble-delay: -0.9s" />
+                <circle class="bubble" cx="133" cy="201" r="1.6" style="--bubble-rise: -73px; --bubble-drift: 6px; --bubble-duration: 2.2s; --bubble-delay: -1.4s" />
+                <circle class="bubble" cx="188" cy="222" r="5" style="--bubble-rise: -96px; --bubble-drift: -14px; --bubble-duration: 4s; --bubble-delay: -2.9s" />
+                <circle class="bubble" cx="102" cy="188" r="2.4" style="--bubble-rise: -66px; --bubble-drift: 10px; --bubble-duration: 2.5s; --bubble-delay: -1.1s" />
+                <circle class="bubble" cx="160" cy="204" r="2" style="--bubble-rise: -82px; --bubble-drift: -11px; --bubble-duration: 3s; --bubble-delay: -0.5s" />
+                <circle class="bubble" cx="116" cy="220" r="4" style="--bubble-rise: -100px; --bubble-drift: 15px; --bubble-duration: 3.8s; --bubble-delay: -3s" />
+                <circle class="bubble" cx="206" cy="226" r="2.2" style="--bubble-rise: -88px; --bubble-drift: -13px; --bubble-duration: 3.2s; --bubble-delay: -2.2s" />
+              </g>
+                </g>
+
+                <g class="liquid-surface" aria-hidden="true">
+                  <path
+                    d="M64 122C84 115 104 129 124 122S164 115 184 122S224 129 256 122"
+                    fill="none"
+                    stroke="#9beeff"
+                    stroke-opacity="0.28"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M64 122C84 115 104 129 124 122S164 115 184 122S224 129 256 122"
+                    fill="none"
+                    stroke="#efffff"
+                    stroke-opacity="0.78"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </g>
+              </g>
+
+              <ellipse
+                class="surface-shadow"
+                cx="211"
+                cy="186"
+                rx="68"
+                ry="76"
+                fill="url(#depth-shadow)"
+                filter="url(#inner-blur)"
+              />
+              <circle cx="160" cy="166" r="74" fill="url(#sphere-edge-shade)" pointer-events="none" />
+
+              <g class="surface-light">
+                <ellipse class="shine" cx="142" cy="107" rx="61" ry="32" fill="url(#upper-shine)" />
+              </g>
+            </g>
+
+            <g class="gaze">
+              <g class="eyes">
+                <g class="eye" fill="#ffffff">
+                  <rect x="130" y="139" width="13" height="28" rx="6.5" opacity="0.9" filter="url(#eye-glow)" />
+                  <rect x="130" y="139" width="13" height="28" rx="6.5" />
+                </g>
+                <g class="eye" fill="#ffffff">
+                  <rect x="177" y="139" width="13" height="28" rx="6.5" opacity="0.9" filter="url(#eye-glow)" />
+                  <rect x="177" y="139" width="13" height="28" rx="6.5" />
+                </g>
+              </g>
+            </g>
+          </g>
+          </svg>
+        </span>
+      </div>
+    </main>
+  </body>
+</html>
