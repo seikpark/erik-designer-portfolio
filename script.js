@@ -2010,7 +2010,8 @@ if (constructionTargets.length > 0) {
 
 recommendationRails.forEach((rail) => {
   const credit = rail.querySelector(".rail-credit");
-  const desktopQuery = window.matchMedia("(min-width: 941px)");
+  const desktopQuery = window.matchMedia("(min-width: 1101px)");
+  const shell = rail.closest(".medium-shell");
   let bottomTop = 0;
   let currentTop = 0;
   let fixedLeft = 0;
@@ -2018,6 +2019,7 @@ recommendationRails.forEach((rail) => {
   let isFixed = false;
   let isInitiallyLocked = false;
   let previousScrollY = window.scrollY;
+  let resizeSettleTimer = 0;
   let topBoundary = 0;
   let triggerY = 0;
 
@@ -2119,8 +2121,26 @@ recommendationRails.forEach((rail) => {
   };
 
   const refreshRailPosition = () => {
-    measureRail({ preserveFixed: true });
+    measureRail();
     updateRailPosition();
+  };
+
+  const scheduleRailRefresh = () => {
+    clearRailPosition();
+    window.clearTimeout(resizeSettleTimer);
+    resizeSettleTimer = window.setTimeout(refreshRailPosition, 640);
+  };
+
+  const isShellColumnTransition = (event) =>
+    event.target === shell && event.propertyName === "grid-template-columns";
+
+  const handleShellTransitionEnd = (event) => {
+    if (!isShellColumnTransition(event)) {
+      return;
+    }
+
+    window.clearTimeout(resizeSettleTimer);
+    refreshRailPosition();
   };
 
   rail.querySelectorAll("details").forEach((details) => {
@@ -2188,8 +2208,11 @@ recommendationRails.forEach((rail) => {
 
   refreshRailPosition();
   window.addEventListener("scroll", updateRailPosition, { passive: true });
-  window.addEventListener("resize", refreshRailPosition);
-  desktopQuery.addEventListener("change", refreshRailPosition);
+  window.addEventListener("resize", scheduleRailRefresh);
+  desktopQuery.addEventListener("change", scheduleRailRefresh);
+  shell?.addEventListener("transitionrun", scheduleRailRefresh);
+  shell?.addEventListener("transitionend", handleShellTransitionEnd);
+  shell?.addEventListener("transitioncancel", scheduleRailRefresh);
 });
 
 if (sections.length > 0) {
