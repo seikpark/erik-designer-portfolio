@@ -249,6 +249,7 @@ const portfolioLanguageSelectors = {
     ".workshop-figure figcaption",
     ".case-detail-section > h2",
     ".case-detail-section > p",
+    ".workshop-question-list > p > span",
     ".case-table th",
     ".case-table td",
     ".workshop-pullquote",
@@ -1308,6 +1309,104 @@ const portfolioKoreanTranslations = new Map([
     "That is what I want a community event to do. Create enough structure for honest feedback, and enough trust for people to share work before it feels completely ready.",
     "제가 만들고 싶은 커뮤니티 행사의 역할도 여기에 있습니다. 솔직한 피드백이 오갈 수 있는 구조와, 완벽하게 준비되지 않은 작업도 꺼내놓을 수 있는 신뢰를 함께 만드는 것입니다.",
   ],
+  [
+    "Sponsored by KDNEW · Career Fireside Chat · Jul 2026",
+    "KDNEW 후원 · 커리어 파이어사이드 챗 · 2026년 7월",
+  ],
+  [
+    "Building a Career in Canada on a Working Holiday",
+    "캐나다 워킹홀리데이로 커리어를 만들어가기까지",
+  ],
+  [
+    "I co-hosted a KDNEW-sponsored Career Fireside Chat for people who wanted to start a career in Canada while here on a working holiday. As one of five speakers, I shared why honest self-assessment should come before adopting someone else’s approach.",
+    "워킹홀리데이로 캐나다에서 커리어를 시작하려는 분들을 위한 커리어 파이어사이드 챗을 공동 주최했습니다. KDNEW가 후원했고, 저는 다섯 명의 스피커 중 한 명으로 참여했습니다. 캐나다에서 커리어를 시작한 경험과 자기 객관화부터 시작해야 한다고 생각한 이유를 나눴습니다.",
+  ],
+  ["Co-hosting", "공동 주최"],
+  ["Career Entry", "커리어 시작"],
+  [
+    "Sponsored by KDNEW · Career Fireside Chat · Burnaby · Jul 2026",
+    "KDNEW 후원 · 커리어 파이어사이드 챗 · 버나비 · 2026년 7월",
+  ],
+  [
+    "I co-hosted a KDNEW-sponsored Career Fireside Chat in Burnaby for people who wanted to start a career in Canada while here on a working holiday. As one of five speakers, I shared the choices and difficulties that shaped my own start—and why honest self-assessment is the first step I would take if I were beginning again.",
+    "7월 25일, 워킹홀리데이로 캐나다에서 커리어를 시작하려는 분들을 위한 커리어 파이어사이드 챗을 버나비에서 공동 주최했습니다. KDNEW가 후원했고, 저는 다섯 명의 스피커 중 한 명으로 참여했습니다. 캐나다에서 커리어를 시작하며 어떤 선택을 했고 어디에서 어려움을 겪었는지, 다시 시작한다면 왜 자기 객관화부터 할지 나눴습니다.",
+  ],
+  ["Co-host / Speaker / Product Designer", "공동 주최 / 스피커 / 프로덕트 디자이너"],
+  [
+    "The challenge was deciding what applied",
+    "정보는 많았지만, 내게 맞는 방법을 고르기는 어려웠습니다",
+  ],
+  [
+    "I came to Canada on a working holiday and started my career here. In the session, I walked through the choices I made, the difficulties I encountered, and what I would examine first if I were starting over.",
+    "저는 워킹홀리데이로 캐나다에 와서 커리어를 시작했습니다. 세션에서는 어떤 선택을 했고 어디에서 어려움을 겪었는지, 다시 시작한다면 무엇부터 확인할지 이야기했습니다.",
+  ],
+  [
+    "Information about building a career in Canada is easy to find. The harder question is which advice fits your experience, strengths, English communication skills, and current situation. We shaped the event around that challenge: helping participants identify what they needed, not simply giving them more information.",
+    "커리어 정보는 어렵지 않게 찾을 수 있습니다. 막상 어려웠던 건 그중 어떤 방법이 내 경험과 강점에 맞는지, 영어로 내 경험을 어느 정도 설명할 수 있는지, 지금 상황에서 무엇부터 해야 하는지 판단하는 일이었습니다. 그래서 이번 이벤트에서는 혼자 찾은 정보만으로는 알기 어려웠던 ‘내게 필요한 것’을 함께 확인해보고 싶었습니다.",
+  ],
+  [
+    "Why honest self-assessment comes first",
+    "왜 자기 객관화가 먼저일까요",
+  ],
+  [
+    "The point I emphasized was simple: start with an honest self-assessment. Before sending more applications or following someone else’s approach, I asked participants to examine their starting point through four questions.",
+    "제가 가장 강조한 건 자기 객관화였습니다. 지원서를 더 보내거나 다른 사람의 방법을 따라가기 전에, 네 가지 질문으로 지금의 자신부터 살펴보자고 이야기했습니다.",
+  ],
+  ["“What are you good at?”", "“내가 잘하는 일은 무엇인가요?”"],
+  ["“Where are you in your career right now?”", "“내 커리어는 지금 어느 단계에 있나요?”"],
+  [
+    "“How confidently can you communicate your experience in English?”",
+    "“내 경험을 영어로 얼마나 자신 있게 설명할 수 있나요?”",
+  ],
+  [
+    "“Can you clearly explain the value of your experience in Korea to Canadian employers?”",
+    "“한국에서 쌓은 경험의 가치를 캐나다 채용 담당자에게 명확하게 설명할 수 있나요?”",
+  ],
+  [
+    "Self-assessment is not about cataloguing weaknesses. It is about recognizing the strengths and experience you already have, understanding where you stand, and choosing a realistic next step.",
+    "자기 객관화는 부족한 점만 찾는 일이 아닙니다. 이미 무엇을 갖고 있는지, 지금 어디에 서 있는지 확인하고, 다음에 무엇을 할지 정하는 과정입니다.",
+  ],
+  [
+    "Together, the questions turned self-assessment into a practical starting point.",
+    "이 질문들을 통해 참가자들이 자신을 조금 더 명확하게 바라볼 수 있기를 바랐습니다.",
+  ],
+  [
+    "Different ways to start, not one formula",
+    "서로 다른 방법을 솔직하게 나눴습니다",
+  ],
+  [
+    "Each of the five speakers had started a career in Canada differently. We shared what we tried, how we made decisions, and where we struggled.",
+    "저를 포함한 다섯 명의 스피커는 서로 다른 방법으로 캐나다에서 커리어를 시작했습니다. 무엇을 시도했고, 어떤 기준으로 선택했으며, 어디에서 막혔는지 솔직하게 나눴습니다.",
+  ],
+  [
+    "Hearing those differences gave participants several real experiences to compare with their own situation, rather than one success story to treat as a formula.",
+    "이 차이가 중요했습니다. 하나의 성공담을 정답처럼 따르기보다, 서로 다른 실제 경험을 자신의 상황과 비교해볼 수 있었기 때문입니다.",
+  ],
+  [
+    "Networking continued after the main session",
+    "메인 세션 뒤에도 네트워킹은 이어졌습니다",
+  ],
+  [
+    "After the main session, participants exchanged LinkedIn profiles and continued conversations with others facing similar questions.",
+    "메인 세션이 끝난 뒤 참가자들은 LinkedIn 프로필을 교환하며 네트워킹을 이어갔습니다. 비슷한 고민을 가진 참가자들끼리 각자의 경험과 생각을 나누는 대화도 계속됐습니다.",
+  ],
+  [
+    "One participant later messaged me to say that the discussion about self-assessment had been especially helpful. Self-assessment was the point I had emphasized most, so that message stayed with me. It showed that the session had given at least one participant a useful way to examine what to do next.",
+    "행사 뒤에는 한 참가자가 자기 객관화에 대한 이야기가 특히 도움이 됐다고 메시지를 보내왔습니다. 제가 가장 강조한 내용이 실제로 도움이 됐다는 걸 직접 들을 수 있어 뜻깊었습니다.",
+  ],
+  [
+    "A clearer starting point mattered more than one answer",
+    "하나의 답보다, 자신의 출발점을 더 분명하게 보는 것이 중요했습니다",
+  ],
+  [
+    "Our five stories showed that starting a career in Canada does not follow one formula. The next step depends on the experience and strengths someone brings, how clearly they can communicate that value in English, and what their current situation allows.",
+    "캐나다에서 커리어를 시작하는 방법은 하나가 아닙니다. 어떤 경험과 강점을 갖고 있는지, 영어로 그 경험을 얼마나 잘 설명할 수 있는지, 지금 어떤 상황에 있는지에 따라 다음에 할 일도 달라집니다.",
+  ],
+  [
+    "I wanted participants to leave with a clearer view of their own starting point and new professional contacts they could stay in touch with after the event. If they could see themselves more clearly and choose a next step that fit their situation, the event had done what I hoped it would do.",
+    "그래서 비슷한 고민을 가진 사람들과 시작한 네트워킹은 이벤트 뒤에도 이어졌으면 했습니다. 무엇보다 참가자들이 자신을 더 명확하게 바라보고, 다음에 무엇을 할지 정하는 데 이번 이벤트가 도움이 되었기를 바랐습니다.",
+  ],
+  ["Read LinkedIn reflection", "링크드인 회고 읽기"],
   ["All workshops", "전체 워크숍"],
   ["View official event", "공식 이벤트 보기"],
 ]);

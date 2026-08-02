@@ -2855,6 +2855,14 @@ body.sidebar-collapsed .medium-sidebar {
   object-position: center;
 }
 
+.workshop-image-thumb.workshop-poster-thumb {
+  background: #202126;
+}
+
+.workshop-image-thumb.workshop-poster-thumb img {
+  object-fit: contain;
+}
+
 .upcoming-project-story {
   outline: none;
 }
@@ -4132,6 +4140,10 @@ body.sidebar-collapsed .medium-sidebar {
   color: var(--medium-accent);
 }
 
+.workshop-question-list + p {
+  margin-top: 16px;
+}
+
 .workshop-pullquote {
   margin: 26px 0;
   border-left: 3px solid var(--medium-ink);
@@ -4802,7 +4814,18 @@ body.sidebar-collapsed .medium-sidebar {
     gap: 18px;
   }
 
+  .story-feed .feed-story:has(.workshop-poster-thumb) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+
   .work-feed:not(.is-tile-view) .compact-story .story-thumb.list-story-thumb {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+
+  .story-feed .compact-story .workshop-poster-thumb.list-story-thumb {
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 10;
