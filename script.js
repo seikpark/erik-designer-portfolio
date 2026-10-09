@@ -97,7 +97,7 @@ setNavIconState();
 const initializeChatbotTrigger = () => {
   const avatar = document.querySelector(".slime-character");
 
-  if (!avatar) {
+  if (!avatar || avatar.hidden) {
     return;
   }
 
@@ -278,7 +278,7 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "BeroAI connects a smart collar and companion app to help dog owners understand what may be happening and respond with more confidence. I also designed a separate pre-order site to explain the product and capture early demand.",
-    "BeroAI는 스마트 목걸이와 앱을 연결해, 보호자가 반려견의 상태를 이해하고 상황에 맞게 대응하도록 돕습니다. 사전 주문 사이트는 제품의 쓰임을 설명하고 초기 수요를 확인하는 별도 경험으로 설계했습니다.",
+    "BeroAI는 스마트 목걸이와 앱을 연결해 보호자가 반려견의 상태를 이해하고 상황에 맞게 대응하도록 돕습니다. 제품의 쓰임을 설명하고 초기 수요를 확인할 수 있도록 사전 주문 사이트를 별도로 설계했습니다.",
   ],
   [
     "Helping owners understand their dog's personality beyond a simple label.",
@@ -301,52 +301,40 @@ const portfolioKoreanTranslations = new Map([
     "개인 투자자를 위한 기업 분석 서비스",
   ],
   [
-    "Butler is an investment assistant service that organizes visualized company data, disclosures, reports, news, screeners, and portfolio workflows for individual investors.",
-    "Butler는 시각화한 기업 데이터와 공시, 리포트, 뉴스, 스크리너, 관심 종목, 포트폴리오 관리 기능을 한곳에 모은 투자 지원 서비스입니다.",
-  ],
-  [
-    "Butler organizes company data, disclosures, reports, news, screeners, and portfolio workflows into an investment assistant experience for individual investors.",
-    "Butler는 기업 데이터와 공시, 리포트, 뉴스, 스크리너, 포트폴리오 관리 기능을 한곳에 모아 개인 투자자의 기업 분석과 투자 관리를 돕습니다.",
+    "I worked on Butler's home and landing pages so new investors could understand the service, find key features, and know where to start.",
+    "투자 입문자가 서비스의 기능을 이해하고 어디서 시작할지 알 수 있도록 Butler의 홈과 랜딩 페이지 리뉴얼에 참여했습니다.",
   ],
   [
     "Turning fan identity into a mobile passport for the SMTOWN universe.",
     "SM 팬을 위한 디지털 여권 서비스",
   ],
   [
-    "SMTOWN Meta-Passport connects fan identity, membership, event stamps, and the Music Nation SMTOWN concept into a mobile passport experience.",
-    "SMTOWN Meta-Passport는 팬의 디지털 정체성과 멤버십, 이벤트 참여, 스탬프를 연결해 팬이 Music Nation SMTOWN 세계관을 모바일 여권 형태로 경험할 수 있게 합니다.",
-  ],
-  [
-    "SMTOWN Meta-Passport connected fan identity, membership, event stamps, and the Music Nation SMTOWN concept into a mobile passport experience.",
-    "SMTOWN Meta-Passport는 팬의 디지털 정체성과 멤버십, 이벤트 참여, 스탬프를 하나의 모바일 여권에 담아 Music Nation SMTOWN 세계관으로 연결했습니다.",
+    "SMTOWN Meta-Passport brought together stamps from online and offline concerts and fan club information in a digital passport for SM fans.",
+    "SMTOWN Meta-Passport는 SM 팬이 온라인·오프라인 공연의 스탬프를 모으고 팬클럽 정보를 관리하는 디지털 여권 서비스입니다.",
   ],
   [
     "Bringing fashion shopping and community into one mobile flow.",
     "쇼핑과 커뮤니티를 결합한 패션 커머스 서비스",
   ],
   [
-    "iToo was a fashion commerce project for Lotte Homeshopping, combining shopping mall flows, product detail, purchase, return, and community features into one mobile-first experience.",
-    "iToo는 롯데홈쇼핑의 패션 커머스 프로젝트입니다. 상품 탐색과 상세 정보 확인, 구매, 반품, 커뮤니티 기능을 하나의 모바일 경험으로 연결했습니다.",
-  ],
-  [
-    "iToo connected mobile shopping mall functions with community-driven fashion content, giving shoppers a place to discover products, check details, purchase, return, and participate beyond the transaction.",
-    "iToo는 모바일 쇼핑 기능과 커뮤니티 기반의 패션 콘텐츠를 연결했습니다. 사용자는 상품을 찾고 구매·반품하는 데서 나아가 거래 이후에도 콘텐츠에 참여할 수 있습니다.",
+    "iToo combined fashion curation, shopping, and community content for Lotte Homeshopping. I worked on project management and design, collaborating with developers through launch.",
+    "iToo는 패션 큐레이션과 쇼핑, 커뮤니티를 결합한 롯데홈쇼핑 서비스입니다. 프로젝트 관리와 디자인을 맡고 개발팀과 협업해 출시까지 진행했습니다.",
   ],
   [
     "Making wearable strength-training feedback easier to understand.",
     "웨어러블 근력 운동을 위한 피드백 서비스",
   ],
   [
-    "PTBOT turns BLE-connected device and sensor data into clear feedback, helping users understand workout quality, intensity, and progress.",
-    "PTBOT는 BLE로 연결된 기기와 센서 데이터를 알기 쉬운 피드백으로 보여줍니다. 사용자는 운동이 제대로 되고 있는지, 강도는 적절한지, 얼마나 나아졌는지를 확인할 수 있습니다.",
+    "PTBOT connected a wearable training device to an Android app via BLE, giving users feedback on exercise posture and intensity, along with workout history.",
+    "PTBOT는 웨어러블 운동 기기와 Android 앱을 BLE로 연결한 서비스입니다. 기기 데이터를 바탕으로 운동 자세와 강도, 운동 기록을 확인하도록 설계했습니다.",
   ],
   [
     "Helping pet owners manage daily feeding through a connected app.",
     "반려동물의 급여 루틴을 관리하는 IoT 연동 서비스",
   ],
   [
-    "Duit The Table links a connected pet-care device with mobile controls, helping guardians manage feeding routines and device interaction from the app.",
-    "Duit The Table은 반려동물 급여 기기와 모바일 앱을 연결합니다. 보호자는 앱에서 급여 루틴을 관리하고 기기를 제어할 수 있습니다.",
+    "Duit The Table connected a pet-feeding device and mobile app so owners could manage feeding routines. Our team developed a warm, comfortable visual style based on the client's direction.",
+    "Duit The Table은 반려동물 급여 기기와 앱을 연결해 식사 패턴을 관리하는 서비스입니다. 팀과 함께 클라이언트가 요청한 따뜻하고 편안한 분위기를 디자인에 담았습니다.",
   ],
   [
     "Turning virtual assets into points people can actually use.",
@@ -373,16 +361,16 @@ const portfolioKoreanTranslations = new Map([
     "학부모와 학생의 후기로 비교하는 교육 정보 서비스",
   ],
   [
-    "YZYZ turns parent and student reviews into service analysis reports, themed rankings, and practical education-service information.",
-    "YZYZ는 학부모와 학생의 후기를 바탕으로 분석 리포트와 테마별 순위, 실용적인 교육 정보를 제공합니다.",
+    "YZYZ helps parents and students compare education services through firsthand reviews, analysis reports, and rankings. I worked across branding and UX/UI design.",
+    "YZYZ는 학부모와 학생의 실제 후기, 분석 리포트, 순위로 교육 서비스를 비교하는 플랫폼입니다. 브랜딩부터 UX/UI 디자인까지 맡았습니다.",
   ],
   [
-    "Helping fans make and share their own emoticons.",
-    "팬이 직접 만들고 공유하는 커스텀 이모티콘 서비스",
+    "Helping people create and sell their own emoticons.",
+    "직접 만들고 판매하는 이모티콘 서비스",
   ],
   [
-    "SmileMe helps users create and share custom emoticons using K-pop artist, celebrity, influencer, content, and sticker assets.",
-    "SmileMe는 K-pop 아티스트와 셀럽, 인플루언서의 콘텐츠와 스티커를 활용해 나만의 이모티콘을 만들고 공유할 수 있는 서비스입니다.",
+    "SmileMe lets people create, share, and sell custom emoticons using content featuring K-pop artists, celebrities, and influencers, along with stickers.",
+    "SmileMe는 K-pop 아티스트와 셀럽, 인플루언서의 콘텐츠와 스티커로 나만의 이모티콘을 만들고 공유·판매하는 서비스입니다.",
   ],
   [
     "Designing sensitive end-of-life support for families.",
@@ -394,12 +382,12 @@ const portfolioKoreanTranslations = new Map([
   ],
   ["Overview", "프로젝트 개요"],
   [
-    "iToo was a Lotte Homeshopping fashion commerce project from 2022 Q1 to 2022 Q4 that combined shopping mall functions with community features. The work covered product discovery, product detail, purchase, shipping, return, refund, order tracking, and user-generated community touchpoints.",
-    "iToo는 2022년 1분기부터 4분기까지 진행한 롯데홈쇼핑 패션 커머스 프로젝트입니다. 쇼핑몰 기능과 커뮤니티를 결합해 상품 탐색, 상세 정보, 구매, 배송, 반품, 환불, 주문 조회와 사용자 참여까지 하나의 흐름으로 설계했습니다.",
+    "iToo was a Lotte Homeshopping fashion curation and commerce project from 2022 Q1 to 2022 Q4. It combined product discovery, shopping, and community content, with flows for purchase, delivery, order tracking, returns, and refunds.",
+    "iToo는 2022년 1분기부터 4분기까지 진행한 롯데홈쇼핑의 패션 큐레이션·커머스 프로젝트입니다. 상품 탐색과 커뮤니티 콘텐츠를 구매, 배송, 주문 조회, 반품·환불 과정과 함께 설계했습니다.",
   ],
   [
-    "My responsibility covered project management, UX structure, service planning, and UI design. The case study will focus on how commerce workflows and community participation were organized into one mobile-first shopping experience.",
-    "프로젝트 관리, UX 구조 설계, 서비스 기획, UI 디자인을 맡았습니다. 커머스의 복잡한 이용 과정과 커뮤니티 참여가 하나의 모바일 경험 안에서 자연스럽게 이어지도록 설계했습니다.",
+    "I worked on project management, UX structure, service planning, and UI design. I collaborated with the development team to carry the shopping and community flows through to launch.",
+    "프로젝트 관리, UX 구조 설계, 서비스 기획, UI 디자인을 맡았습니다. 개발팀과 협업하며 쇼핑과 커뮤니티 기능을 설계하고 서비스 출시까지 함께했습니다.",
   ],
   [
     "Photoism is an app for managing and enjoying the special memories users create at Photoism. It connects moment registration, frame recommendations, shooting reviews, cart-to-kiosk preparation, My Album storage, frame requests, and frame news into one mobile experience.",
@@ -434,28 +422,28 @@ const portfolioKoreanTranslations = new Map([
     "프로덕트 디자인을 맡았습니다. 지갑 잔액 확인, 자산 전환, 포인트 사용, 결제 준비 과정을 더 명확하고 이해하기 쉬운 핀테크 경험으로 정리했습니다.",
   ],
   [
-    "Butler was a 2023 Q3 fintech service project for individual investors who need to make sense of dense company information. The service brings together visualized company data, public disclosures, IR materials, analyst-style reports, news, screeners, watchlists, and portfolio workflows.",
-    "Butler는 복잡한 기업 정보를 확인해야 하는 개인 투자자를 위해 2023년 3분기에 진행한 핀테크 서비스 프로젝트입니다. 시각화한 기업 데이터, 공시, IR 자료, 분석 리포트, 뉴스, 스크리너, 관심 종목, 포트폴리오 관리 기능을 한곳에 모았습니다.",
+    "Butler brings together company data, disclosures, reports, news, and portfolio tools. The 2023 Q3 redesign focused on new investors. They struggled to understand what the service offered and where to start.",
+    "Butler는 기업 데이터와 공시, 리포트, 뉴스, 포트폴리오 관리 기능을 제공하는 투자 서비스입니다. 2023년 3분기 리뉴얼에서는 투자 입문자에 집중했습니다. 이들은 서비스가 어떤 정보를 제공하는지, 어디서 시작해야 하는지 알기 어려워했습니다.",
   ],
   [
-    "The case study will focus on how the product helps users move from scattered market information to a more scan-friendly research and monitoring flow.",
-    "흩어진 시장 정보를 빠르게 훑어보고 필요한 기업을 조사·모니터링할 수 있는 흐름으로 정리했습니다.",
+    "We used user surveys, Hotjar, and Google Analytics to guide the redesign of the home and landing pages. I worked with the team to distinguish primary and secondary features and create content explaining how to use the service.",
+    "사용자 설문과 Hotjar·Google Analytics 분석을 바탕으로 홈과 랜딩 페이지를 재설계했습니다. 팀과 함께 핵심 기능과 보조 기능을 구분하고, 서비스 사용법을 안내하는 콘텐츠를 구성했습니다.",
   ],
   [
-    "SmileMe was a Danal Entertainment mobile platform for creating and sharing custom emoticons. The service used K-pop artist, celebrity, influencer, content, and sticker assets to help users make personal expressive content instead of only consuming pre-made items.",
-    "SmileMe는 나만의 이모티콘을 만들고 공유할 수 있는 다날엔터테인먼트의 모바일 플랫폼입니다. K-pop 아티스트와 셀럽, 인플루언서의 콘텐츠와 스티커를 활용해 완성된 이모티콘을 소비하는 데서 나아가 사용자가 직접 자신만의 표현을 만들 수 있도록 했습니다.",
+    "SmileMe was a Danal Entertainment mobile platform for creating, sharing, and selling custom emoticons. People could combine content featuring K-pop artists, celebrities, and influencers with stickers to make their own emoticons.",
+    "SmileMe는 나만의 이모티콘을 만들고 공유·판매할 수 있는 다날엔터테인먼트의 모바일 플랫폼입니다. K-pop 아티스트와 셀럽, 인플루언서의 콘텐츠에 스티커를 조합해 원하는 이모티콘을 만들도록 했습니다.",
   ],
   [
-    "My responsibility was product design. The case study will focus on how the creation flow, asset discovery, market structure, and personal collection/shopping areas were organized into one mobile experience.",
-    "프로덕트 디자인을 맡았습니다. 이모티콘 제작, 소재 탐색, 마켓, 개인 컬렉션과 쇼핑 영역을 하나의 모바일 경험으로 연결했습니다.",
+    "As a Product Designer, I worked with the team on a casual, approachable visual style and the flows for content discovery, emoticon creation, the marketplace, and personal collections.",
+    "프로덕트 디자이너로서 팀과 함께 친근하고 편안한 디자인을 만들었습니다. 콘텐츠 탐색과 이모티콘 제작, 마켓, 개인 컬렉션으로 이어지는 이용 흐름을 설계했습니다.",
   ],
   [
-    "Duit The Table was a mobile app project connected to an IoT pet-care device. Duit's brand context centers on connecting people and pets, and The Table sits in the connected feeding-device experience.",
-    "Duit The Table은 IoT 반려동물 돌봄 기기와 연결되는 모바일 앱 프로젝트입니다. 사람과 반려동물을 연결한다는 Duit의 브랜드 방향을 바탕으로, 급여 기기와 앱을 함께 사용하는 경험을 설계했습니다.",
+    "Duit The Table was a mobile app project connected to an IoT pet-feeding device. Owners could manage their pets' feeding routines and control the device from the app.",
+    "Duit The Table은 IoT 급여 기기와 연결해 반려동물의 식사 패턴을 관리하는 모바일 앱입니다. 보호자가 앱에서 급여 루틴을 관리하고 기기를 제어할 수 있도록 설계했습니다.",
   ],
   [
-    "My responsibility was design management. The case study will focus on how the app supports device-linked controls, everyday feeding routines, and a mobile experience that helps guardians care for pets through connected hardware.",
-    "디자인 매니지먼트를 맡았습니다. 앱에서 기기를 제어하고 일상적인 급여 루틴을 관리할 수 있도록 하드웨어와 모바일 경험을 하나의 흐름으로 연결했습니다.",
+    "I managed the design work with the team, following the client's request for a warm, comfortable visual style. We brought device controls and everyday feeding routines together in the app.",
+    "디자인 매니지먼트를 맡아 팀과 함께 기기 제어와 일상적인 급여 관리 화면을 설계했습니다. 클라이언트가 요청한 따뜻하고 편안한 분위기를 비주얼에 반영했습니다.",
   ],
   [
     "Pawdle is a BeroAI service that helps dog owners discover their dog's unique personality and understand behavior more clearly. The product direction centers on insights, tips, and tools that strengthen the bond between dogs and owners.",
@@ -466,28 +454,28 @@ const portfolioKoreanTranslations = new Map([
     "프로덕트 오너와 프로덕트 디자이너 역할을 함께 맡았습니다. 성격 인사이트와 돌봄 가이드, 보호자 교육 콘텐츠를 친근한 반려동물 돌봄 경험으로 연결했습니다.",
   ],
   [
-    "SMTOWN Meta-Passport is a digital passport service for SM Entertainment fans, built around the Music Nation SMTOWN concept. The product gives fans a digital identity and connects membership, event participation, stamps, and visa-style information into one mobile experience.",
-    "SMTOWN Meta-Passport는 Music Nation SMTOWN 세계관을 바탕으로 만든 SM엔터테인먼트 팬을 위한 디지털 여권 서비스입니다. 팬에게 디지털 ID를 부여하고 멤버십, 이벤트 참여, 스탬프, 비자 형식의 정보를 하나의 모바일 경험으로 연결했습니다.",
+    "SMTOWN Meta-Passport was a digital passport service for SM Entertainment fans, built around the Music Nation SMTOWN concept. Fans could collect stamps from online and offline concerts and keep their fan club information and activities in one place.",
+    "SMTOWN Meta-Passport는 Music Nation SMTOWN 세계관을 바탕으로 만든 SM엔터테인먼트 팬을 위한 디지털 여권 서비스입니다. 온라인·오프라인 공연에서 스탬프를 모으고, 팬클럽 정보와 활동을 한곳에서 관리할 수 있도록 설계했습니다.",
   ],
   [
-    "My responsibility was design management. The case study will focus on how the visual direction and mobile experience were organized around fandom identity, collectible participation, and the connection between online and offline SM events.",
-    "디자인 매니지먼트를 맡아 팬덤 정체성과 수집의 재미를 비주얼에 담고, 온라인 활동이 오프라인 SM 이벤트 참여로 이어지도록 비주얼 방향과 모바일 경험을 설계했습니다.",
+    "I managed the design work with the team, preserving the brand's identity while giving the app the feel of a digital passport with a futuristic visual style.",
+    "디자인 매니지먼트를 맡아 팀과 함께 브랜드 정체성을 유지하면서, 디지털 여권의 형태와 미래적인 인상을 살린 화면을 설계했습니다.",
   ],
   [
-    "PTBOT was an Android app for a wearable strength-training robot. Its core purpose was to help users understand whether they were exercising correctly by collecting device data and returning meaningful workout feedback through the app.",
-    "PTBOT는 웨어러블 근력 운동 로봇을 위한 Android 앱입니다. 기기 데이터를 수집해 의미 있는 운동 피드백으로 보여주고, 사용자가 운동을 제대로 하고 있는지 확인할 수 있도록 설계했습니다.",
+    "PTBOT was a personal training support project developed in collaboration with Samsung Electronics. The Android app exchanged data with a wearable strength-training device via BLE and gave users feedback on exercise posture and workout performance.",
+    "PTBOT는 삼성전자와 협업한 개인 운동 지원 프로젝트입니다. 웨어러블 근력 운동 기기와 Android 앱을 BLE로 연결해 운동 자세와 수행 상태를 확인하도록 설계했습니다.",
   ],
   [
     "My responsibility was project management. The work coordinated app requirements, BLE communication logic, app server collaboration, and visualization flows for exercise quality, resistance, assistance, and workout-history feedback.",
     "프로젝트 관리를 맡아 앱 요구사항, BLE 통신 로직, 앱 서버 협업을 조율했습니다. 운동 수행 상태와 저항·보조 강도, 운동 기록을 이해하기 쉽게 보여주는 시각화 흐름도 함께 정리했습니다.",
   ],
   [
-    "YZYZ is an education information app that helps consumers understand services through stories from people who experienced them in the field. It covers subjects such as academies, home-visit education, English kindergartens, and digital learning.",
-    "YZYZ는 실제 이용자의 경험을 바탕으로 교육 서비스를 이해할 수 있도록 돕는 정보 앱입니다. 학원, 방문 교육, 영어 유치원, 디지털 학습 등 다양한 교육 서비스를 다룹니다.",
+    "YZYZ is an education information app built around firsthand reviews. It covers academies, home-visit education, English-language kindergartens, and digital learning services.",
+    "YZYZ는 실제 이용자의 후기로 교육 서비스를 비교하는 정보 앱입니다. 학원, 방문 교육, 영어 유치원, 디지털 학습 등 다양한 교육 서비스를 다룹니다.",
   ],
   [
-    "The service provides review-based analysis reports, themed rankings, and direct consumer reviews from parents and students, helping users compare education services and make more informed choices.",
-    "후기 기반의 분석 리포트와 테마별 순위, 학부모와 학생이 직접 작성한 리뷰를 제공합니다. 사용자는 여러 교육 서비스를 비교하고 자신에게 맞는 선택을 할 수 있습니다.",
+    "I worked across branding and UX/UI design, including screens for browsing parent and student reviews, analysis reports, and themed rankings.",
+    "브랜딩과 UX/UI 디자인을 맡아 학부모·학생의 후기, 분석 리포트, 테마별 순위를 탐색하는 화면을 설계했습니다.",
   ],
   [
     "BeroAI is an AI IoT pet communication service built around a smart collar and companion app. The service had to turn collar signals into a useful answer: what may be happening, what the owner can do now, and how care can continue over time.",
@@ -1563,7 +1551,7 @@ const portfolioKoreanTranslations = new Map([
   ["Format", "구성"],
   [
     "Lightning talk, live Lovable workshop, team build, demos, finalist pitches, and awards",
-    "라이트닝 토크, Lovable 라이브 워크숍, 팀 빌딩, 데모, 파이널리스트 발표와 시상",
+    "라이트닝 토크, Lovable 라이브 워크숍, 팀별 프로토타입 제작, 데모, 파이널리스트 발표와 시상",
   ],
   ["Teams", "팀 구성"],
   ["Randomly formed groups of three designers", "현장에서 무작위로 구성한 디자이너 3인 1팀"],
@@ -1574,7 +1562,7 @@ const portfolioKoreanTranslations = new Map([
   ["Make the workflow visible first", "먼저 작업 과정을 눈앞에 보여줬다"],
   [
     "Before the hackathon, the speakers made two different AI workflows concrete. Sue Hwang showed how she used Claude and Codex to build a Figma plugin as a designer. Dan Jeong then took the room through Lovable, from the first prompt to a working product flow.",
-    "해커톤을 시작하기 전에 두 연사가 서로 다른 AI 작업 방식을 구체적으로 보여줬습니다. Sue Hwang은 디자이너로서 Claude와 Codex를 활용해 Figma 플러그인을 만든 과정을 공유했습니다. Dan Jeong은 첫 프롬프트부터 실제로 작동하는 제품 흐름까지 Lovable을 사용하는 과정을 직접 보여줬습니다.",
+    "해커톤을 시작하기 전에 두 연사가 서로 다른 AI 작업 방식을 구체적으로 보여줬습니다. Sue Hwang님은 디자이너로서 Claude와 Codex를 활용해 Figma 플러그인을 만든 과정을 공유했습니다. Dan Jeong님은 첫 프롬프트부터 실제로 작동하는 제품 흐름까지 Lovable을 사용하는 과정을 직접 보여줬습니다.",
   ],
   [
     "That sequence was intentional. We did not want to start with a blank prompt box and call it empowerment. People needed to see how a designer breaks work into steps, checks the result, and keeps control of the experience.",
@@ -1586,7 +1574,7 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "Dan Jeong introduced a practical Lovable workflow before the team build began.",
-    "팀 빌딩을 시작하기 전, Dan Jeong이 실전 Lovable 워크플로를 소개했습니다.",
+    "팀별 프로토타입 제작을 시작하기 전, Dan Jeong님이 실전 Lovable 워크플로를 소개했습니다.",
   ],
   ["Then the room had 90 minutes to build", "그리고 90분 동안 직접 만들었다"],
   [
@@ -1652,7 +1640,7 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "On March 22, I co-hosted a sold-out, Korean-language AI workshop and mini hackathon for 40 designers in Metro Vancouver. We combined practitioner talks, a live Lovable workshop, and a 90-minute team build. By the end, first-time users were presenting working apps.",
-    "3월 22일, 메트로 밴쿠버의 디자이너 40명과 함께 한국어 AI 워크숍 겸 미니 해커톤을 공동 주최했습니다. 현업 디자이너들의 발표, Lovable 라이브 실습, 90분 팀 빌딩을 하나의 흐름으로 묶었습니다. Lovable을 처음 써본 참가자들도 마지막에는 직접 만든 앱을 발표했습니다.",
+    "3월 22일, 메트로 밴쿠버의 디자이너 40명과 함께 한국어 AI 워크숍 겸 미니 해커톤을 공동 주최했습니다. 현업 디자이너들의 발표, Lovable 라이브 실습, 90분 팀별 프로토타입 제작을 하나의 흐름으로 묶었습니다. Lovable을 처음 써본 참가자들도 마지막에는 직접 만든 앱을 발표했습니다.",
   ],
   ["A room for designers to build, not just listen", "듣는 데서 끝나지 않는 자리를 만들고 싶었다"],
   [
@@ -1669,7 +1657,7 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "Practitioner talks, live Lovable workshop, 90-minute team build, demos, finalist pitches, and awards",
-    "현업 세션, Lovable 라이브 워크숍, 90분 팀 빌딩, 데모, 파이널리스트 발표와 시상",
+    "현업 세션, Lovable 라이브 워크숍, 90분 팀별 프로토타입 제작, 데모, 파이널리스트 발표와 시상",
   ],
   ["Contributors", "진행 및 연사"],
   [
@@ -1683,7 +1671,7 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "So Eun shared how designers can use Git and a shared codebase to collaborate more closely with engineers and with one another. Sue Hwang walked through how she built a Figma plugin with Claude and Codex, step by step, as a designer. Dan Jeong then moved from explanation to a live Lovable build, showing how a prompt becomes an editable product flow.",
-    "So Eun님은 디자이너가 Git과 하나의 코드베이스를 활용해 엔지니어, 다른 디자이너와 더 가깝게 협업하는 방법을 공유했습니다. Sue Hwang은 디자이너로서 Claude와 Codex를 활용해 Figma 플러그인을 만든 과정을 단계별로 보여줬습니다. 이어 Dan Jeong은 Lovable 라이브 빌드를 진행하며 첫 프롬프트가 수정 가능한 제품 흐름으로 바뀌는 과정을 설명했습니다.",
+    "So Eun님은 디자이너가 Git과 하나의 코드베이스를 활용해 엔지니어, 다른 디자이너와 더 가깝게 협업하는 방법을 공유했습니다. Sue Hwang님은 디자이너로서 Claude와 Codex를 활용해 Figma 플러그인을 만든 과정을 단계별로 보여줬습니다. 이어 Dan Jeong님은 Lovable 라이브 빌드를 진행하며 첫 프롬프트가 수정 가능한 제품 흐름으로 바뀌는 과정을 설명했습니다.",
   ],
   [
     "Each participant received 100 Lovable credits in advance. Then we formed random teams of three and gave them 90 minutes to choose a problem, define one core experience, and make it work well enough to share. The sessions were not separate lectures before a hackathon. They were the setup for the build.",
@@ -1691,12 +1679,12 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "Dan Jeong introduced a practical Lovable workflow before the team challenge began.",
-    "팀 챌린지를 시작하기 전, Dan Jeong이 실전 Lovable 워크플로를 소개했습니다.",
+    "팀 챌린지를 시작하기 전, Dan Jeong님이 실전 Lovable 워크플로를 소개했습니다.",
   ],
   ["Ninety minutes later, the ideas were working", "90분 뒤, 아이디어가 실제로 움직이기 시작했다"],
   [
     "Crystal Park and Leiah Choi won the mini hackathon with Sircle, a dating service for seniors. Instead of starting with faster matching, they started with a more useful question: how can an older adult know that a new connection is safe and trustworthy?",
-    "미니 해커톤 우승팀인 Crystal Park과 Leiah Choi는 시니어 데이팅 서비스 Sircle을 만들었습니다. 더 빠른 매칭보다 먼저 던진 질문이 좋았습니다. 고령의 사용자가 새로운 만남을 안전하고 신뢰할 수 있다고 느끼려면 무엇이 필요할까?",
+    "미니 해커톤 우승팀인 Crystal Park님과 Leiah Choi님은 시니어 데이팅 서비스 Sircle을 만들었습니다. 더 빠른 매칭보다 먼저 던진 질문이 좋았습니다. 고령의 사용자가 새로운 만남을 안전하고 신뢰할 수 있다고 느끼려면 무엇이 필요할까?",
   ],
   [
     "Another team built an English-learning app for newcomers that paired practical phrases with Canadian cultural context. Other teams created a community meal-prep platform and an affirmation app that kept social media locked until the user spoke the phrase correctly.",
@@ -1746,11 +1734,11 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "I co-hosted a sold-out Korean-language workshop where 40 designers moved from practitioner talks to a 90-minute team build and working prototypes.",
-    "현업 세션부터 90분 팀 빌딩까지 이어지는 한국어 워크숍을 공동 주최했습니다. 디자이너 40명이 Lovable로 작동하는 프로토타입을 만들었습니다.",
+    "현업 세션부터 90분 팀별 프로토타입 제작까지 이어지는 한국어 워크숍을 공동 주최했습니다. 디자이너 40명이 Lovable로 작동하는 프로토타입을 만들었습니다.",
   ],
   [
     "Portfolio Roast: A Live Mock Interview & Fireside Talk for UX Designers",
-    "Portfolio Roast: UX 디자이너를 위한 실전 포트폴리오 인터뷰 & 피드백 세션",
+    "Portfolio Roast: UX 디자이너를 위한 공개 모의 인터뷰와 파이어사이드 토크",
   ],
   [
     "I helped organize an evening where two designers presented their portfolios live and more than 20 peers learned from the questions, feedback, and honest career conversation that followed.",
@@ -1763,7 +1751,7 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "I helped organize a live portfolio mock interview and fireside talk for more than 20 designers in Burnaby. Two designers presented their case studies with Carlos Melendez, Principal User Experience Designer at Oracle, while the room learned from the questions, feedback, and honest career conversation that followed.",
-    "버나비에서 20명 이상의 디자이너가 참여한 실전 포트폴리오 모의 인터뷰와 파이어사이드 토크를 함께 준비했습니다. 두 명의 디자이너가 Oracle의 Principal User Experience Designer인 Carlos Melendez와 함께 케이스 스터디를 발표했고, 참가자들은 이어진 질문과 피드백, 솔직한 커리어 대화를 함께 들었습니다.",
+    "버나비에서 20명 이상의 디자이너가 참여한 실전 포트폴리오 모의 인터뷰와 파이어사이드 토크를 함께 준비했습니다. 두 명의 디자이너가 Oracle의 Principal User Experience Designer인 Carlos Melendez님과 함께 케이스 스터디를 발표했고, 참가자들은 이어진 질문과 피드백, 솔직한 커리어 대화를 함께 들었습니다.",
   ],
   [
     "Organizing team / Event operations / Community facilitation",
@@ -1808,7 +1796,7 @@ const portfolioKoreanTranslations = new Map([
   ["We put the portfolio into an interview, not a slideshow", "슬라이드 리뷰 대신, 실제 인터뷰에 가깝게"],
   [
     "Hayley Lee and Sue Lee each presented a portfolio case study in front of the room. Carlos responded as an experienced interviewer would: he listened to the story, asked for missing context, and gave direct feedback on what made the work easier or harder to evaluate.",
-    "Hayley Lee와 Sue Lee는 각자의 포트폴리오 케이스 스터디를 참가자들 앞에서 발표했습니다. Carlos는 실제 인터뷰어처럼 이야기를 듣고, 빠진 맥락을 질문하고, 어떤 부분이 작업을 이해하기 쉽게 만들거나 어렵게 만드는지 직접 피드백했습니다.",
+    "Hayley Lee님과 Sue Lee님은 각자의 포트폴리오 케이스 스터디를 참가자들 앞에서 발표했습니다. Carlos님은 실제 인터뷰어처럼 이야기를 듣고, 빠진 맥락을 질문하고, 어떤 부분이 작업을 이해하기 쉽게 만들거나 어렵게 만드는지 직접 피드백했습니다.",
   ],
   [
     "The live format changed the value of the critique. A question asked of one presenter was useful to everyone. People could see where a polished screen still needed a clearer decision, where the outcome needed stronger evidence, and where the story became easier to follow once the presenter explained the context aloud.",
@@ -1905,7 +1893,7 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "I co-hosted a KDNEW-sponsored Career Fireside Chat in Burnaby for people who wanted to start a career in Canada while here on a working holiday. As one of five speakers, I shared the choices and difficulties that shaped my own start—and why honest self-assessment is the first step I would take if I were beginning again.",
-    "7월 25일, 워킹홀리데이로 캐나다에서 커리어를 시작하려는 분들을 위한 커리어 파이어사이드 챗을 버나비에서 공동 주최했습니다. KDNEW가 후원했고, 저는 다섯 명의 스피커 중 한 명으로 참여했습니다. 캐나다에서 커리어를 시작하며 어떤 선택을 했고 어디에서 어려움을 겪었는지, 다시 시작한다면 왜 자기 객관화부터 할지 나눴습니다.",
+    "워킹홀리데이로 캐나다에서 커리어를 시작하려는 분들을 위한 커리어 파이어사이드 챗을 버나비에서 공동 주최했습니다. KDNEW가 후원했고, 저는 다섯 명의 스피커 중 한 명으로 참여했습니다. 캐나다에서 커리어를 시작하며 어떤 선택을 했고 어디에서 어려움을 겪었는지, 다시 시작한다면 왜 자기 객관화부터 할지 나눴습니다.",
   ],
   ["Co-host / Speaker / Product Designer", "공동 주최 / 스피커 / 프로덕트 디자이너"],
   [
@@ -1979,11 +1967,11 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "After the main session, participants exchanged LinkedIn profiles and continued conversations with others facing similar questions.",
-    "메인 세션이 끝난 뒤 참가자들은 LinkedIn 프로필을 교환하며 네트워킹을 이어갔습니다. 비슷한 고민을 가진 참가자들끼리 각자의 경험과 생각을 나누는 대화도 계속됐습니다.",
+    "메인 세션이 끝난 뒤에도 참가자들은 비슷한 고민을 가진 사람들과 LinkedIn 프로필을 교환하고, 각자의 경험과 생각을 나눴습니다.",
   ],
   [
     "One participant later messaged me to say that the discussion about self-assessment had been especially helpful. Self-assessment was the point I had emphasized most, so that message stayed with me. It showed that the session had given at least one participant a useful way to examine what to do next.",
-    "행사 뒤에는 한 참가자가 자기 객관화에 대한 이야기가 특히 도움이 됐다고 메시지를 보내왔습니다. 제가 가장 강조한 내용이 실제로 도움이 됐다는 걸 직접 들을 수 있어 뜻깊었습니다.",
+    "행사 뒤 한 참가자가 자기 객관화에 대한 이야기가 특히 도움이 됐다고 메시지를 보내왔습니다. 제가 가장 강조한 내용이라 그 메시지가 기억에 남았습니다. 적어도 한 참가자에게는 다음 행동을 생각해보는 데 도움이 됐다는 것을 알 수 있었습니다.",
   ],
   [
     "A clearer starting point mattered more than one answer",
@@ -2007,7 +1995,7 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "I co-hosted a sold-out Korean-language workshop and mini hackathon for 40 designers in Metro Vancouver. I helped connect practitioner workflows, a live Lovable build, and a 90-minute team challenge. The speed was useful, but what it revealed about problem framing mattered more.",
-    "메트로 밴쿠버의 디자이너 40명과 함께 한국어 AI 워크숍 겸 미니 해커톤을 공동 주최했습니다. 현업 작업 방식과 Lovable 라이브 실습, 90분 팀 빌딩을 하나의 흐름으로 설계했습니다. 빠르게 만드는 것보다 더 중요했던 건, 그 과정에서 문제 정의의 수준이 그대로 드러났다는 점입니다.",
+    "메트로 밴쿠버의 디자이너 40명과 함께 한국어 AI 워크숍 겸 미니 해커톤을 공동 주최했습니다. 현업 작업 방식과 Lovable 라이브 실습, 90분간 팀별 프로토타입 제작이 하나의 흐름으로 이어지도록 구성하는 데 참여했습니다. 빠르게 만드는 일도 유용했지만, 그 과정에서 문제를 어떻게 정의했는지가 드러났다는 점이 더 중요했습니다.",
   ],
   [
     "Designers needed a place to try, not another AI overview",
@@ -2019,11 +2007,11 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "Many meetups we encountered were organized around engineering workflows. So Eun Ahn and I instead planned a Korean-language event around the work designers already do: define a problem, shape an experience, build a prototype, and explain the decisions behind it.",
-    "주변에서 접한 AI 밋업은 대부분 엔지니어의 작업 방식을 중심으로 구성돼 있었습니다. So Eun Ahn님과 저는 디자이너가 이미 해오던 일, 즉 문제를 정하고 경험을 설계하고 프로토타입을 만들고 결정의 이유를 설명하는 과정을 중심으로 한국어 행사를 준비했습니다.",
+    "주변에서 접한 여러 AI 밋업은 엔지니어의 작업 방식에 초점을 맞추고 있었습니다. So Eun Ahn님과 저는 디자이너가 이미 해오던 일, 즉 문제를 정하고 경험을 설계하고 프로토타입을 만들고 결정의 이유를 설명하는 과정을 중심으로 한국어 행사를 준비했습니다.",
   ],
   [
     "The event filled all 40 spots, with KDNEW, Lovable, and Canbu joining as partners. As a co-host, I linked the talks, hands-on workshop, team build, and demos so participants could move from watching a workflow to testing one themselves.",
-    "40명 정원이 모두 찼고, KDNEW·Lovable·Canbu가 파트너로 함께했습니다. 저는 공동 주최자로서 발표와 실습, 팀 빌딩, 데모를 하나의 흐름으로 묶었습니다. 참가자들이 작업 방식을 보기만 하는 데서 멈추지 않고 직접 시험해볼 수 있게 만드는 것이 제 역할이었습니다.",
+    "40명 정원이 모두 찼고, KDNEW·Lovable·Canbu가 파트너로 함께했습니다. 저는 공동 주최자로서 발표와 실습, 팀별 프로토타입 제작, 데모를 하나의 흐름으로 묶었습니다. 참가자들이 작업 방식을 보기만 하는 데서 멈추지 않고 직접 시험해볼 수 있게 만드는 것이 제 역할이었습니다.",
   ],
   ["Speakers and facilitators", "스피커와 진행"],
   [
@@ -2032,7 +2020,7 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "Each participant received 100 Lovable credits in advance. Then we formed random teams of three and gave them 90 minutes to choose a problem, define one core experience, and make it work well enough to share. The talks were not a preface to the hackathon. Each one supplied a method participants could use in the build.",
-    "참가자 전원에게는 Lovable 크레딧 100개를 미리 제공했습니다. 이후 무작위로 3인 팀을 만들고, 문제 하나와 핵심 경험 하나를 정해 90분 안에 공유 가능한 수준으로 구현하게 했습니다. 앞의 발표는 해커톤에 덧붙인 강연이 아니었습니다. 각 세션에서 본 작업 방식을 바로 팀 빌딩에 활용할 수 있도록 순서를 설계했습니다.",
+    "참가자 전원에게는 Lovable 크레딧 100개를 미리 제공했습니다. 이후 무작위로 3인 팀을 만들고, 문제 하나와 핵심 경험 하나를 정해 90분 안에 공유 가능한 수준으로 구현하게 했습니다. 앞의 발표는 해커톤에 덧붙인 강연이 아니었습니다. 각 세션에서 본 작업 방식을 바로 팀별 프로토타입 제작에 활용할 수 있도록 순서를 설계했습니다.",
   ],
   [
     "Working prototypes made the product questions visible",
@@ -2073,11 +2061,11 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "I co-hosted a sold-out Korean-language workshop where 40 designers moved from real AI workflows to a 90-minute team build. The speed was useful; what it revealed about problem framing mattered more.",
-    "현업 작업 방식부터 90분 팀 빌딩까지 이어지는 한국어 워크숍을 공동 주최했습니다. 디자이너 40명이 직접 만든 결과를 통해 문제 정의의 수준을 확인했습니다.",
+    "현업 작업 방식을 살펴보고 90분간 팀별로 프로토타입을 만드는 한국어 워크숍을 공동 주최했습니다. 디자이너 40명이 직접 만든 결과물에서 문제를 어떻게 정의했는지가 드러났습니다.",
   ],
   [
     "I worked on the organizing team for Portfolio Roast, a live mock interview and fireside talk for more than 20 designers in Burnaby. Two designers presented real case studies to Carlos Melendez, Principal User Experience Designer at Oracle. The format made the questions behind portfolio evaluation visible to everyone in the room.",
-    "운영팀으로 Portfolio Roast를 함께 준비했습니다. 버나비에서 열린 이 행사에는 20명 이상의 디자이너가 참여했습니다. 두 명의 디자이너가 Oracle의 Principal User Experience Designer인 Carlos Melendez에게 실제 케이스 스터디를 발표했고, 포트폴리오를 평가할 때 어떤 질문이 오가는지 참가자 모두가 볼 수 있었습니다.",
+    "운영팀으로 Portfolio Roast를 함께 준비했습니다. 버나비에서 열린 이 행사에는 20명 이상의 디자이너가 참여했습니다. 두 명의 디자이너가 Oracle의 Principal User Experience Designer인 Carlos Melendez님에게 실제 케이스 스터디를 발표했고, 포트폴리오를 평가할 때 어떤 질문이 오가는지 참가자 모두가 볼 수 있었습니다.",
   ],
   [
     "A polished portfolio can still break under questions",
@@ -2085,7 +2073,7 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "The event gave designers a lower-stakes place to test that moment. Portfolio Roast put real case studies into a live interview setting, then opened the questions and feedback to the room so everyone could learn from the same conversation.",
-    "Portfolio Roast는 그 순간을 실제 인터뷰보다 부담이 적은 자리에서 먼저 시험해보도록 만든 행사였습니다. 실제 케이스 스터디를 라이브 인터뷰 상황에 놓고, 그 자리에서 나온 질문과 피드백을 모두에게 열었습니다.",
+    "Portfolio Roast는 그 순간을 실제 인터뷰보다 부담이 적은 자리에서 먼저 시험해보도록 만든 행사였습니다. 실제 케이스 스터디를 라이브 인터뷰처럼 발표하고, 그 자리에서 나온 질문과 피드백을 모두가 함께 듣고 배울 수 있게 했습니다.",
   ],
   [
     "So Eun Ahn brought together the guest, presenters, and community. I worked with So Eun and Suryeon Kim on the organizing team, helping shape the program flow and support event operations. KDNEW joined as event partner. The official event page listed 25 attendees, and the event recap confirmed that more than 20 designers joined us that evening.",
@@ -2134,7 +2122,7 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "I joined the fifth annual KDD Korean Tech Conference as a career mentor. At a conference of 211 people, the 1:2 format created space to turn broad industry uncertainty into each participant's context, direction, and next test.",
-    "제5회 KDD Korean Tech Conference에 커리어 멘토로 참여했습니다. 211명이 모인 컨퍼런스 안에서 진행된 1:2 대화에서는 업계의 큰 불확실성을 한 사람의 현재 상황과 원하는 방향, 다음에 해볼 행동으로 좁혀봤습니다.",
+    "제5회 KDD Korean Tech Conference에 커리어 멘토로 참여했습니다. 211명이 모인 컨퍼런스에서 1:2 멘토링을 진행하며 각자의 경험과 원하는 방향을 살펴보고, 다음에 무엇을 해볼지 함께 정했습니다.",
   ],
   [
     "The conference treated uncertainty as a question to work with",
@@ -2192,7 +2180,7 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "I joined Vancouver's KDD Korean Tech Conference as a career mentor. The 1:2 format helped turn broad industry uncertainty into each participant's context, direction, and next test.",
-    "Vancouver KDD Korean Tech Conference에 커리어 멘토로 참여했습니다. 1:2 대화에서 업계의 큰 불확실성을 각 참가자의 현재 상황과 방향, 다음에 해볼 행동으로 좁혔습니다.",
+    "Vancouver KDD Korean Tech Conference에 커리어 멘토로 참여했습니다. 1:2 멘토링에서 각자의 경험과 원하는 방향을 살펴보고, 다음에 무엇을 해볼지 함께 정했습니다.",
   ],
 ]);
 
@@ -2369,7 +2357,9 @@ const renderUpcomingProjects = () => {
 renderUpcomingProjects();
 
 const feedStories = Array.from(document.querySelectorAll(".feed-story"));
-const constructionTargets = Array.from(document.querySelectorAll("[data-construction]"));
+const constructionTargets = Array.from(document.querySelectorAll("[data-construction]")).filter(
+  (target) => !target.closest("[hidden]"),
+);
 const menuButton = document.querySelector(".menu-button");
 const recommendationRails = Array.from(document.querySelectorAll(".recommendation-rail"));
 const thumbVideos = Array.from(document.querySelectorAll(".bero-video-thumb video"));
