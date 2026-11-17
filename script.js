@@ -272,6 +272,22 @@ const portfolioLanguageSelectors = {
   ],
 };
 const portfolioKoreanTranslations = new Map([
+  ["Making AI Design Feel Like Your Brand", "브랜드다운 디자인을 위한 AI 활용법"],
+  ["AI Design Talk · Vancouver", "AI 디자인 강의 · 밴쿠버"],
+  ["In Vancouver, I shared how small business owners can use AI to create social media carousels, posters, and websites with a clearer sense of their own brand.", "밴쿠버에서 소상공인이 자신의 브랜드에 맞는 카드뉴스, 포스터, 웹사이트를 AI로 만드는 방법을 나눴습니다."],
+  ["Speaker / Product Designer", "강연자 / 프로덕트 디자이너"],
+  ["The question behind the talk", "강의를 시작한 질문"],
+  ["I recently gave a talk in Vancouver about a question many people have when using AI for design: how can the result look less obviously AI-generated?", "최근 밴쿠버에서 AI로 디자인할 때 자주 마주하는 질문을 주제로 강의했습니다. 어떻게 하면 결과물에서 AI로 만든 느낌을 줄일 수 있을까요?"],
+  ["Many attendees were not designers. I chose social media carousels, posters, and websites because they are formats small business owners often use, and walked through how I create them with AI.", "참가자 중에는 디자이너가 아닌 분들이 많았습니다. 소상공인이 자주 사용하는 카드뉴스, 포스터, 웹사이트를 예시로 골라 제가 AI로 만드는 과정을 보여드렸습니다."],
+  ["Start with what you want to communicate", "무엇을 전하고 싶은지부터 정하기"],
+  ["The starting point I shared was to get clear on what you want to make and what you can give AI to work with. Who are you creating for? What do you want to communicate? How should your brand look and feel?", "제가 이야기한 출발점은 무엇을 만들고 싶은지, AI에 어떤 재료를 줄 수 있는지 분명히 하는 것이었습니다. 누구를 위한 디자인인가요? 무엇을 전하고 싶나요? 브랜드가 어떤 모습과 분위기로 보이길 바라나요?"],
+  ["Those answers help you choose relevant references and provide the context, content, and visual materials AI needs. They give the design a more specific direction and give you a way to judge what comes back.", "이 질문에 답하면 적절한 참고 자료를 고르고 AI에 필요한 맥락과 콘텐츠, 시각 자료를 전달할 수 있습니다. 디자인의 방향이 구체해지고, 나온 결과를 판단할 기준도 생깁니다."],
+  ["Bring your own understanding to the process", "브랜드를 아는 사람의 판단을 더하기"],
+  ["I wanted to show the process of bringing your own understanding of a brand into the work, then making deliberate choices as you refine it. A clear direction also makes it easier to explain what needs to change.", "제가 보여드리고 싶었던 것은 브랜드에 대한 자신의 이해를 작업에 담고, 결과를 다듬으며 의도적으로 선택하는 과정이었습니다. 방향이 분명하면 무엇을 바꿔야 하는지도 더 쉽게 설명할 수 있습니다."],
+  ["What stayed with me was the enthusiasm in the room, especially from business owners who wanted to learn AI and use it in their own work. Hearing from people who found the session useful meant a lot to me. I hope the ideas we covered help them create designs that feel more like their own brands.", "가장 기억에 남는 것은 참가자들의 열정이었습니다. 특히 AI를 배우고 자신의 일에 적용하고 싶어 하는 사업자분들의 모습이 인상 깊었습니다. 강의가 도움이 됐다고 말씀해 주신 분들께도 감사했습니다. 이번에 나눈 내용이 각자의 브랜드에 더 잘 어울리는 디자인을 만드는 데 도움이 되기를 바랍니다."],
+  ["Design Education", "디자인 교육"],
+  ["AI Design", "AI 디자인"],
+  ["Small Business", "소상공인"],
   [
     "Turning smart collar data into useful, trustworthy guidance for dog owners.",
     "반려견의 행동 신호를 해석하는 AI 스마트 목걸이 서비스",
