@@ -272,19 +272,19 @@ const portfolioLanguageSelectors = {
   ],
 };
 const portfolioKoreanTranslations = new Map([
-  ["Making AI Design Feel Like Your Brand", "브랜드다운 디자인을 위한 AI 활용법"],
+  ["Making AI Design Feel Like Your Brand", "우리 브랜드에 맞는 디자인을 AI로 만드는 법"],
   ["AI Design Talk · Vancouver", "AI 디자인 강의 · 밴쿠버"],
-  ["In Vancouver, I shared how small business owners can use AI to create social media carousels, posters, and websites with a clearer sense of their own brand.", "밴쿠버에서 소상공인이 자신의 브랜드에 맞는 카드뉴스, 포스터, 웹사이트를 AI로 만드는 방법을 나눴습니다."],
+  ["In Vancouver, I shared how small business owners can use AI to create social media carousels, posters, and websites with a clearer sense of their own brand.", "밴쿠버에서 소상공인을 대상으로, AI를 써서 각자의 브랜드에 맞는 카드뉴스와 포스터, 웹사이트를 만드는 법을 소개했습니다."],
   ["Speaker / Product Designer", "강연자 / 프로덕트 디자이너"],
-  ["The question behind the talk", "강의를 시작한 질문"],
-  ["I recently gave a talk in Vancouver about a question many people have when using AI for design: how can the result look less obviously AI-generated?", "최근 밴쿠버에서 AI로 디자인할 때 자주 마주하는 질문을 주제로 강의했습니다. 어떻게 하면 결과물에서 AI로 만든 느낌을 줄일 수 있을까요?"],
-  ["Many attendees were not designers. I chose social media carousels, posters, and websites because they are formats small business owners often use, and walked through how I create them with AI.", "참가자 중에는 디자이너가 아닌 분들이 많았습니다. 소상공인이 자주 사용하는 카드뉴스, 포스터, 웹사이트를 예시로 골라 제가 AI로 만드는 과정을 보여드렸습니다."],
+  ["The question behind the talk", "이 주제로 강의한 이유"],
+  ["I recently gave a talk in Vancouver about a question many people have when using AI for design: how can the result look less obviously AI-generated?", "최근 밴쿠버에서 AI로 디자인할 때 자주 부딪히는 고민을 이야기했습니다. 어떻게 하면 AI로 만든 티가 덜 날까요?"],
+  ["Many attendees were not designers. I chose social media carousels, posters, and websites because they are formats small business owners often use, and walked through how I create them with AI.", "참가자 중에는 디자이너가 아닌 분들이 많았습니다. 소상공인에게 익숙한 카드뉴스와 포스터, 웹사이트를 예로 들고, 제가 AI로 이 세 가지를 만드는 과정을 보여드렸습니다."],
   ["Start with what you want to communicate", "무엇을 전하고 싶은지부터 정하기"],
-  ["The starting point I shared was to get clear on what you want to make and what you can give AI to work with. Who are you creating for? What do you want to communicate? How should your brand look and feel?", "제가 이야기한 출발점은 무엇을 만들고 싶은지, AI에 어떤 재료를 줄 수 있는지 분명히 하는 것이었습니다. 누구를 위한 디자인인가요? 무엇을 전하고 싶나요? 브랜드가 어떤 모습과 분위기로 보이길 바라나요?"],
-  ["Those answers help you choose relevant references and provide the context, content, and visual materials AI needs. They give the design a more specific direction and give you a way to judge what comes back.", "이 질문에 답하면 적절한 참고 자료를 고르고 AI에 필요한 맥락과 콘텐츠, 시각 자료를 전달할 수 있습니다. 디자인의 방향이 구체해지고, 나온 결과를 판단할 기준도 생깁니다."],
-  ["Bring your own understanding to the process", "브랜드를 아는 사람의 판단을 더하기"],
-  ["I wanted to show the process of bringing your own understanding of a brand into the work, then making deliberate choices as you refine it. A clear direction also makes it easier to explain what needs to change.", "제가 보여드리고 싶었던 것은 브랜드에 대한 자신의 이해를 작업에 담고, 결과를 다듬으며 의도적으로 선택하는 과정이었습니다. 방향이 분명하면 무엇을 바꿔야 하는지도 더 쉽게 설명할 수 있습니다."],
-  ["What stayed with me was the enthusiasm in the room, especially from business owners who wanted to learn AI and use it in their own work. Hearing from people who found the session useful meant a lot to me. I hope the ideas we covered help them create designs that feel more like their own brands.", "가장 기억에 남는 것은 참가자들의 열정이었습니다. 특히 AI를 배우고 자신의 일에 적용하고 싶어 하는 사업자분들의 모습이 인상 깊었습니다. 강의가 도움이 됐다고 말씀해 주신 분들께도 감사했습니다. 이번에 나눈 내용이 각자의 브랜드에 더 잘 어울리는 디자인을 만드는 데 도움이 되기를 바랍니다."],
+  ["The starting point I shared was to get clear on what you want to make and what you can give AI to work with. Who are you creating for? What do you want to communicate? How should your brand look and feel?", "무엇을 만들고 싶은지, AI에 어떤 자료를 줄 수 있는지부터 정해 보자고 했습니다. 누구를 위한 디자인인가요? 무엇을 전하고 싶나요? 우리 브랜드가 사람들에게 어떻게 보이고, 어떤 느낌을 주면 좋을까요?"],
+  ["Those answers help you choose relevant references and provide the context, content, and visual materials AI needs. They give the design a more specific direction and give you a way to judge what comes back.", "이 질문에 답해 보면 어떤 예시를 참고할지, AI에 어떤 배경 설명과 글, 이미지를 줄지 고르기 쉽습니다. 만들고 싶은 디자인이 분명해지면 AI가 내놓은 결과가 우리 브랜드에 어울리는지도 판단하기 쉽습니다."],
+  ["Bring your own understanding to the process", "우리 브랜드에 맞게 결과물 다듬기"],
+  ["I wanted to show the process of bringing your own understanding of a brand into the work, then making deliberate choices as you refine it. A clear direction also makes it easier to explain what needs to change.", "AI가 만든 디자인을 보고, 우리 브랜드에 어떤 부분이 어울리고 어디를 고쳐야 할지 판단하는 과정을 보여드리고 싶었습니다. 방향이 분명하면 무엇을 바꿔야 하는지도 더 쉽게 설명할 수 있습니다."],
+  ["What stayed with me was the enthusiasm in the room, especially from business owners who wanted to learn AI and use it in their own work. Hearing from people who found the session useful meant a lot to me. I hope the ideas we covered help them create designs that feel more like their own brands.", "AI를 배워 자기 일에 써보고 싶어 하던 사업자분들이 기억에 남습니다. 강의가 도움이 됐다고 말씀해 주신 분들께도 감사했습니다. 참가자분들이 각자의 브랜드에 맞는 디자인을 만들 때 이날 나눈 방법을 써보시면 좋겠습니다."],
   ["Design Education", "디자인 교육"],
   ["AI Design", "AI 디자인"],
   ["Small Business", "소상공인"],
@@ -298,19 +298,19 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "Helping owners understand their dog's personality beyond a simple label.",
-    "반려견의 성격과 행동을 이해하는 반려동물 돌봄 서비스",
+    "반려견의 성격과 행동을 이해하고 싶은 보호자를 위한 서비스",
   ],
   [
     "Pawdle helps dog owners understand their dog's personality with insights, tips, and tools that support better care and communication.",
-    "Pawdle은 반려견의 성격을 이해할 수 있는 인사이트와 팁, 도구를 제공합니다. 보호자는 이를 더 나은 돌봄과 소통에 활용할 수 있습니다.",
+    "Pawdle은 반려견의 성격을 이해하는 데 필요한 정보와 돌봄 팁, 도구를 제공합니다. 보호자는 반려견의 성격에 맞춰 돌보고 소통하는 방법을 참고할 수 있습니다.",
   ],
   [
     "Creating a practical community hub for Koreans settling in Canada.",
-    "캐나다 교민들을 위한 커뮤니티 서비스",
+    "캐나다에 정착하는 한인을 위한 커뮤니티",
   ],
   [
     "Canbu grew into a Korean community service in Canada, passing 2,000 users through offline promotion, local verification, and community-driven information sharing.",
-    "Canbu는 오프라인 홍보와 현지 정보 검증, 커뮤니티 구성원이 나누는 정보를 바탕으로 2,000명 이상이 사용하는 캐나다 한인 커뮤니티로 성장했습니다.",
+    "팀은 현지에서 서비스를 알리고 지역 정보를 직접 확인했습니다. 회원들도 정보를 나누면서 Canbu는 이용자 2,000명이 넘는 캐나다 한인 커뮤니티로 성장했습니다.",
   ],
   [
     "Making company analysis easier to scan for everyday investors.",
@@ -318,7 +318,7 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "I worked on Butler's home and landing pages so new investors could understand the service, find key features, and know where to start.",
-    "투자 입문자가 서비스의 기능을 이해하고 어디서 시작할지 알 수 있도록 Butler의 홈과 랜딩 페이지 리뉴얼에 참여했습니다.",
+    "Butler의 홈과 랜딩 페이지를 개편하는 데 참여했습니다. 투자 입문자가 주요 기능을 찾고 어디서부터 써보면 좋을지 알 수 있도록 했습니다.",
   ],
   [
     "Turning fan identity into a mobile passport for the SMTOWN universe.",
@@ -334,11 +334,11 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "iToo combined fashion curation, shopping, and community content for Lotte Homeshopping. I worked on project management and design, collaborating with developers through launch.",
-    "iToo는 패션 큐레이션과 쇼핑, 커뮤니티를 결합한 롯데홈쇼핑 서비스입니다. 프로젝트 관리와 디자인을 맡고 개발팀과 협업해 출시까지 진행했습니다.",
+    "iToo는 패션 큐레이션과 쇼핑, 커뮤니티를 결합한 롯데홈쇼핑 서비스입니다. 프로젝트 관리와 디자인을 맡아 출시할 때까지 개발팀과 함께 일했습니다.",
   ],
   [
     "Making wearable strength-training feedback easier to understand.",
-    "웨어러블 근력 운동을 위한 피드백 서비스",
+    "웨어러블 기기로 근력 운동 자세와 강도를 확인하는 서비스",
   ],
   [
     "PTBOT connected a wearable training device to an Android app via BLE, giving users feedback on exercise posture and intensity, along with workout history.",
@@ -346,11 +346,11 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "Helping pet owners manage daily feeding through a connected app.",
-    "반려동물의 급여 루틴을 관리하는 IoT 연동 서비스",
+    "앱으로 반려동물 급식기를 관리하는 서비스",
   ],
   [
     "Duit The Table connected a pet-feeding device and mobile app so owners could manage feeding routines. Our team developed a warm, comfortable visual style based on the client's direction.",
-    "Duit The Table은 반려동물 급여 기기와 앱을 연결해 식사 패턴을 관리하는 서비스입니다. 팀과 함께 클라이언트가 요청한 따뜻하고 편안한 분위기를 디자인에 담았습니다.",
+    "Duit The Table은 급식기와 앱을 연결해 보호자가 반려동물의 식사를 챙길 수 있게 한 서비스입니다. 팀과 함께 클라이언트가 요청한 따뜻하고 편안한 분위기를 화면에 반영했습니다.",
   ],
   [
     "Turning virtual assets into points people can actually use.",
@@ -358,23 +358,23 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "Metafin helps users manage virtual assets and convert them into company points that can be used like cash across connected services.",
-    "Metafin은 가상자산을 관리하고, 연동 서비스에서 현금처럼 사용할 수 있는 기업 포인트로 전환하는 크립토 지갑 서비스입니다.",
+    "Metafin은 가상자산을 관리하고 기업 포인트로 전환하는 크립토 지갑 서비스입니다. 전환한 포인트는 연동 서비스에서 현금처럼 사용할 수 있습니다.",
   ],
   [
     "Extending photo-booth memories beyond the kiosk.",
-    "포토부스 촬영 경험을 이어주는 사진 관리 서비스",
+    "촬영할 프레임을 고르고 포토부스 사진을 보관하는 앱",
   ],
   [
     "Photoism helps users manage photo-booth memories, discover frames, prepare kiosk shoots, and keep photos and videos in My Album.",
-    "Photoism은 포토부스에서 만든 추억을 관리하는 앱입니다. 프레임을 찾고 촬영을 준비하며, 촬영한 사진과 영상을 My Album에 보관할 수 있습니다.",
+    "Photoism에서는 촬영 전에 프레임을 고르고, 촬영한 사진과 영상은 My Album에 보관할 수 있습니다.",
   ],
   [
     "Photoism helps users manage special memories, discover frames, prepare kiosk shoots, and automatically keep photos and videos in My Album.",
-    "Photoism은 포토부스에서 만든 특별한 추억을 관리하는 앱입니다. 프레임 탐색과 촬영 준비부터 촬영한 사진과 영상을 My Album에 자동으로 보관하는 과정까지 하나로 연결했습니다.",
+    "Photoism은 포토부스에서 찍은 사진과 영상을 담아두는 앱입니다. 앱에서 프레임을 골라 촬영을 준비하면, 키오스크에서 찍은 사진과 영상은 My Album에 자동으로 저장됩니다.",
   ],
   [
     "Helping families compare education services through real reviews.",
-    "학부모와 학생의 후기로 비교하는 교육 정보 서비스",
+    "학부모와 학생의 후기로 교육 서비스를 비교하는 앱",
   ],
   [
     "YZYZ helps parents and students compare education services through firsthand reviews, analysis reports, and rankings. I worked across branding and UX/UI design.",
@@ -386,7 +386,7 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "SmileMe lets people create, share, and sell custom emoticons using content featuring K-pop artists, celebrities, and influencers, along with stickers.",
-    "SmileMe는 K-pop 아티스트와 셀럽, 인플루언서의 콘텐츠와 스티커로 나만의 이모티콘을 만들고 공유·판매하는 서비스입니다.",
+    "SmileMe는 K-pop 아티스트와 셀럽, 인플루언서의 콘텐츠와 스티커를 조합해 나만의 이모티콘을 만들고 공유·판매하는 서비스입니다.",
   ],
   [
     "Designing sensitive end-of-life support for families.",
@@ -394,52 +394,52 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "HI supports emotional and practical needs before and after passing away, while helping families create memorials for loved ones.",
-    "HI는 임종 전후에 필요한 정서적·실질적 지원을 제공하고, 남은 가족이 고인을 위한 추모 공간을 만들 수 있도록 돕습니다.",
+    "HI는 임종 전후에 필요한 정서적·실질적 지원을 제공하는 서비스입니다. 남은 가족이 고인을 위한 추모 공간을 만들 수 있도록 돕습니다.",
   ],
   ["Overview", "프로젝트 개요"],
   [
     "iToo was a Lotte Homeshopping fashion curation and commerce project from 2022 Q1 to 2022 Q4. It combined product discovery, shopping, and community content, with flows for purchase, delivery, order tracking, returns, and refunds.",
-    "iToo는 2022년 1분기부터 4분기까지 진행한 롯데홈쇼핑의 패션 큐레이션·커머스 프로젝트입니다. 상품 탐색과 커뮤니티 콘텐츠를 구매, 배송, 주문 조회, 반품·환불 과정과 함께 설계했습니다.",
+    "iToo는 2022년 1분기부터 4분기까지 진행한 롯데홈쇼핑의 패션 큐레이션·커머스 프로젝트입니다. 상품 탐색과 커뮤니티 콘텐츠부터 구매, 배송, 주문 조회, 반품·환불까지 전체 흐름을 설계했습니다.",
   ],
   [
     "I worked on project management, UX structure, service planning, and UI design. I collaborated with the development team to carry the shopping and community flows through to launch.",
-    "프로젝트 관리, UX 구조 설계, 서비스 기획, UI 디자인을 맡았습니다. 개발팀과 협업하며 쇼핑과 커뮤니티 기능을 설계하고 서비스 출시까지 함께했습니다.",
+    "프로젝트 관리, UX 구조 설계, 서비스 기획, UI 디자인을 맡았습니다. 개발팀과 협업해 쇼핑과 커뮤니티 기능을 설계하고, 출시 과정에도 참여했습니다.",
   ],
   [
     "Photoism is an app for managing and enjoying the special memories users create at Photoism. It connects moment registration, frame recommendations, shooting reviews, cart-to-kiosk preparation, My Album storage, frame requests, and frame news into one mobile experience.",
-    "Photoism은 포토부스에서 만든 특별한 추억을 관리하고 즐기는 앱입니다. 모먼트 등록, 프레임 추천, 촬영 후기, 키오스크 촬영 준비, My Album 보관, 프레임 요청과 소식을 하나의 모바일 경험으로 연결했습니다.",
+    "Photoism에서는 포토부스에서 찍은 사진과 영상을 보관하고 다시 볼 수 있습니다. 앱에서 프레임을 추천받고 키오스크 촬영을 준비한 뒤 My Album에 촬영물을 보관할 수 있습니다. 모먼트를 등록하거나 촬영 후기를 쓰고, 새 프레임을 요청하거나 관련 소식을 확인할 수도 있습니다.",
   ],
   [
     "My responsibility was design management. The case study will focus on how the app supports the full photo-booth journey, from discovering a frame before shooting to automatically saving photos and videos after kiosk use.",
-    "디자인 매니지먼트를 맡았습니다. 촬영 전에 프레임을 찾는 과정부터 키오스크 촬영 뒤 사진과 영상을 자동으로 저장하는 과정까지, 전체 포토부스 경험을 앱으로 연결했습니다.",
+    "디자인 매니지먼트를 맡았습니다. 촬영 전에 프레임을 찾는 단계부터 키오스크 촬영 후 사진과 영상을 자동 저장하는 단계까지 앱에서 이어지도록 설계했습니다.",
   ],
   [
     "Canbu started from the friction and limitations of existing community channels for Koreans living in Canada. The goal was to create a service where Korean residents could help each other and make better everyday decisions through trustworthy local information.",
-    "Canbu는 캐나다 거주 한인들이 기존 커뮤니티 채널에서 겪는 불편과 한계에서 시작했습니다. 신뢰할 수 있는 지역 정보를 바탕으로 서로 도움을 주고받으며, 일상에서 더 나은 결정을 내릴 수 있는 서비스를 만드는 것이 목표였습니다.",
+    "Canbu는 캐나다 거주 한인들이 기존 커뮤니티 채널을 이용하며 겪은 불편에서 시작했습니다. 한인들이 믿을 만한 지역 정보를 나누고 캐나다 생활에 필요한 선택을 할 때 서로 도울 수 있는 곳을 만들고 싶었습니다.",
   ],
   [
     "My responsibility was design. The team promoted the service through marketing events and offline visits to local Korean markets, and also verified discounted items in person to improve the accuracy of local deal information. Canbu has grown past 2,000 users and is becoming a representative Korean community service in Canada.",
-    "저는 디자인을 맡았습니다. 팀은 마케팅 행사와 현지 한인 마트 방문을 통해 서비스를 알렸고, 할인 상품을 직접 확인해 지역 할인 정보의 정확도를 높였습니다. Canbu는 2,000명 이상의 사용자를 확보했고, 캐나다의 대표적인 한인 커뮤니티 서비스로 성장하고 있습니다.",
+    "저는 디자인을 맡았습니다. 팀은 행사와 현지 한인 마트에서 서비스를 알렸습니다. 지역 할인 정보를 올릴 때는 상품이 실제로 할인 중인지 직접 확인했습니다. Canbu는 캐나다의 대표적인 한인 커뮤니티로 자리 잡았고, 이용자는 2,000명을 넘었습니다.",
   ],
   [
     "HI was part of an internal venture project at KT. The service was designed to support people with emotional and practical needs before and after passing away, and to help family members who are left behind create memorials.",
-    "HI는 KT 사내 벤처 프로젝트로, 임종 전후에 필요한 정서적·실질적 지원을 제공하고 남은 가족이 추모 공간을 만들 수 있도록 설계한 서비스입니다.",
+    "HI는 KT 사내 벤처 프로젝트로 시작한 서비스입니다. 임종 전후에 필요한 정서적·실질적 지원을 제공하고, 남은 가족이 추모 공간을 만들 수 있도록 설계했습니다.",
   ],
   [
     "My responsibility was product design. The case study will focus on how a sensitive end-of-life service can organize preparation, remembrance, practical support, and family-facing memorial creation into one experience.",
-    "프로덕트 디자인을 맡았습니다. 민감한 주제를 다루는 만큼, 이별을 준비하는 과정과 실질적인 지원, 남은 가족이 추모 공간을 만드는 과정이 자연스럽게 이어지도록 설계했습니다.",
+    "프로덕트 디자인을 맡았습니다. 가족이 이별을 준비하며 필요한 도움을 받고, 사별 후에는 고인을 기릴 공간을 만들 수 있도록 설계했습니다.",
   ],
   [
     "Metafin Company was established by KG Inicis to enter the blockchain and virtual-asset payment market. The service direction focused on a crypto wallet experience where users could manage virtual assets and convert them into company points.",
-    "Metafin Company는 KG이니시스가 블록체인과 가상자산 결제 시장에 진출하기 위해 설립한 회사입니다. 사용자가 가상자산을 관리하고 기업 포인트로 전환할 수 있는 크립토 지갑 경험에 초점을 맞췄습니다.",
+    "Metafin Company는 KG이니시스가 블록체인과 가상자산 결제 시장에 진출하기 위해 설립한 회사입니다. 서비스의 방향은 사용자가 가상자산을 관리하고 기업 포인트로 바꿀 수 있는 지갑을 만드는 것이었습니다.",
   ],
   [
     "My responsibility was product design. The case study will focus on how wallet balance, asset conversion, point usability, and payment-ready flows were translated into a clearer fintech product experience.",
-    "프로덕트 디자인을 맡았습니다. 지갑 잔액 확인, 자산 전환, 포인트 사용, 결제 준비 과정을 더 명확하고 이해하기 쉬운 핀테크 경험으로 정리했습니다.",
+    "프로덕트 디자인을 맡았습니다. 사용자가 지갑 잔액을 확인하고, 가상자산을 포인트로 바꾸고, 포인트를 사용하거나 결제를 준비하는 과정을 설계했습니다.",
   ],
   [
     "Butler brings together company data, disclosures, reports, news, and portfolio tools. The 2023 Q3 redesign focused on new investors. They struggled to understand what the service offered and where to start.",
-    "Butler는 기업 데이터와 공시, 리포트, 뉴스, 포트폴리오 관리 기능을 제공하는 투자 서비스입니다. 2023년 3분기 리뉴얼에서는 투자 입문자에 집중했습니다. 이들은 서비스가 어떤 정보를 제공하는지, 어디서 시작해야 하는지 알기 어려워했습니다.",
+    "Butler는 기업 데이터와 공시, 리포트, 뉴스, 포트폴리오 관리 기능을 제공하는 투자 서비스입니다. 2023년 3분기 리뉴얼에서는 투자 입문자에 집중했습니다. 투자 입문자들은 어떤 정보를 볼 수 있는지, 어디서부터 써야 할지 몰라 어려움을 겪었습니다.",
   ],
   [
     "We used user surveys, Hotjar, and Google Analytics to guide the redesign of the home and landing pages. I worked with the team to distinguish primary and secondary features and create content explaining how to use the service.",
@@ -447,35 +447,35 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "SmileMe was a Danal Entertainment mobile platform for creating, sharing, and selling custom emoticons. People could combine content featuring K-pop artists, celebrities, and influencers with stickers to make their own emoticons.",
-    "SmileMe는 나만의 이모티콘을 만들고 공유·판매할 수 있는 다날엔터테인먼트의 모바일 플랫폼입니다. K-pop 아티스트와 셀럽, 인플루언서의 콘텐츠에 스티커를 조합해 원하는 이모티콘을 만들도록 했습니다.",
+    "SmileMe는 나만의 이모티콘을 만들고 공유·판매할 수 있는 다날엔터테인먼트의 모바일 플랫폼입니다. K-pop 아티스트와 셀럽, 인플루언서의 콘텐츠와 스티커를 조합해 원하는 이모티콘을 만들도록 했습니다.",
   ],
   [
     "As a Product Designer, I worked with the team on a casual, approachable visual style and the flows for content discovery, emoticon creation, the marketplace, and personal collections.",
-    "프로덕트 디자이너로서 팀과 함께 친근하고 편안한 디자인을 만들었습니다. 콘텐츠 탐색과 이모티콘 제작, 마켓, 개인 컬렉션으로 이어지는 이용 흐름을 설계했습니다.",
+    "프로덕트 디자이너로 참여해 팀과 함께 화면을 친근하고 편안한 분위기로 디자인했습니다. 콘텐츠 탐색과 이모티콘 제작, 마켓, 개인 컬렉션으로 이어지는 이용 흐름을 설계했습니다.",
   ],
   [
     "Duit The Table was a mobile app project connected to an IoT pet-feeding device. Owners could manage their pets' feeding routines and control the device from the app.",
-    "Duit The Table은 IoT 급여 기기와 연결해 반려동물의 식사 패턴을 관리하는 모바일 앱입니다. 보호자가 앱에서 급여 루틴을 관리하고 기기를 제어할 수 있도록 설계했습니다.",
+    "Duit The Table은 반려동물의 식사를 관리하는 모바일 앱으로, IoT 급식기와 연결해 씁니다. 보호자가 앱에서 반려동물의 식사를 관리하고 급식기를 조작할 수 있도록 설계했습니다.",
   ],
   [
     "I managed the design work with the team, following the client's request for a warm, comfortable visual style. We brought device controls and everyday feeding routines together in the app.",
-    "디자인 매니지먼트를 맡아 팀과 함께 기기 제어와 일상적인 급여 관리 화면을 설계했습니다. 클라이언트가 요청한 따뜻하고 편안한 분위기를 비주얼에 반영했습니다.",
+    "디자인 관리를 맡아 팀과 함께 보호자가 급식기를 조작하고 매일 사료 주는 일을 관리하는 화면을 설계했습니다. 클라이언트가 요청한 따뜻하고 편안한 분위기를 화면에 반영했습니다.",
   ],
   [
     "Pawdle is a BeroAI service that helps dog owners discover their dog's unique personality and understand behavior more clearly. The product direction centers on insights, tips, and tools that strengthen the bond between dogs and owners.",
-    "Pawdle은 보호자가 반려견의 고유한 성격을 발견하고 행동을 더 잘 이해할 수 있도록 돕는 BeroAI 서비스입니다. 반려견과 보호자의 유대감을 높이는 인사이트와 팁, 도구를 중심으로 설계했습니다.",
+    "Pawdle은 보호자가 반려견의 고유한 성격을 발견하고 행동을 더 잘 이해할 수 있도록 돕는 BeroAI 서비스입니다. 반려견과 보호자의 유대감을 높일 수 있는 성격 정보와 돌봄 팁, 도구를 중심으로 설계했습니다.",
   ],
   [
     "My responsibility covered product ownership and product design. The case study will focus on how personality insights, care guidance, and owner-facing education were organized into a friendly pet-care service experience.",
-    "프로덕트 오너와 프로덕트 디자이너 역할을 함께 맡았습니다. 성격 인사이트와 돌봄 가이드, 보호자 교육 콘텐츠를 친근한 반려동물 돌봄 경험으로 연결했습니다.",
+    "프로덕트 오너와 프로덕트 디자이너 역할을 함께 맡았습니다. 보호자가 반려견의 성격을 이해하고 돌보는 법을 익힐 수 있도록 성격 정보와 돌봄 가이드, 보호자 교육 자료를 한곳에 모았습니다.",
   ],
   [
     "SMTOWN Meta-Passport was a digital passport service for SM Entertainment fans, built around the Music Nation SMTOWN concept. Fans could collect stamps from online and offline concerts and keep their fan club information and activities in one place.",
-    "SMTOWN Meta-Passport는 Music Nation SMTOWN 세계관을 바탕으로 만든 SM엔터테인먼트 팬을 위한 디지털 여권 서비스입니다. 온라인·오프라인 공연에서 스탬프를 모으고, 팬클럽 정보와 활동을 한곳에서 관리할 수 있도록 설계했습니다.",
+    "SMTOWN Meta-Passport는 SM엔터테인먼트 팬을 위한 디지털 여권입니다. Music Nation SMTOWN의 세계관을 바탕으로 만들었습니다. 온라인·오프라인 공연에서 스탬프를 모으고, 팬클럽 정보와 활동을 한곳에서 관리할 수 있도록 설계했습니다.",
   ],
   [
     "I managed the design work with the team, preserving the brand's identity while giving the app the feel of a digital passport with a futuristic visual style.",
-    "디자인 매니지먼트를 맡아 팀과 함께 브랜드 정체성을 유지하면서, 디지털 여권의 형태와 미래적인 인상을 살린 화면을 설계했습니다.",
+    "디자인 관리를 맡았습니다. 팀과 함께 브랜드의 특징을 유지하면서 디지털 여권의 형태를 살리고 화면에 미래적인 느낌을 담았습니다.",
   ],
   [
     "PTBOT was a personal training support project developed in collaboration with Samsung Electronics. The Android app exchanged data with a wearable strength-training device via BLE and gave users feedback on exercise posture and workout performance.",
@@ -483,7 +483,7 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "My responsibility was project management. The work coordinated app requirements, BLE communication logic, app server collaboration, and visualization flows for exercise quality, resistance, assistance, and workout-history feedback.",
-    "프로젝트 관리를 맡아 앱 요구사항, BLE 통신 로직, 앱 서버 협업을 조율했습니다. 운동 수행 상태와 저항·보조 강도, 운동 기록을 이해하기 쉽게 보여주는 시각화 흐름도 함께 정리했습니다.",
+    "프로젝트 관리를 맡아 앱 요구사항과 BLE 통신 로직을 정리하고, 앱 서버 개발을 둘러싼 협업을 조율했습니다. 운동 수행 상태와 저항·보조 강도, 운동 기록을 이해하기 쉽게 보여주는 시각화 방식도 함께 정리했습니다.",
   ],
   [
     "YZYZ is an education information app built around firsthand reviews. It covers academies, home-visit education, English-language kindergartens, and digital learning services.",
@@ -495,11 +495,11 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "BeroAI is an AI IoT pet communication service built around a smart collar and companion app. The service had to turn collar signals into a useful answer: what may be happening, what the owner can do now, and how care can continue over time.",
-    "BeroAI는 스마트 목걸이와 앱으로 반려견의 행동 신호를 해석하는 AI IoT 서비스입니다. 단순히 데이터를 보여주는 것으로는 부족했습니다. 보호자가 ‘지금 무슨 일이 일어나고 있지?’, ‘내가 무엇을 해야 하지?’에 답을 얻고, 이후의 돌봄까지 이어갈 수 있어야 했습니다.",
+    "BeroAI는 스마트 목걸이와 앱으로 반려견의 행동 신호를 해석하는 AI IoT 서비스입니다. 단순히 데이터를 보여주는 것으로는 부족했습니다. 보호자는 ‘지금 무슨 일이 일어나고 있지?’, ‘내가 무엇을 해야 하지?’라는 질문에 답을 얻어야 했습니다. 그래야 그때그때 필요한 돌봄을 이어갈 수 있기 때문입니다.",
   ],
   [
     "I led product strategy, app UX/UI, AI communication logic, and avatar interaction. In parallel, I designed a pre-order site to explain the product and capture early demand; it supported the launch without becoming part of the app service.",
-    "저는 제품 전략, 앱 UX/UI, AI 커뮤니케이션 로직, 아바타 인터랙션을 맡았습니다. 사전 주문 사이트는 앱 서비스와 분리해, 제품의 쓰임을 설명하고 초기 수요를 확인하는 출시 경험으로 설계했습니다.",
+    "저는 제품 전략, 앱 UX/UI, AI 커뮤니케이션 로직, 아바타 인터랙션을 맡았습니다. 제품의 쓰임을 설명하고 초기 수요를 확인하려고 앱과 별도로 사전 주문 사이트를 설계했습니다.",
   ],
   [
     "Reframed BeroAI from a tracking device into an AI communication service.",
@@ -507,11 +507,11 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "Mapped categories for emotion, behavior, and needs with the AI team so interpretation could become usable product logic.",
-    "AI 팀과 감정·행동·욕구 체계를 정리하고, 해석 결과를 아바타·아이콘·채팅에 쓰일 제품 로직으로 바꿨습니다.",
+    "AI 팀과 감정·행동·욕구 체계를 정리하고, 해석 결과가 아바타·아이콘·채팅에 일관되게 반영되도록 제품 로직을 만들었습니다.",
   ],
   [
     "Structured the app around Understand, Respond, and Bond loops.",
-    "앱은 이해하기, 대응하기, 유대 쌓기로 이어지는 세 가지 흐름으로 설계했습니다.",
+    "앱은 이해하기, 대응하기, 유대감 쌓기로 이어지는 세 가지 흐름으로 설계했습니다.",
   ],
   ["Problem", "해결해야 했던 문제"],
   [
@@ -520,31 +520,31 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "BeroAI therefore had to explain context and next steps without pretending that AI could know a dog's inner state.",
-    "그래서 BeroAI는 AI가 반려견의 속마음을 정확히 안다고 말하지 않으면서도, 관찰한 신호와 가능한 맥락, 보호자가 할 수 있는 다음 행동을 함께 설명해야 했습니다.",
+    "그래서 BeroAI는 AI가 반려견의 속마음을 정확히 안다고 말하지 않으면서도, 관찰된 신호가 어떤 상황을 뜻할 수 있는지와 보호자가 할 수 있는 다음 행동을 함께 설명해야 했습니다.",
   ],
   ["Research", "화면 설계 전에 확인한 것"],
   [
     "Before designing screens, I used a Pre-PRD questionnaire to turn the broad idea of an AI pet communicator into explicit product decisions. It covered owner uncertainty, dog-signal taxonomy, explanation logic, privacy, reliability, and responsible engagement.",
-    "화면을 그리기 전에 Pre-PRD 질문지를 만들어 ‘AI로 반려동물과 소통한다’는 아이디어를 구체적인 제품 결정으로 바꿨습니다. 보호자의 불확실성, 반려견 신호 분류, 설명 방식, 개인정보 보호, 신뢰성, 책임 있는 사용 조건을 다뤘습니다.",
+    "화면을 그리기 전에 Pre-PRD 질문지를 만들어 ‘AI로 반려동물과 소통한다’는 아이디어를 구체적인 제품 결정으로 바꿨습니다. 보호자가 무엇을 판단하기 어려워하는지 살펴보고, 반려견의 신호를 분류하고 설명하는 방법, 개인정보 보호, 신뢰성, 책임 있는 사용을 위한 조건을 정리했습니다.",
   ],
   [
     "This was an internal product-definition exercise, not a usability study. Its purpose was to expose assumptions and align the product and AI teams before interface design.",
-    "사용성 테스트 결과는 아니었습니다. 화면을 설계하기 전에 제품팀과 AI 팀이 같은 가정을 보고, 무엇부터 검증할지 맞추기 위한 내부 제품 정의 과정이었습니다.",
+    "사용성 테스트 결과는 아니었습니다. 화면을 설계하기 전에 제품팀과 AI 팀이 가정을 함께 확인하고, 무엇부터 검증할지 우선순위를 맞추는 내부 제품 정의 과정이었습니다.",
   ],
   ["Product Positioning", "제품의 약속 정하기"],
   [
     "For BeroAI to earn trust, I first had to set the boundary of its promise. Rather than claim perfect dog translation, I framed it as a service that interprets patterns, explains possible context, and helps owners respond at a better time.",
-    "BeroAI가 신뢰를 얻으려면 먼저 제품의 약속에 경계를 세워야 했습니다. ‘반려견의 말을 완벽하게 번역한다’고 말하는 대신, 관찰된 패턴과 가능한 맥락을 설명하고 보호자가 더 적절한 때에 대응하도록 돕는 서비스로 정의했습니다.",
+    "보호자가 BeroAI를 믿고 쓰려면 반려견의 행동을 어디까지 해석할 수 있다고 말할지 먼저 정해야 했습니다. ‘반려견의 말을 완벽하게 번역한다’고 말하는 대신, 관찰된 패턴이 어떤 상황을 뜻할 수 있는지 설명하고 보호자가 적절한 때에 대응하도록 돕는 서비스로 정의했습니다.",
   ],
   ["Service Architecture", "서비스의 세 가지 반복 구조"],
   [
     "I organized the product around three connected loops: understand the dog's state, respond with an appropriate action, and build the bond through repeated care, training, and rewards.",
-    "앱은 세 가지 흐름이 이어지도록 설계했습니다. 반려견의 상태를 이해하고, 알맞은 행동으로 대응하고, 돌봄과 훈련을 반복하며 유대감을 쌓는 흐름입니다.",
+    "앱은 세 가지 흐름이 이어지도록 설계했습니다. 반려견의 상태를 이해하고 알맞게 대응하며, 돌봄과 훈련을 반복해 유대감을 쌓는 흐름입니다.",
   ],
   ["AI Communication UX", "AI 해석을 설명하는 방법"],
   [
     "The Chat Room became the explanation layer. Need icons show immediate states such as hunger, potty, or thirst; Chat explains the context, the deviation, and why a response may help.",
-    "배고픔, 배변, 갈증처럼 바로 확인해야 하는 상태는 아이콘으로 빠르게 보여줬습니다. 왜 그런 신호가 나타났는지, 평소와 무엇이 다른지는 Chat Room에서 설명했습니다.",
+    "배고픔, 배변 욕구, 갈증처럼 바로 확인해야 할 상태는 아이콘으로 빠르게 보여줬습니다. 왜 그런 신호가 나타났는지, 평소와 무엇이 다른지는 Chat Room에서 설명했습니다.",
   ],
   [
     "Each message moved through a scenario: trigger, interpretation, owner action, and resolution. It needed enough reasoning to feel credible without implying that the system knew the dog's exact inner state.",
@@ -563,7 +563,7 @@ const portfolioKoreanTranslations = new Map([
   ["Map and Training Systems", "이해에서 행동으로"],
   [
     "Map and Training gave the service an action layer. Owners could move from understanding a signal to doing something useful outdoors, during practice, or in daily routines.",
-    "Map과 Training은 이해한 내용을 실제 행동으로 옮기는 기능입니다. 보호자가 산책이나 훈련, 일상에서 바로 해볼 수 있는 행동을 제안했습니다.",
+    "Map과 Training은 반려견의 신호를 이해한 뒤 실제 행동으로 이어가게 하는 기능입니다. 보호자가 산책이나 훈련, 일상에서 바로 해볼 수 있는 행동을 제안했습니다.",
   ],
   ["Pre-order Website and Funnel", "새로운 제품을 설명하고 수요 확인하기"],
   [
@@ -589,40 +589,40 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "Not yet verified: interpretation accuracy, real-world care outcomes, retention, and conversion performance.",
-    "아직 확인하지 못한 것: AI 해석 정확도, 실제 돌봄 변화, 재방문, 사전 주문 전환 성과는 이후 검증이 필요합니다.",
+    "앞으로 검증할 항목은 AI 해석의 정확도, 실제 돌봄의 변화, 사용자가 계속 돌아오는지, 사전 주문으로 얼마나 이어지는지입니다.",
   ],
   ["Reflection", "돌아보며"],
   [
     "AI product design is not about making intelligence visible for its own sake. It is about helping people understand what the system is telling them, where its confidence stops, and what they can do next. In BeroAI, that meant connecting hardware signals, AI interpretation, and app experience into one service, while giving the separate pre-order site a clear way to explain that service.",
-    "이 프로젝트에서 다시 확인한 건, AI 제품 디자인의 역할은 지능을 드러내는 데 있지 않다는 점입니다. 사용자가 시스템이 무엇을 알려주는지, 어디까지 믿을 수 있는지, 다음에 무엇을 할 수 있는지 이해하게 해야 합니다. BeroAI에서는 하드웨어 신호와 AI 해석, 앱 경험을 하나로 연결하고, 사전 주문 사이트는 그 서비스를 설명하는 별도 경험으로 남겼습니다.",
+    "사용자가 시스템이 무엇을 알려주는지, 어디까지 믿을 수 있는지, 다음에 무엇을 할 수 있는지 이해하게 해야 합니다. 앱에서는 목걸이가 포착한 신호를 AI가 어떻게 해석했는지 보여줬고, 별도로 만든 사전 주문 사이트에서는 이 서비스의 쓰임을 설명했습니다.",
   ],
   ["The product question", "무엇을 알려주고, 어디까지 말할 것인가"],
   ["The question behind the product", "데이터보다 어려운 건 의미를 설명하는 일이었습니다"],
   ["The questions that shaped the product", "제품을 만들기 전에 확인한 질문"],
-  ["Set the promise before designing the interface", "화면을 만들기 전에 제품의 약속부터 정하기"],
-  ["Three loops: understand, respond, bond", "이해하고, 대응하고, 유대 쌓는 세 가지 흐름"],
+  ["Set the promise before designing the interface", "화면보다 먼저, 제품이 어디까지 말할지 정하기"],
+  ["Three loops: understand, respond, bond", "이해하고, 대응하고, 유대감을 쌓는 세 가지 흐름"],
   ["Show the signal, then explain the context", "신호를 보여주고 맥락을 설명하기"],
-  ["Answer the first question first", "가장 먼저 궁금한 질문에 답하기"],
+  ["Answer the first question first", "가장 궁금한 질문부터 답하기"],
   ["Keep bonding tied to care", "유대감도 돌봄과 연결하기"],
   ["Turn understanding into action", "이해한 내용을 행동으로 옮기기"],
-  ["Explain the product before asking for a pre-order", "사전 주문 전에 제품의 필요성 설명하기"],
+  ["Explain the product before asking for a pre-order", "사전 주문을 받기 전에 제품의 필요성부터 설명하기"],
   ["What was ready, and what still needed validation", "출시한 것과 아직 검증하지 못한 것"],
-  ["What this changed in my view of AI design", "AI 제품 디자인에 대해 다시 확인한 것"],
+  ["What this changed in my view of AI design", "BeroAI를 만들며 다시 생각한 AI 제품 디자인"],
   ["Raw signals had to become guidance that an owner could understand.", "목걸이가 모은 원시 신호는 보호자가 이해할 수 있는 안내로 바뀌어야 했습니다."],
-  ["AI interpretations had to communicate likelihood, not certainty.", "AI 해석은 확정된 답이 아니라 가능성으로 전달해야 했습니다."],
+  ["AI interpretations had to communicate likelihood, not certainty.", "AI 해석은 정답처럼 단정하지 않고 가능성으로 전달해야 했습니다."],
   ["The product story had to establish value before asking for a pre-order.", "사전 주문을 요청하기 전에 제품이 왜 필요한지 먼저 설명해야 했습니다."],
   ["The avatar and status cards summarize the current state before exposing raw metrics.", "아바타와 상태 카드는 원시 수치보다 먼저 현재 상태를 요약해 보여줍니다."],
   [
     "Chat Preview shows the latest explanation behind a behavior change and opens the full Chat Room when more context is needed.",
-    "Chat Preview는 행동 변화에 대한 최신 설명을 보여주고, 더 많은 맥락이 필요할 때 Chat Room으로 이어집니다.",
+    "Chat Preview에서는 행동 변화에 관한 최신 설명을 볼 수 있습니다. 더 자세히 알고 싶으면 Chat Room을 엽니다.",
   ],
   [
     "Quick Actions lead to a relevant care or training response, while device and account controls remain secondary.",
-    "Quick Action은 돌봄이나 훈련으로 바로 이어지게 하고, 기기와 계정 설정은 보조 영역에 두었습니다.",
+    "Quick Action은 돌봄이나 훈련으로 바로 이어주고, 기기와 계정 설정은 보조 영역에 두었습니다.",
   ],
   [
     "The room and avatar reflect the dog's recent context and provide a consistent place to return to.",
-    "공간과 아바타는 반려견의 최근 상태를 반영하고, 사용자가 계속 돌아올 수 있는 기준점이 됩니다.",
+    "공간과 아바타에 반려견의 최근 상태를 반영해, 다시 방문했을 때도 그곳에서 상태를 살펴볼 수 있게 했습니다.",
   ],
   [
     "Customization and rewards stay connected to walks, training, and records rather than becoming a separate game.",
@@ -630,11 +630,11 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "Closing Dog Space returns to Care Home, and blocked states lead to a clear recovery path.",
-    "Dog Space를 닫으면 Care Home으로 돌아가고, 막힌 상태에서는 복구 방법을 분명히 보여줍니다.",
+    "Dog Space를 닫으면 Care Home으로 돌아가고, 진행할 수 없는 상태에서는 다음에 무엇을 해야 하는지 분명히 보여줍니다.",
   ],
   [
     "Walk insights turn routes into behavior patterns through heatmaps, sniffing signals, stress zones, and reports.",
-    "산책 인사이트는 히트맵, 냄새 탐색 신호, 스트레스 구역, 리포트를 통해 경로를 행동 패턴으로 바꿔 보여줍니다.",
+    "산책 인사이트는 히트맵, 냄새 탐색 신호, 스트레스 구역, 리포트로 산책 경로에서 드러난 행동 패턴을 보여줍니다.",
   ],
   [
     "Safety features surface nearby risks through alerts, privacy zones, and status indicators.",
@@ -642,19 +642,19 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "Training progresses from foundational commands to socialization, alone training, and behavior support.",
-    "훈련은 기본 명령에서 시작해 사회화, 혼자 있기, 행동 지원으로 이어집니다.",
+    "훈련은 기본 명령에서 시작해 사회화, 혼자 있는 연습, 행동 지원으로 이어집니다.",
   ],
   ["Area", "항목"],
   ["Scope", "내용"],
   ["Product", "제품"],
   [
     "Bero Smart Collar — AI IoT pet communication service built around a smart collar and companion app",
-    "Bero Smart Collar — 스마트 목걸이와 모바일 앱을 중심으로 만든 AI IoT 반려견 커뮤니케이션 서비스",
+    "Bero Smart Collar — 스마트 목걸이와 모바일 앱으로 반려견의 행동 신호를 해석하는 AI IoT 서비스",
   ],
   ["Role", "역할"],
   [
     "Product Designer, Product Strategy, Service Design, UX/UI Design",
-    "프로덕트 디자인 · 제품 전략 · 서비스 디자인 · UX/UI 디자인",
+    "프로덕트 디자이너 · 제품 전략 · 서비스 디자인 · UX/UI 디자인",
   ],
   ["Output", "주요 산출물"],
   [
@@ -662,7 +662,7 @@ const portfolioKoreanTranslations = new Map([
     "앱 정보 구조와 사용자 흐름, 모바일 화면 체계, 감정·행동·욕구 매핑, 시나리오 로직, 사전 주문 사이트와 수요 확인 흐름",
   ],
   ["Status", "진행 상태"],
-  ["Pre-order site launched; mobile prototype logic defined", "사전 주문 사이트 출시, 모바일 프로토타입 로직 정의"],
+  ["Pre-order site launched; mobile prototype logic defined", "사전 주문 사이트 출시, 모바일 프로토타입의 동작 원리 정의"],
   ["Tension", "고려할 점"],
   ["Design challenge", "디자인 과제"],
   ["Raw data vs meaning", "신호와 의미 사이의 거리"],
@@ -686,64 +686,64 @@ const portfolioKoreanTranslations = new Map([
   ["Owner uncertainty", "보호자의 불확실성"],
   [
     "What owners need to know when they are away, walking, or seeing unusual behavior.",
-    "외출 중이거나 산책할 때, 평소와 다른 행동을 봤을 때 보호자가 알고 싶어 하는 것은 무엇인지 확인했습니다.",
+    "보호자가 외출했거나 반려견과 산책할 때, 또는 평소와 다른 행동을 봤을 때 무엇을 알고 싶어 하는지 확인했습니다.",
   ],
   [
     "Framed BeroAI around practical care moments instead of device novelty.",
-    "기기 자체의 새로움이 아니라 실제 돌봄이 필요한 순간을 중심으로 BeroAI를 정의했습니다.",
+    "새로운 기기라는 점보다 실제 돌봄이 필요한 순간을 중심으로 BeroAI를 정의했습니다.",
   ],
   ["Emotion, behavior, and needs", "감정, 행동, 욕구"],
   [
     "Which emotional states, behavior labels, needs, and conflict rules the AI should support.",
-    "AI가 다뤄야 할 감정 상태, 행동 분류, 욕구와 신호가 충돌할 때의 기준을 정리했습니다.",
+    "AI가 다룰 감정 상태와 행동 유형, 욕구를 정리하고 서로 어긋나는 신호가 잡혔을 때 적용할 기준을 정했습니다.",
   ],
   [
     "Created the shared mapping for avatar states, need icons, and chat explanations.",
-    "아바타 상태, 욕구 아이콘, 채팅 설명이 같은 기준으로 움직이도록 매핑을 만들었습니다.",
+    "아바타 상태, 욕구 아이콘, 채팅 설명이 같은 기준을 따르도록 매핑을 만들었습니다.",
   ],
   ["Narrative and reports", "기록과 리포트"],
   [
     "How behavior, emotion, activity, and needs should become diaries, trends, and alerts.",
-    "행동, 감정, 활동량, 욕구를 일지, 변화 추이, 알림으로 어떻게 보여줄지 살폈습니다.",
+    "행동, 감정, 활동량, 욕구를 일지와 변화 추이, 알림에 어떻게 보여줄지 살폈습니다.",
   ],
   [
     "Shifted History and Report from metric dumping to explanations of change.",
     "History와 Report에서 수치를 나열하는 대신, 어떤 변화가 있었는지 설명하도록 바꿨습니다.",
   ],
-  ["Trust, privacy, and reliability", "신뢰, 개인정보 보호, 안정성"],
+  ["Trust, privacy, and reliability", "사용자 신뢰, 개인정보 보호, 시스템 신뢰성"],
   [
     "How to handle consent, AI data use, signal loss, confidence thresholds, and latency.",
     "동의, AI 데이터 사용, 신호 끊김, 신뢰도 기준, 지연 시간을 어떻게 다룰지 확인했습니다.",
   ],
   [
     "Set the rule that BeroAI should communicate context and likelihood, not certainty.",
-    "BeroAI는 확정적인 답 대신 상황의 맥락과 가능성을 전달한다는 기준을 세웠습니다.",
+    "BeroAI는 답을 단정하지 않고, 관찰한 신호가 어떤 상황을 뜻할 수 있는지 전달한다는 기준을 세웠습니다.",
   ],
   ["Care loops and engagement", "돌봄 흐름과 재방문"],
   [
     "What Auto Cue, scoring, rewards, and Dog Space should encourage or avoid.",
-    "Auto Cue, 점수, 보상, Dog Space가 어떤 행동을 북돋거나 피해야 하는지 정리했습니다.",
+    "Auto Cue, 점수, 보상, Dog Space를 설계할 때 어떤 행동을 권하고, 어떤 행동은 부추기지 않을지 정리했습니다.",
   ],
   [
     "Kept engagement tied to responsible care actions, not shallow gamification.",
-    "가벼운 게임 요소에 머물지 않도록, 재방문 경험을 책임 있는 돌봄 행동과 연결했습니다.",
+    "단순히 자주 방문하게 하는 데 그치지 않고, 다시 사용할 때마다 책임 있는 돌봄 행동으로 이어지도록 설계했습니다.",
   ],
   ["Instead of", "기존의 설명"],
   ["I positioned BeroAI as", "BeroAI를 이렇게 정의했습니다"],
   ["A smart collar that tracks activity", "활동량을 추적하는 스마트 목걸이"],
   [
     "A service that turns dog behavior signals into context and care guidance.",
-    "반려견의 행동 신호를 상황의 맥락과 돌봄 안내로 바꾸는 서비스",
+    "반려견의 행동 신호가 뜻할 수 있는 상황과 필요한 돌봄을 안내하는 서비스",
   ],
   ["An AI that \"translates\" dogs perfectly", "반려견의 말을 완벽하게 번역하는 AI"],
   [
     "An AI communicator that helps owners interpret patterns and respond with better timing.",
-    "보호자가 패턴을 해석하고 더 적절한 때에 대응하도록 돕는 AI 커뮤니케이터",
+    "보호자가 패턴을 해석하고 적절한 시점에 대응하도록 돕는 AI 커뮤니케이터",
   ],
   ["A price-led launch message", "가격을 앞세운 출시 메시지"],
   [
     "A trust-led story that shows why the product matters before asking users to pre-order.",
-    "사전 주문을 요청하기 전에 제품이 왜 필요한지 설명하는 신뢰 중심의 이야기",
+    "사전 주문을 요청하기 전에 제품의 필요성을 설명해 신뢰를 쌓는 이야기",
   ],
   ["Layer", "구성 요소"],
   ["Purpose", "하는 일"],
@@ -757,7 +757,7 @@ const portfolioKoreanTranslations = new Map([
   ["AI interpretation and mapping", "AI 해석과 매핑"],
   [
     "Translate signal patterns into emotion, behavior, needs, and likely context.",
-    "신호 패턴을 감정, 행동, 욕구, 가능성 있는 맥락으로 해석합니다.",
+    "신호가 반복되는 양상을 보고 반려견의 감정과 행동, 욕구를 해석하고 어떤 상황인지 추정합니다.",
   ],
   ["Avatar state, need icon, chat explanation", "아바타 상태, 욕구 아이콘, 채팅 설명"],
   ["Care surfaces", "돌봄 화면"],
@@ -769,14 +769,14 @@ const portfolioKoreanTranslations = new Map([
   ["Action systems", "행동 지원 기능"],
   [
     "Support outdoor safety, activity records, training practice, and repeat engagement.",
-    "야외 안전, 활동 기록, 훈련 연습, 반복적인 사용을 돕습니다.",
+    "보호자가 외출할 때 반려견의 안전을 살피고, 활동을 기록하고, 꾸준히 훈련하며 앱을 다시 찾도록 돕습니다.",
   ],
   ["Walk report, route insight, training journey, missions", "산책 리포트, 경로 인사이트, 훈련 과정, 미션"],
   ["Scenario", "상황"],
   ["Signal pattern", "신호 패턴"],
   ["Owner-facing interpretation", "보호자에게 전달하는 설명"],
   ["Unfamiliar noise", "낯선 소리"],
-  ["Unusual sound, fixed head direction, barking", "평소와 다른 소리, 한쪽에 고정된 시선, 짖음"],
+  ["Unusual sound, fixed head direction, barking", "낯선 소리, 한쪽을 계속 향한 고개, 짖음"],
   [
     "The dog may be alert because of an unfamiliar sound outside.",
     "바깥의 낯선 소리에 반응해 경계하고 있을 수 있습니다.",
@@ -784,14 +784,14 @@ const portfolioKoreanTranslations = new Map([
   ["Activity-based hunger", "활동량에 따른 배고픔"],
   [
     "High activity, mealtime proximity, continued hunger cues",
-    "평소보다 많은 활동, 다가오는 식사 시간, 계속되는 배고픔 신호",
+    "평소보다 많은 활동, 가까워진 식사 시간, 계속되는 배고픔 신호",
   ],
   [
     "The need icon can show hunger; Chat explains why it may be happening earlier than usual.",
-    "욕구 아이콘은 배고픔을 보여주고, Chat은 평소보다 이른 이유를 설명합니다.",
+    "욕구 아이콘은 배고픔을 보여주고, Chat은 평소보다 일찍 배고픔을 느낄 수 있는 이유를 설명합니다.",
   ],
   ["Separation anxiety", "보호자가 없을 때 느끼는 불안"],
-  ["Frozen posture near entrance, micro howling, owner away", "현관 근처의 굳은 자세, 작은 하울링, 보호자 부재"],
+  ["Frozen posture near entrance, micro howling, owner away", "현관 근처의 굳은 자세, 작은 소리로 하울링함, 보호자 부재"],
   [
     "The dog may be waiting anxiously and reacting to outside footsteps.",
     "보호자를 기다리며 불안해하고, 바깥 발소리에 반응하고 있을 수 있습니다.",
@@ -873,20 +873,20 @@ const portfolioKoreanTranslations = new Map([
   ["Design decision", "설계 결정"],
   ["Why it mattered", "이유"],
   ["Hero and story", "첫 화면과 제품 이야기"],
-  ["Lead with owner uncertainty and the value of understanding the dog.", "보호자가 느끼는 불확실성과 반려견을 이해하는 가치를 먼저 보여줍니다."],
-  ["Make the new product category emotionally legible in the first screen.", "낯선 제품이 무엇을 돕는지 첫 화면에서 이해하게 합니다."],
+  ["Lead with owner uncertainty and the value of understanding the dog.", "보호자가 느끼는 불확실성과 반려견을 이해했을 때 얻는 가치를 먼저 보여줍니다."],
+  ["Make the new product category emotionally legible in the first screen.", "보호자가 첫 화면에서 이 제품이 어떤 상황에 도움이 될지 알 수 있습니다."],
   ["Lead capture", "신청 정보 받기"],
   [
     "Collect email, region, optional dog profile fields, and key conversion events.",
-    "이메일, 지역, 선택형 반려견 프로필과 주요 전환 이벤트를 수집합니다.",
+    "이메일과 지역을 받고, 반려견 프로필은 원하는 사람만 입력하도록 합니다. 주요 전환 이벤트도 기록합니다.",
   ],
-  ["Support segmentation and measurable demand.", "대상별 반응을 구분하고, 수요를 확인합니다."],
+  ["Support segmentation and measurable demand.", "사용자 유형별 반응을 나눠 보고, 수요를 확인합니다."],
   ["FAQ and policy", "FAQ와 정책"],
   [
     "Address shipping, refunds, subscriptions, hardware fit, warranty, coverage, privacy, and support.",
-    "배송, 환불, 구독, 목걸이 착용 조건, 보증, 사용 가능 범위, 개인정보 보호, 고객 지원에 답합니다.",
+    "배송·환불·구독, 목걸이 착용 조건과 보증, 서비스 이용 범위, 개인정보 보호와 고객 지원에 관한 질문에 답합니다.",
   ],
-  ["Reduce purchase anxiety for an early hardware and AI service.", "초기 하드웨어·AI 서비스에 대한 구매 불안을 낮춥니다."],
+  ["Reduce purchase anxiety for an early hardware and AI service.", "출시 초기의 하드웨어·AI 서비스를 구매할 때 느끼는 불안을 낮춥니다."],
   ["Coming soon", "상세 내용 준비 중"],
   [
     "Detailed process, role, UX decisions, and outcomes will be added later.",
@@ -1077,7 +1077,7 @@ const portfolioKoreanTranslations = new Map([
   ["Career Snapshot", "8년 동안 역할은 넓어졌지만, 중심은 제품 디자인입니다"],
   [
     "Product Design → Began my career by turning user problems into product flows, screens, and interactions.",
-    "제품 디자인 → 사용자 문제를 이해하고, 제품의 흐름과 화면으로 풀어내는 일에서 커리어를 시작했습니다.",
+    "제품 디자인 → 사용자 문제를 제품 흐름과 화면으로 풀어내는 일로 커리어를 시작했습니다.",
   ],
   [
     "Expanding Roles → Stayed hands-on in design while taking on Design Manager, Project Manager, and Product Owner responsibilities.",
@@ -1089,7 +1089,7 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "Global Collaboration → Worked in South Korea and Canada and collaborated with and led teams across regions, including Vietnam.",
-    "글로벌 협업 → 한국과 캐나다에서 일했고, 베트남을 포함한 여러 지역의 동료와 협업하고 팀을 이끌었습니다.",
+    "글로벌 협업 → 한국과 캐나다에서 일했고, 베트남을 포함한 여러 지역의 동료와 협업했으며 팀도 이끌었습니다.",
   ],
   [
     "OCR Service → Worked on a government-funded OCR service to help travellers identify allergenic ingredients.",
@@ -1137,7 +1137,7 @@ const portfolioKoreanTranslations = new Map([
   ["What I Learned Working in Korea", "신뢰는 작은 실행에서 쌓인다는 것을 배웠습니다"],
   [
     "In South Korea, I worked as both a hands-on designer and a team lead. On any given project, that could mean reviewing a flow, giving design feedback, resolving a stakeholder disagreement, or helping the team decide what had to ship first.",
-    "한국에서는 실무 디자이너이자 팀 리드로 일했습니다. 프로젝트에 따라 화면 흐름을 검토하고, 디자인 피드백을 주고, 이해관계자의 의견 충돌을 조율하고, 무엇을 먼저 출시할지 팀과 정했습니다.",
+    "한국에서는 실무 디자이너이자 팀 리드로 일했습니다. 프로젝트에 따라 화면 흐름을 검토하고 디자인 피드백을 줬습니다. 의견이 엇갈릴 때는 관계자들과 조율하고, 무엇을 먼저 출시할지 팀과 정했습니다.",
   ],
   [
     "I learned that trust is built through the small, repeatable parts of the work: listening closely, explaining decisions clearly, and following through.",
@@ -1183,7 +1183,7 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "I am a Product Designer who starts with questions. I began my career in South Korea and now work in Vancouver as a Senior Product Designer and Product Manager. Over eight years, I have stayed close to the details of the product while taking responsibility for teams, schedules, and product direction.",
-    "저는 질문에서 시작하는 프로덕트 디자이너입니다. 한국에서 커리어를 시작했고, 지금은 캐나다 밴쿠버에서 시니어 프로덕트 디자이너이자 프로덕트 매니저로 일합니다. 8년 동안 제품의 세부를 직접 설계하면서 팀과 일정, 제품의 방향까지 함께 책임져왔습니다.",
+    "저는 해결책을 만들기 전에 어떤 문제를 왜 풀어야 하는지부터 확인하는 프로덕트 디자이너입니다. 한국에서 커리어를 시작해 지금은 밴쿠버에서 시니어 프로덕트 디자이너이자 프로덕트 매니저로 일합니다. 8년 동안 화면과 사용자 흐름을 직접 설계하면서, 팀과 일정, 제품 방향까지 책임 범위를 넓혀 왔습니다.",
   ],
   [
     "My role expanded, but I stayed close to design",
@@ -1191,36 +1191,36 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "I began as a hands-on Product Designer. Later, I also worked as a Design Manager, Project Manager, and Product Owner. These responsibilities often overlapped within the same project.",
-    "실무 프로덕트 디자이너로 커리어를 시작했습니다. 이후 디자인 매니저와 프로젝트 매니저, 프로덕트 오너 역할도 맡았습니다. 하나의 프로젝트에서 이 역할들을 함께 책임지는 경우가 많았습니다.",
+    "실무 프로덕트 디자이너로 커리어를 시작했습니다. 이후 디자인 매니저와 프로젝트 매니저, 프로덕트 오너 역할도 맡았습니다. 하나의 프로젝트에서 여러 역할을 함께 맡는 경우가 많았습니다.",
   ],
   [
     "Working across these roles changed the way I see design. A screen is only one part of a product decision. I also consider what the user needs, what the team can build, what the business must decide, and what it takes to launch.",
-    "여러 역할을 함께 맡으면서 디자인을 보는 방식도 달라졌습니다. 화면은 제품을 결정하는 일의 한 부분입니다. 사용자가 무엇을 필요로 하는지, 팀이 무엇을 만들 수 있는지, 비즈니스가 무엇을 정해야 하는지, 실제로 출시하려면 무엇이 필요한지까지 함께 봅니다.",
+    "여러 역할을 맡으며 디자인을 보는 방식도 달라졌습니다. 화면 설계는 제품 의사결정의 한 부분일 뿐입니다. 사용자에게 필요한 것과 팀이 만들 수 있는 것, 사업상 내려야 할 결정과 출시 준비까지 함께 살핍니다.",
   ],
   [
     "AI makes the work faster. It does not decide what is worth making",
-    "AI는 만드는 일을 빠르게 합니다. 무엇을 만들지는 대신 정해주지 않습니다",
+    "AI는 만드는 속도를 높이지만, 무엇을 만들지는 정해 주지 않습니다",
   ],
   [
     "I use AI to reduce repetitive work and test ideas faster. But experience and judgment still matter when deciding which problem to solve, what to leave out, and how the product should work for people.",
-    "반복 업무를 줄이고 아이디어를 더 빠르게 시험할 때 AI를 씁니다. 하지만 어떤 문제를 풀지, 무엇을 덜어낼지, 사람에게 제품이 어떻게 작동해야 하는지를 정할 때는 여전히 경험과 판단이 필요합니다.",
+    "반복 작업을 줄이고 아이디어를 더 빠르게 시험할 때 AI를 씁니다. 어떤 문제를 풀고 무엇을 덜어낼지, 사람들이 제품을 어떻게 쓸지는 제 경험을 바탕으로 판단합니다.",
   ],
   ["Eight years, in five lines", "8년의 경력을 다섯 줄로 정리하면"],
   [
     "OCR Service → Worked on a government-funded OCR service that helps travellers identify allergenic ingredients.",
-    "OCR 서비스 → 여행자가 식품 성분에서 알레르기 유발 물질을 확인할 수 있도록 정부 지원 OCR 서비스에 참여했습니다.",
+    "OCR 서비스 → 여행자가 식품 성분에서 알레르기 유발 물질을 확인할 수 있게 돕는 정부 지원 OCR 서비스에 참여했습니다.",
   ],
   [
     "I wanted to turn intuition into a standard we could share",
-    "직관을 함께 쓰는 기준으로 바꾸고 싶었습니다",
+    "직관을 팀이 공유할 수 있는 기준으로 바꾸고 싶었습니다",
   ],
   [
     "Product decisions had to make sense to users, clients, business teams, and developers at the same time. Experience gave me intuition, but intuition alone was not enough to explain why one direction was better than another.",
-    "제품을 결정할 때는 사용자와 클라이언트, 비즈니스 팀, 개발자가 함께 납득할 수 있어야 했습니다. 경험은 직관을 만들어줬지만, 직관만으로는 왜 한 방향이 다른 방향보다 나은지 설명하기 어려웠습니다.",
+    "제품의 방향을 정할 때는 사용자와 클라이언트, 비즈니스 팀, 개발자가 함께 납득할 수 있어야 했습니다. 일을 하며 감은 생겼지만, 왜 이 방향이 더 나은지 설명하려면 그 감만으로는 부족했습니다.",
   ],
   [
     "That is why I pursued a master’s degree in Service Design. My research, “A Study on Colors to Improve Kiosk Usability for the Elderly,” examined how color could make self-service kiosks more usable and accessible for older adults.",
-    "그래서 서비스디자인 석사 과정을 밟았습니다. 논문 「고령자의 키오스크 사용성 향상을 위한 색채 연구」에서는 색채가 고령자의 셀프서비스 키오스크 사용성과 접근성을 어떻게 높일 수 있는지 연구했습니다.",
+    "그래서 서비스디자인 석사 과정을 밟았습니다. 논문 「고령자의 키오스크 사용성 향상을 위한 색채 연구」에서는 색을 어떻게 쓰면 고령자가 셀프서비스 키오스크에 더 쉽게 접근하고 사용할 수 있는지 살폈습니다.",
   ],
   [
     "I learned that trust is built in the small follow-through",
@@ -1228,11 +1228,11 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "Trust was built through the small, repeatable parts of the work: listening closely, explaining decisions clearly, and finishing what I said I would do.",
-    "신뢰는 작지만 반복되는 일에서 쌓였습니다. 자세히 듣고, 결정의 이유를 분명히 설명하고, 하겠다고 말한 일을 끝까지 마치는 일이었습니다.",
+    "상대의 말을 자세히 듣고, 결정 이유를 분명히 설명하고, 약속한 일을 끝까지 마쳤습니다.",
   ],
   [
     "Military service taught me to finish the work someone else was waiting for",
-    "군복무에서 누군가 기다리는 일을 끝까지 마치는 법을 배웠습니다",
+    "작은 누락도 다른 사람의 일에 바로 영향을 준다는 걸 배웠습니다",
   ],
   [
     "In my early twenties, I spent about two years serving at military headquarters.",
@@ -1240,15 +1240,15 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "The work involved coordinating people, schedules, documents, and administrative requests. A small omission could immediately affect someone else’s work. I learned to stay calm, make responsibilities clear, and finish what others were waiting for.",
-    "인원과 일정, 문서, 행정 요청을 조율하는 일이었습니다. 작은 누락도 다른 사람의 업무에 바로 영향을 줄 수 있었습니다. 상황을 차분히 정리하고, 역할과 책임을 분명히 나누고, 누군가 기다리는 일을 끝까지 마치는 법을 배웠습니다.",
+    "인원과 일정, 문서, 행정 요청을 조율했습니다. 상황을 차분히 정리하고 역할과 책임을 분명히 나눈 뒤, 제 몫을 다해야 다음 사람도 일을 이어갈 수 있었습니다.",
   ],
   [
     "Talking with other designers shows me where people are getting stuck",
-    "다른 디자이너와 대화하면 지금 막히는 지점이 보입니다",
+    "다른 디자이너와 대화하면 어디에서 막히는지 보입니다",
   ],
   [
     "Through ADPList, workshops, and community programs, I review portfolios and talk with designers about product thinking and career decisions. Those conversations show me where designers are getting stuck and what they are trying next.",
-    "ADPList와 워크숍, 커뮤니티 프로그램에서 포트폴리오를 리뷰하고 제품을 보는 관점과 커리어 결정을 이야기합니다. 대화를 나누다 보면 디자이너들이 지금 어디에서 막히고, 다음으로 무엇을 시도하는지 알게 됩니다.",
+    "ADPList와 워크숍, 커뮤니티 프로그램에서 포트폴리오를 리뷰하고, 제품을 보는 관점과 커리어 선택에 관해 이야기합니다. 대화를 나누다 보면 디자이너들이 지금 어디에서 막히고, 다음으로 무엇을 시도하는지 알게 됩니다.",
   ],
   [
     "I also run a design community in South Korea and host in-person events in Vancouver. I like creating opportunities for people to compare how they work, share what worked, and decide what they want to try next.",
@@ -1256,20 +1256,20 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "Side projects let me follow a question all the way through",
-    "사이드 프로젝트에서는 궁금한 문제를 끝까지 따라가봅니다",
+    "사이드 프로젝트에서는 하나의 질문을 끝까지 따라가 봅니다",
   ],
   [
     "Client work usually begins with a problem that already needs an answer. A side project begins with a question I choose myself. I look for people who have the problem, make the smallest useful version, and watch what they actually do.",
-    "클라이언트 프로젝트는 대개 이미 답이 필요한 문제에서 시작합니다. 사이드 프로젝트는 제가 직접 고른 질문에서 시작합니다. 같은 문제를 겪는 사람을 찾고, 쓸 수 있는 가장 작은 형태로 만든 뒤, 사람들이 실제로 어떻게 쓰는지 봅니다.",
+    "클라이언트 프로젝트는 대개 이미 답이 필요한 문제에서 시작합니다. 사이드 프로젝트는 제가 직접 고른 질문에서 시작합니다. 같은 문제를 겪는 사람을 찾고, 써볼 수 있을 만큼만 먼저 만들어 사람들이 어떻게 쓰는지 지켜봅니다.",
   ],
   [
     "Some ideas stop early. Others grow into products. Either way, the point is to replace an assumption with something I can learn from.",
-    "어떤 아이디어는 일찍 멈추고, 어떤 아이디어는 제품으로 이어집니다. 어느 쪽이든 추측으로 남겨두지 않고 직접 확인하며 배우는 것이 중요합니다.",
+    "어떤 아이디어는 일찍 멈추고, 어떤 아이디어는 제품으로 이어집니다. 어느 쪽이든 추측에 머무르지 않고, 직접 확인한 결과에서 배웁니다.",
   ],
-  ["Time away from work shapes me too", "일하지 않는 시간도 저를 만듭니다"],
+  ["Time away from work shapes me too", "일하지 않을 때는 여행하고 요리합니다"],
   [
     "Travel and cooking are not extensions of my job. They are simply parts of the life I value: stepping out of routine, paying attention to unfamiliar places, and caring for my family in an everyday way.",
-    "여행과 요리는 일의 연장이 아닙니다. 일상에서 잠시 벗어나 낯선 곳을 바라보고, 가장 익숙한 방식으로 가족을 돌보는 시간입니다. 제가 소중하게 생각하는 삶의 모습이기도 합니다.",
+    "여행과 요리는 일의 연장이 아닙니다. 여행으로 일상에서 잠시 벗어나 낯선 곳을 보고, 요리로 가족을 돌봅니다.",
   ],
   ["I travel because I like it", "좋아해서 여행합니다"],
   [
@@ -1283,25 +1283,25 @@ const portfolioKoreanTranslations = new Map([
   ["Cooking is how I take care of my family", "요리는 제가 가족을 돌보는 방법입니다"],
   [
     "I studied cooking before moving into design, and it has stayed with me as a long-time interest.",
-    "디자인을 시작하기 전에 요리를 공부했고, 지금도 오래 이어온 관심사로 남아 있습니다.",
+    "디자이너가 되기 전에는 요리를 공부했습니다.",
   ],
   [
     "These days, I usually cook for my wife and son. Choosing a menu, preparing ingredients, and making a meal is the most familiar way I care for my family.",
-    "요즘은 주로 아내와 아들을 위해 요리합니다. 메뉴를 정하고 재료를 준비해 한 끼를 만드는 일은, 제가 가족을 돌보는 가장 익숙한 방법입니다.",
+    "요즘은 주로 아내와 아들을 위해 요리합니다. 메뉴를 정하고 재료를 준비해 한 끼를 만드는 일은 제가 가족을 돌보는 가장 익숙한 방법입니다.",
   ],
   [
     "The work itself continues in the case studies",
-    "제가 한 일은 케이스 스터디에서 이어집니다",
+    "프로젝트에서 한 일은 케이스 스터디에서 자세히 설명합니다",
   ],
   [
     "This page explains who I am and how I came to work this way. The case studies explain the problems I faced, the decisions I made, and what I built with the team.",
-    "이 페이지에서는 제가 어떤 사람이고, 어떻게 지금처럼 일하게 되었는지 이야기했습니다. 케이스 스터디에서는 어떤 문제를 만났고, 무엇을 결정했으며, 팀과 함께 무엇을 만들었는지 설명합니다.",
+    "이 페이지에서는 제가 어떤 사람이고 어떻게 지금처럼 일하게 되었는지 이야기합니다. 케이스 스터디에서는 어떤 문제를 만났고, 무엇을 결정했으며, 팀과 함께 무엇을 만들었는지 설명합니다.",
   ],
   ["View projects", "프로젝트 보기"],
   ["View resume", "이력서 보기"],
   ["Contact", "연락하기"],
   ["Email", "이메일"],
-  ["Available for product and AI design work", "제품 및 AI 디자인 프로젝트 문의 가능"],
+  ["Available for product and AI design work", "프로덕트·AI 디자인 프로젝트 문의를 받습니다"],
   ["LinkedIn", "LinkedIn"],
   ["Profile and career history", "프로필과 경력 보기"],
   ["Recommendations", "함께 일한 사람들이 전한 말"],
@@ -1322,15 +1322,15 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "He consistently delivered exceptional results while fostering collaboration and maintaining clear communication. His ability to navigate challenges, align stakeholders, and lead teams effectively makes him a true asset to any organization.",
-    "Erik은 명확하게 소통하고 협업을 이끌면서도 꾸준히 뛰어난 결과를 만들었습니다. 어려운 상황을 풀고 이해관계자를 조율하며 팀을 효과적으로 이끄는 역량은 어느 조직에서든 큰 강점이 될 것입니다.",
+    "Erik은 명확하게 소통하고 협업을 이끌며 꾸준히 뛰어난 결과를 냈습니다. 어려운 상황에 대처하고 이해관계자를 조율하며 팀을 효과적으로 이끄는 역량은 어느 조직에서든 큰 강점이 될 것입니다.",
   ],
   [
     "With a deep sense of responsibility and extensive Product Design experience, Erik possesses the skills to address clients' MVP issues from a UX perspective.",
-    "Erik은 강한 책임감과 폭넓은 프로덕트 디자인 경험을 바탕으로, 클라이언트의 MVP 문제를 UX 관점에서 해결할 수 있는 역량을 갖추고 있습니다.",
+    "Erik은 강한 책임감과 폭넓은 프로덕트 디자인 경험을 바탕으로, 클라이언트가 겪는 MVP 관련 문제를 UX 관점에서 해결할 역량을 갖추고 있습니다.",
   ],
   [
     "Additionally, his strong communication skills with colleagues are a notable asset.",
-    "동료들과 원활하게 소통하는 능력 또한 돋보이는 강점입니다.",
+    "동료들과 원활하게 소통하는 능력도 돋보입니다.",
   ],
   ["Product Strategy", "제품 전략"],
   ["UX Strategy", "UX 전략"],
@@ -1351,7 +1351,7 @@ const portfolioKoreanTranslations = new Map([
     "I co-hosted a sold-out workshop in Burnaby where designers moved from rough ideas to working prototypes, then shared what the speed revealed about their product thinking.",
     "버나비에서 열린 매진 워크숍을 공동 주최했습니다. 디자이너들은 거친 아이디어를 실제로 작동하는 프로토타입으로 만들었고, 그 속도가 자신의 제품 사고를 어떻게 드러내는지 함께 확인했습니다.",
   ],
-  ["Workshop Hosting", "워크숍 주최"],
+  ["Workshop Hosting", "워크숍 공동 주최"],
   ["Community", "커뮤니티"],
   ["AI Prototyping", "AI 프로토타이핑"],
   ["Portfolio Workshop · Nov 2025", "포트폴리오 워크숍 · 2025년 11월"],
@@ -1382,7 +1382,7 @@ const portfolioKoreanTranslations = new Map([
     "Vancouver KDD Korean Tech Conference에 커리어 멘토로 참여했습니다. 불확실한 업계에 대한 넓은 고민을 1:2 대화에서 각자의 다음 결정으로 구체화했습니다.",
   ],
   ["Career Mentoring", "커리어 멘토링"],
-  ["Product & Design", "프로덕트 & 디자인"],
+  ["Product & Design", "프로덕트·디자인"],
   [
     "Vancouver KDD · 1:2 career mentoring · Vancouver · Aug 2025",
     "Vancouver KDD · 1:2 커리어 멘토링 · 밴쿠버 · 2025년 8월",
@@ -1409,7 +1409,7 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "By 2025, change in technology careers was no longer an abstract discussion. AI was reshaping how people worked, hiring felt harder to read, and many people were trying to decide which skills and experiences would still matter.",
-    "2025년의 기술 커리어에서 변화는 더 이상 막연한 이야기가 아니었습니다. AI는 일하는 방식을 바꾸고 있었고, 채용 시장의 흐름은 읽기 어려워졌습니다. 어떤 경험과 역량이 앞으로도 유효할지 고민하는 사람도 많았습니다.",
+    "2025년에는 기술 업계의 커리어 변화가 더 이상 막연한 이야기가 아니었습니다. AI는 일하는 방식을 바꾸고 있었고, 채용 시장이 어떻게 변할지도 가늠하기 어려웠습니다. 어떤 경험과 역량이 앞으로도 유효할지 고민하는 사람도 많았습니다.",
   ],
   [
     "Vancouver KDD brought those questions into one full-day conference. Speaker sessions offered different perspectives on change, while the mentoring program gave participants a smaller place to connect those ideas to their own careers. The official event recap recorded 211 participants.",
@@ -1440,11 +1440,11 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "I participated as a career mentor, bringing the perspective of a product designer who has also worked across product management, project leadership, and design teams in Korea and Canada.",
-    "저는 커리어 멘토로 참여했습니다. 프로덕트 디자이너를 중심으로 프로덕트 매니지먼트, 프로젝트 리딩, 한국과 캐나다의 디자인팀에서 일해온 경험을 나눴습니다.",
+    "저는 커리어 멘토로 참여했습니다. 프로덕트 디자인을 중심으로 일하며 프로덕트 매니지먼트와 프로젝트 리딩을 맡고, 한국과 캐나다의 디자인팀에서 일한 경험을 나눴습니다.",
   ],
   [
     "The value of the 1:2 format was simple: it made room for context. A large talk can surface a useful idea, but a career decision depends on where someone is starting, what experience they already have, and what they can realistically do next.",
-    "1:2 멘토링의 장점은 단순했습니다. 한 사람의 맥락을 들을 수 있다는 점입니다. 큰 강연은 좋은 관점을 던져주지만, 실제 커리어 결정은 어디에서 출발하는지, 이미 어떤 경험을 가지고 있는지, 다음에 무엇을 현실적으로 할 수 있는지에 따라 달라집니다.",
+    "1:2 멘토링의 장점은 한 사람의 상황을 자세히 들을 수 있다는 점이었습니다. 큰 강연에서 유용한 관점을 얻더라도, 실제 커리어 결정은 그 사람이 어디에서 출발하는지, 어떤 경험을 가졌는지, 다음에 무엇을 현실적으로 할 수 있는지에 따라 달라집니다.",
   ],
   [
     "My role was not to hand over one universal roadmap. It was to listen for the decision underneath the job title and help make the next move more concrete.",
@@ -1457,7 +1457,7 @@ const portfolioKoreanTranslations = new Map([
   ["Start with the person, not a job title", "직무명보다 먼저, 지금의 사람을 봤습니다"],
   [
     "A job title can hide the actual question. Someone may be asking whether their previous experience still counts, how to enter a new market, or whether the skills they are building lead toward the work they actually want.",
-    "직무명만으로는 실제 고민이 잘 보이지 않습니다. 이전 경험이 다음 역할에도 유효한지, 새로운 시장에 어떻게 진입해야 하는지, 지금 쌓는 역량이 정말 원하는 일로 이어지는지를 묻고 있을 수 있습니다.",
+    "직무명만으로는 실제 고민이 잘 보이지 않습니다. 이전 경험이 다음 직무에서도 통할지, 새로운 시장에 어떻게 들어갈지, 지금 배우는 일이 원하는 직무로 이어질지 고민하는 분도 있을 겁니다.",
   ],
   [
     "The most useful conversations moved through three layers:",
@@ -1503,7 +1503,7 @@ const portfolioKoreanTranslations = new Map([
   ["What stayed with me as a mentor", "멘토로서 남은 생각"],
   [
     "I joined the event to share what I had learned, but stepping outside everyday work also gave me a wider view of technology and career. Conversations with people who were still exploring their path made familiar questions feel specific again.",
-    "제가 배운 것을 나누기 위해 참여했지만, 일상 업무에서 한 발 떨어져 기술과 커리어를 더 넓게 생각해본 시간이기도 했습니다. 아직 자신의 방향을 탐색하고 있는 사람들과 대화하니 익숙한 질문도 다시 구체적으로 보였습니다.",
+    "제가 배운 것을 나누려고 참여했지만, 일상 업무에서 한 발 떨어져 기술과 커리어를 더 넓게 생각해 본 시간이기도 했습니다. 아직 방향을 찾는 분들과 대화하면서, 익숙한 질문도 각자의 상황에 놓고 보니 다시 구체적으로 들렸습니다.",
   ],
   [
     "Good mentoring does not remove uncertainty. It helps someone make the next decision with more context.",
@@ -1546,7 +1546,7 @@ const portfolioKoreanTranslations = new Map([
     "디자이너들이 아이디어를 실제 프로토타입으로 만드는 실습형 워크숍을 공동 주최했습니다. 제작 속도도 인상적이었지만, 더 중요했던 건 그 속도가 문제 정의의 수준을 그대로 드러냈다는 점입니다.",
   ],
   ["Co-host / Workshop design / Community facilitation", "공동 주최 / 워크숍 설계 / 커뮤니티 퍼실리테이션"],
-  ["View event", "이벤트 보기"],
+  ["View event", "행사 보기"],
   [
     "Designers, speakers, volunteers, and hosts at the end of the workshop in Burnaby.",
     "버나비 워크숍을 마친 뒤 함께한 디자이너, 연사, 자원봉사자, 주최자들.",
@@ -1683,11 +1683,11 @@ const portfolioKoreanTranslations = new Map([
   ["We designed the day as one continuous build", "발표와 실습을 하나의 빌드 과정으로 묶었다"],
   [
     "We did not open a blank prompt box and tell everyone to start. The first half of the event made three parts of an AI-enabled design workflow visible.",
-    "빈 프롬프트 창을 열어두고 바로 시작하라고 하지는 않았습니다. 행사의 전반부에서는 AI를 활용한 디자인 워크플로의 세 가지 장면을 먼저 보여줬습니다.",
+    "빈 프롬프트 창을 열어 놓고 바로 만들어보라고 하지는 않았습니다. 행사 전반부에서는 AI를 활용한 디자인 작업 방식 세 가지를 먼저 보여줬습니다.",
   ],
   [
     "So Eun shared how designers can use Git and a shared codebase to collaborate more closely with engineers and with one another. Sue Hwang walked through how she built a Figma plugin with Claude and Codex, step by step, as a designer. Dan Jeong then moved from explanation to a live Lovable build, showing how a prompt becomes an editable product flow.",
-    "So Eun님은 디자이너가 Git과 하나의 코드베이스를 활용해 엔지니어, 다른 디자이너와 더 가깝게 협업하는 방법을 공유했습니다. Sue Hwang님은 디자이너로서 Claude와 Codex를 활용해 Figma 플러그인을 만든 과정을 단계별로 보여줬습니다. 이어 Dan Jeong님은 Lovable 라이브 빌드를 진행하며 첫 프롬프트가 수정 가능한 제품 흐름으로 바뀌는 과정을 설명했습니다.",
+    "So Eun님은 디자이너가 Git과 하나의 코드베이스를 활용해 엔지니어·동료 디자이너와 더 가깝게 협업하는 방법을 공유했습니다. Sue Hwang님은 디자이너로서 Claude와 Codex를 활용해 Figma 플러그인을 만든 과정을 단계별로 보여줬습니다. 이어 Dan Jeong님은 현장에서 Lovable에 첫 프롬프트를 입력하고, 그 결과를 수정해 가며 제품의 사용 흐름을 만드는 과정을 보여줬습니다.",
   ],
   [
     "Each participant received 100 Lovable credits in advance. Then we formed random teams of three and gave them 90 minutes to choose a problem, define one core experience, and make it work well enough to share. The sessions were not separate lectures before a hackathon. They were the setup for the build.",
@@ -1700,7 +1700,7 @@ const portfolioKoreanTranslations = new Map([
   ["Ninety minutes later, the ideas were working", "90분 뒤, 아이디어가 실제로 움직이기 시작했다"],
   [
     "Crystal Park and Leiah Choi won the mini hackathon with Sircle, a dating service for seniors. Instead of starting with faster matching, they started with a more useful question: how can an older adult know that a new connection is safe and trustworthy?",
-    "미니 해커톤 우승팀인 Crystal Park님과 Leiah Choi님은 시니어 데이팅 서비스 Sircle을 만들었습니다. 더 빠른 매칭보다 먼저 던진 질문이 좋았습니다. 고령의 사용자가 새로운 만남을 안전하고 신뢰할 수 있다고 느끼려면 무엇이 필요할까?",
+    "미니 해커톤 우승팀인 Crystal Park님과 Leiah Choi님은 시니어 데이팅 서비스 Sircle을 만들었습니다. 더 빠른 매칭보다 먼저 던진 질문이 좋았습니다. 나이 든 사용자는 어떻게 해야 새로 만난 상대를 믿고 안심할 수 있을까?",
   ],
   [
     "Another team built an English-learning app for newcomers that paired practical phrases with Canadian cultural context. Other teams created a community meal-prep platform and an affirmation app that kept social media locked until the user spoke the phrase correctly.",
@@ -1717,7 +1717,7 @@ const portfolioKoreanTranslations = new Map([
   ["What the room felt like", "사람들이 즐긴 건 결과물만이 아니었다"],
   [
     "At the beginning, people stayed close to their own laptops. Halfway through, they were standing behind other teams, comparing flows, fixing prompts, and explaining what had worked. The room felt less like a class and more like a temporary product studio.",
-    "처음에는 모두 자기 팀의 노트북 앞에 머물렀습니다. 시간이 조금 지나자 다른 팀의 화면 뒤에 모여 흐름을 비교하고, 프롬프트를 고치고, 잘된 방법을 설명하기 시작했습니다. 행사장은 강의실보다 잠시 만들어진 하나의 프로덕트 스튜디오에 가까워졌습니다.",
+    "처음에는 모두 자기 팀의 노트북 앞에 머물렀습니다. 시간이 조금 지나자 다른 팀의 노트북 주변에 모여 흐름을 비교하고, 프롬프트를 고치고, 어떤 방법이 잘됐는지 설명하기 시작했습니다. 행사장은 어느새 강의실보다 프로덕트 스튜디오에 가까워졌습니다.",
   ],
   [
     "The small operational details mattered too. Participants later mentioned the venue, pacing, food, snacks, and coffee as part of what helped them stay comfortable and focused. A useful workshop is not only the content on the screen. It is the structure and care that let people participate without worrying about whether they belong in the room.",
@@ -1780,7 +1780,7 @@ const portfolioKoreanTranslations = new Map([
   ["A portfolio reads differently when you have to present it", "포트폴리오는 발표하는 순간 다르게 보인다"],
   [
     "Portfolio work is usually done alone. Designers can spend weeks editing a case study, but they often do not learn how the story lands until a real interview begins.",
-    "포트폴리오는 대부분 혼자 만듭니다. 몇 주 동안 케이스 스터디를 다듬어도 그 이야기가 상대에게 어떻게 들리는지는 실제 인터뷰가 시작되어야 알게 되는 경우가 많습니다.",
+    "포트폴리오는 대부분 혼자 만듭니다. 몇 주 동안 케이스 스터디를 다듬어도, 실제 인터뷰 전에는 그 이야기가 상대에게 어떻게 들리는지 알기 어렵습니다.",
   ],
   [
     "We wanted to make that moment less private and less intimidating. Portfolio Roast put real case studies into a live interview setting, then opened the questions and feedback to the room so everyone could learn from the same conversation.",
@@ -1812,7 +1812,7 @@ const portfolioKoreanTranslations = new Map([
   ["We put the portfolio into an interview, not a slideshow", "슬라이드 리뷰 대신, 실제 인터뷰에 가깝게"],
   [
     "Hayley Lee and Sue Lee each presented a portfolio case study in front of the room. Carlos responded as an experienced interviewer would: he listened to the story, asked for missing context, and gave direct feedback on what made the work easier or harder to evaluate.",
-    "Hayley Lee님과 Sue Lee님은 각자의 포트폴리오 케이스 스터디를 참가자들 앞에서 발표했습니다. Carlos님은 실제 인터뷰어처럼 이야기를 듣고, 빠진 맥락을 질문하고, 어떤 부분이 작업을 이해하기 쉽게 만들거나 어렵게 만드는지 직접 피드백했습니다.",
+    "Hayley Lee님과 Sue Lee님은 각자의 포트폴리오 케이스 스터디를 참가자들 앞에서 발표했습니다. Carlos님은 실제 인터뷰어처럼 이야기를 듣고, 빠진 맥락을 묻고, 어떤 부분 때문에 작업을 이해하기 쉽거나 어려운지 직접 피드백했습니다.",
   ],
   [
     "The live format changed the value of the critique. A question asked of one presenter was useful to everyone. People could see where a polished screen still needed a clearer decision, where the outcome needed stronger evidence, and where the story became easier to follow once the presenter explained the context aloud.",
@@ -1849,16 +1849,16 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "The timing mattered. These were not abstract career questions asked at the beginning of the night. Everyone had just watched two real stories being presented and questioned, so the advice had something concrete to attach to.",
-    "이 대화가 구체적으로 들린 데는 순서도 중요했습니다. 행사를 시작하자마자 추상적인 커리어 조언부터 꺼낸 것이 아니었습니다. 모두가 두 개의 실제 포트폴리오가 발표되고 질문받는 과정을 본 직후였기 때문에, 조언을 자신의 작업과 바로 연결해볼 수 있었습니다.",
+    "이 대화가 구체적이었던 데에는 진행 순서도 한몫했습니다. 행사를 시작하자마자 추상적인 커리어 조언부터 꺼낸 것이 아니었습니다. 모두가 두 개의 실제 케이스 스터디 발표와 질의응답을 본 직후라, 조언을 자신의 작업에 바로 대입해볼 수 있었습니다.",
   ],
   ["One person's feedback became shared learning", "한 사람의 피드백이 모두의 학습이 됐다"],
   [
     "Portfolio feedback is often a private exchange between a reviewer and one designer. Here, more than 20 people could watch the same story, hear the same question, and compare it with their own work.",
-    "포트폴리오 피드백은 보통 리뷰어와 한 명의 디자이너 사이에서 끝납니다. 이번에는 20명 이상의 참가자가 같은 이야기를 보고, 같은 질문을 듣고, 자신의 작업과 비교할 수 있었습니다.",
+    "포트폴리오 피드백은 리뷰어와 한 명의 디자이너 사이에서 끝나는 경우가 많습니다. 이번에는 참가자 20명 이상이 같은 발표를 보고 같은 질문을 들으며 자기 작업과 비교해 볼 수 있었습니다.",
   ],
   [
     "That made the room feel less like a panel and more like a working session. The presenters were generous enough to show unfinished parts of their stories. The audience listened closely, asked follow-up questions, and stayed for the conversations that continued after the formal program.",
-    "덕분에 행사장은 심사받는 자리보다 함께 포트폴리오를 살펴보는 세션에 가까워졌습니다. 발표자들은 아직 완벽하지 않은 이야기까지 기꺼이 꺼내놓았습니다. 참가자들은 집중해서 듣고 후속 질문을 던졌고, 공식 프로그램이 끝난 뒤에도 대화를 이어갔습니다.",
+    "덕분에 행사장은 발표자를 심사하는 자리보다 함께 포트폴리오를 살펴보는 세션에 가까워졌습니다. 발표자들은 포트폴리오에서 아직 다듬지 못한 부분까지 기꺼이 보여줬습니다. 참가자들은 집중해서 듣고 후속 질문을 던졌고, 공식 프로그램이 끝난 뒤에도 대화를 이어갔습니다.",
   ],
   [
     "Presenter · LinkedIn reflection · Dec 2, 2025",
@@ -1875,7 +1875,7 @@ const portfolioKoreanTranslations = new Map([
   ["What stayed with me as an organizer", "운영팀으로서 남은 생각"],
   [
     "A useful portfolio review cannot stop at making the page look more polished. It has to test whether the designer can explain the problem, the decisions, and the evidence when another person starts asking questions.",
-    "좋은 포트폴리오 리뷰는 화면을 더 매끈하게 만드는 조언에서 끝나면 안 됩니다. 다른 사람이 질문을 시작했을 때도 문제와 결정, 근거를 설명할 수 있는지까지 확인해야 합니다.",
+    "좋은 포트폴리오 리뷰는 화면을 더 보기 좋게 다듬는 데서 끝나면 안 됩니다. 질문을 받았을 때 문제와 결정, 근거를 직접 설명할 수 있는지까지 확인해야 합니다.",
   ],
   [
     "A portfolio is not only a finished page. It is a story that has to hold together when the questions begin.",
@@ -1899,17 +1899,17 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "I co-hosted a KDNEW-sponsored Career Fireside Chat for people who wanted to start a career in Canada while here on a working holiday. As one of five speakers, I shared why honest self-assessment should come before adopting someone else’s approach.",
-    "워킹홀리데이로 캐나다에서 커리어를 시작하려는 분들을 위한 커리어 파이어사이드 챗을 공동 주최했습니다. KDNEW가 후원했고, 저는 다섯 명의 스피커 중 한 명으로 참여했습니다. 캐나다에서 커리어를 시작한 경험과 자기 객관화부터 시작해야 한다고 생각한 이유를 나눴습니다.",
+    "워킹홀리데이로 캐나다에서 일을 시작하려는 분들을 위해 커리어 파이어사이드 챗을 공동 주최했습니다. KDNEW가 후원했고, 저는 다섯 명의 스피커 중 한 명으로 참여했습니다. 캐나다에서 커리어를 시작한 경험을 들려드리고, 구직에 앞서 내 경험과 강점을 먼저 돌아보자고 제안했습니다.",
   ],
   ["Co-hosting", "공동 주최"],
-  ["Career Entry", "커리어 시작"],
+  ["Career Entry", "캐나다에서 일 시작하기"],
   [
     "Sponsored by KDNEW · Career Fireside Chat · Burnaby · Jul 2026",
     "KDNEW 후원 · 커리어 파이어사이드 챗 · 버나비 · 2026년 7월",
   ],
   [
     "I co-hosted a KDNEW-sponsored Career Fireside Chat in Burnaby for people who wanted to start a career in Canada while here on a working holiday. As one of five speakers, I shared the choices and difficulties that shaped my own start—and why honest self-assessment is the first step I would take if I were beginning again.",
-    "워킹홀리데이로 캐나다에서 커리어를 시작하려는 분들을 위한 커리어 파이어사이드 챗을 버나비에서 공동 주최했습니다. KDNEW가 후원했고, 저는 다섯 명의 스피커 중 한 명으로 참여했습니다. 캐나다에서 커리어를 시작하며 어떤 선택을 했고 어디에서 어려움을 겪었는지, 다시 시작한다면 왜 자기 객관화부터 할지 나눴습니다.",
+    "워킹홀리데이로 캐나다에서 일하려는 분들을 위해 버나비에서 커리어 파이어사이드 챗을 공동 주최했습니다. KDNEW가 후원했고, 저는 다섯 명의 스피커 중 한 명으로 참여했습니다. 캐나다에서 커리어를 시작하며 어떤 선택을 했고 어디에서 어려움을 겪었는지, 다시 시작한다면 왜 자기 객관화부터 하겠는지도 이야기했습니다.",
   ],
   ["Co-host / Speaker / Product Designer", "공동 주최 / 스피커 / 프로덕트 디자이너"],
   [
@@ -1922,7 +1922,7 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "Information about building a career in Canada is easy to find. The harder question is which advice fits your experience, strengths, English communication skills, and current situation. We shaped the event around that challenge: helping participants identify what they needed, not simply giving them more information.",
-    "커리어 정보는 어렵지 않게 찾을 수 있습니다. 막상 어려웠던 건 그중 어떤 방법이 내 경험과 강점에 맞는지, 영어로 내 경험을 어느 정도 설명할 수 있는지, 지금 상황에서 무엇부터 해야 하는지 판단하는 일이었습니다. 그래서 이번 이벤트에서는 혼자 찾은 정보만으로는 알기 어려웠던 ‘내게 필요한 것’을 함께 확인해보고 싶었습니다.",
+    "캐나다에서 커리어를 시작하는 데 필요한 정보는 어렵지 않게 찾을 수 있습니다. 하지만 어떤 방법이 내 경험과 강점에 맞는지, 내 경험을 영어로 얼마나 설명할 수 있는지, 지금 무엇부터 해야 할지 판단하기는 어려웠습니다. 그래서 참가자들이 각자에게 필요한 조언을 찾을 수 있는 자리를 마련하고 싶었습니다.",
   ],
   ["Audience", "참가 대상"],
   [
@@ -1959,15 +1959,15 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "Self-assessment is not about cataloguing weaknesses. It is about recognizing the strengths and experience you already have, understanding where you stand, and choosing a realistic next step.",
-    "자기 객관화는 부족한 점만 찾는 일이 아닙니다. 이미 무엇을 갖고 있는지, 지금 어디에 서 있는지 확인하고, 다음에 무엇을 할지 정하는 과정입니다.",
+    "자기 객관화는 부족한 점만 찾는 일이 아닙니다. 이미 가진 경험과 강점, 현재 위치를 확인하고 현실적인 다음 행동을 정하는 과정입니다.",
   ],
   [
     "Together, the questions turned self-assessment into a practical starting point.",
-    "이 질문들을 통해 참가자들이 자신을 조금 더 명확하게 바라볼 수 있기를 바랐습니다.",
+    null,
   ],
   [
     "Different ways to start, not one formula",
-    "서로 다른 방법을 솔직하게 나눴습니다",
+    "다섯 사람이 캐나다에서 일을 시작한 방법",
   ],
   [
     "Each of the five speakers had started a career in Canada differently. We shared what we tried, how we made decisions, and where we struggled.",
@@ -1975,7 +1975,7 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "Hearing those differences gave participants several real experiences to compare with their own situation, rather than one success story to treat as a formula.",
-    "이 차이가 중요했습니다. 하나의 성공담을 정답처럼 따르기보다, 서로 다른 실제 경험을 자신의 상황과 비교해볼 수 있었기 때문입니다.",
+    "참가자들은 하나의 성공담을 정답처럼 따르기보다, 서로 다른 실제 경험을 자신의 상황과 비교해볼 수 있었습니다.",
   ],
   [
     "Networking continued after the main session",
@@ -1987,31 +1987,31 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "One participant later messaged me to say that the discussion about self-assessment had been especially helpful. Self-assessment was the point I had emphasized most, so that message stayed with me. It showed that the session had given at least one participant a useful way to examine what to do next.",
-    "행사 뒤 한 참가자가 자기 객관화에 대한 이야기가 특히 도움이 됐다고 메시지를 보내왔습니다. 제가 가장 강조한 내용이라 그 메시지가 기억에 남았습니다. 적어도 한 참가자에게는 다음 행동을 생각해보는 데 도움이 됐다는 것을 알 수 있었습니다.",
+    "행사 뒤 한 참가자가 자기 객관화에 대한 이야기가 특히 도움이 됐다고 메시지를 보내왔습니다. 제가 가장 강조한 내용이라 그 메시지가 기억에 남았습니다.",
   ],
   [
     "A clearer starting point mattered more than one answer",
-    "하나의 답보다, 자신의 출발점을 더 분명하게 보는 것이 중요했습니다",
+    "하나의 답보다 자신의 출발점을 분명히 아는 것이 중요했습니다",
   ],
   [
     "Our five stories showed that starting a career in Canada does not follow one formula. The next step depends on the experience and strengths someone brings, how clearly they can communicate that value in English, and what their current situation allows.",
-    "캐나다에서 커리어를 시작하는 방법은 하나가 아닙니다. 어떤 경험과 강점을 갖고 있는지, 영어로 그 경험을 얼마나 잘 설명할 수 있는지, 지금 어떤 상황에 있는지에 따라 다음에 할 일도 달라집니다.",
+    "캐나다에서 커리어를 시작하는 방법은 하나가 아닙니다. 어떤 경험과 강점을 갖고 있는지, 영어로 그 경험을 얼마나 분명히 설명할 수 있는지, 지금 어떤 상황에 있는지에 따라 다음에 할 일도 달라집니다.",
   ],
   [
     "I wanted participants to leave with a clearer view of their own starting point and new professional contacts they could stay in touch with after the event. If they could see themselves more clearly and choose a next step that fit their situation, the event had done what I hoped it would do.",
-    "그래서 비슷한 고민을 가진 사람들과 시작한 네트워킹은 이벤트 뒤에도 이어졌으면 했습니다. 무엇보다 참가자들이 자신을 더 명확하게 바라보고, 다음에 무엇을 할지 정하는 데 이번 이벤트가 도움이 되었기를 바랐습니다.",
+    "참가자들이 행사에서 만난 사람들과 이후에도 연락을 이어가기를 바랐습니다. 또 자신의 출발점을 분명히 보고, 상황에 맞는 다음 행동을 정하는 데 이번 행사가 도움이 되기를 바랐습니다.",
   ],
-  ["Read LinkedIn reflection", "링크드인 회고 읽기"],
-  ["All workshops", "전체 워크숍"],
-  ["View official event", "공식 이벤트 보기"],
+  ["Read LinkedIn reflection", "LinkedIn 회고 읽기"],
+  ["All workshops", "워크숍 전체 보기"],
+  ["View official event", "공식 행사 페이지 보기"],
   ["Sponsored by KDNEW", "KDNEW 후원"],
   [
     "AI & Design: New Workflows with Lovable",
-    "AI & Design: Lovable로 직접 만들어본 새로운 작업 방식",
+    "AI & Design에서 Lovable로 프로토타입 만들기",
   ],
   [
     "I co-hosted a sold-out Korean-language workshop and mini hackathon for 40 designers in Metro Vancouver. I helped connect practitioner workflows, a live Lovable build, and a 90-minute team challenge. The speed was useful, but what it revealed about problem framing mattered more.",
-    "메트로 밴쿠버의 디자이너 40명과 함께 한국어 AI 워크숍 겸 미니 해커톤을 공동 주최했습니다. 현업 작업 방식과 Lovable 라이브 실습, 90분간 팀별 프로토타입 제작이 하나의 흐름으로 이어지도록 구성하는 데 참여했습니다. 빠르게 만드는 일도 유용했지만, 그 과정에서 문제를 어떻게 정의했는지가 드러났다는 점이 더 중요했습니다.",
+    "메트로 밴쿠버의 디자이너 40명과 함께 한국어 AI 워크숍 겸 미니 해커톤을 공동 주최했습니다. 현업 디자이너의 AI 작업 방식 소개와 Lovable 라이브 실습, 90분간 팀별 프로토타입 제작이 이어지도록 행사 구성을 함께 짰습니다. 프로토타입을 빨리 만들 수 있다는 점도 좋았지만, 제 눈에는 각 팀이 어떤 문제를 풀기로 했는지가 더 잘 보였습니다.",
   ],
   [
     "Designers needed a place to try, not another AI overview",
@@ -2019,15 +2019,15 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "AI was already part of nearly every design conversation around us. The practical question was different: where could a designer try vibe coding, understand the workflow, and build something without already knowing how to code?",
-    "AI는 이미 주변 디자이너들의 대화에 빠지지 않고 등장하고 있었습니다. 정작 어려웠던 건 다른 데 있었습니다. 디자이너가 바이브 코딩의 작업 방식을 이해하고, 코딩 경험이 없어도 직접 만들어볼 자리는 어디에 있을까?",
+    "주변 디자이너들과 대화할 때마다 AI 이야기가 나왔습니다. 정작 어려웠던 건 다른 데 있었습니다. 코딩 경험이 없는 디자이너는 어디에서 바이브 코딩을 직접 해보고 작업 방식을 익힐 수 있을까?",
   ],
   [
     "Many meetups we encountered were organized around engineering workflows. So Eun Ahn and I instead planned a Korean-language event around the work designers already do: define a problem, shape an experience, build a prototype, and explain the decisions behind it.",
-    "주변에서 접한 여러 AI 밋업은 엔지니어의 작업 방식에 초점을 맞추고 있었습니다. So Eun Ahn님과 저는 디자이너가 이미 해오던 일, 즉 문제를 정하고 경험을 설계하고 프로토타입을 만들고 결정의 이유를 설명하는 과정을 중심으로 한국어 행사를 준비했습니다.",
+    "주변에서 접한 여러 AI 밋업은 엔지니어의 작업 방식에 초점을 맞추고 있었습니다. So Eun Ahn님과 저는 디자이너가 해오던 방식대로 문제를 정의하고, 경험을 설계하고, 프로토타입을 만들고, 결정의 이유를 설명할 수 있는 한국어 행사를 준비했습니다.",
   ],
   [
     "The event filled all 40 spots, with KDNEW, Lovable, and Canbu joining as partners. As a co-host, I linked the talks, hands-on workshop, team build, and demos so participants could move from watching a workflow to testing one themselves.",
-    "40명 정원이 모두 찼고, KDNEW·Lovable·Canbu가 파트너로 함께했습니다. 저는 공동 주최자로서 발표와 실습, 팀별 프로토타입 제작, 데모를 하나의 흐름으로 묶었습니다. 참가자들이 작업 방식을 보기만 하는 데서 멈추지 않고 직접 시험해볼 수 있게 만드는 것이 제 역할이었습니다.",
+    "40명 정원이 모두 찼고, KDNEW·Lovable·Canbu가 파트너로 함께했습니다. 공동 주최자로서 발표와 실습을 먼저 하고, 이어서 팀별로 프로토타입을 만들어 시연하도록 순서를 짰습니다. 참가자들이 작업 방식을 본 뒤 곧바로 직접 시험해보도록 하는 것이 제 역할이었습니다.",
   ],
   ["Speakers and facilitators", "스피커와 진행"],
   [
@@ -2036,7 +2036,7 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "Each participant received 100 Lovable credits in advance. Then we formed random teams of three and gave them 90 minutes to choose a problem, define one core experience, and make it work well enough to share. The talks were not a preface to the hackathon. Each one supplied a method participants could use in the build.",
-    "참가자 전원에게는 Lovable 크레딧 100개를 미리 제공했습니다. 이후 무작위로 3인 팀을 만들고, 문제 하나와 핵심 경험 하나를 정해 90분 안에 공유 가능한 수준으로 구현하게 했습니다. 앞의 발표는 해커톤에 덧붙인 강연이 아니었습니다. 각 세션에서 본 작업 방식을 바로 팀별 프로토타입 제작에 활용할 수 있도록 순서를 설계했습니다.",
+    "참가자 전원에게는 Lovable 크레딧 100개를 미리 제공했습니다. 이후 참가자들은 무작위로 구성된 3인 팀에서 문제 하나와 핵심 경험 하나를 정하고, 90분 안에 공유할 수 있는 프로토타입을 만들었습니다. 각 세션에서 본 작업 방식을 바로 팀별 프로토타입 제작에 활용할 수 있도록 순서를 설계했습니다.",
   ],
   [
     "Working prototypes made the product questions visible",
@@ -2044,7 +2044,7 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "These were not finished products, and we did not evaluate them as if they were. Once each team had enough of a working experience to show the user, problem, and core interaction, they could see which parts of the idea were clear and which still relied on assumptions.",
-    "완성된 제품을 기대하지는 않았습니다. 각 팀이 사용자와 문제, 핵심 인터랙션을 보여줄 수 있을 만큼 구현하자 아이디어의 어떤 부분이 분명하고, 어디가 아직 가정에 기대고 있는지 확인할 수 있었습니다.",
+    "완성된 제품을 기대하지는 않았습니다. 각 팀이 사용자와 문제, 핵심 인터랙션을 보여줄 만큼 구현하자, 아이디어에서 분명한 부분과 아직 가정에 머문 부분을 구분할 수 있었습니다.",
   ],
   [
     "The room changed when teams started sharing",
@@ -2052,36 +2052,36 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "Survey comments also mentioned the pacing, venue, food, coffee, and credits provided in advance. Those details did not teach the tool, but they reduced friction and helped people stay with the workshop.",
-    "후기에는 시간 배분과 장소, 식사와 커피, 미리 제공한 크레딧도 언급됐습니다. 이런 요소가 도구를 가르쳐주지는 않지만, 참가자가 중간에 막히지 않고 워크숍을 따라갈 때 생기는 불필요한 어려움을 줄여줬습니다.",
+    "후기에는 시간 배분과 장소, 식사와 커피, 미리 제공한 크레딧도 언급됐습니다. 이런 준비 덕분에 참가자들은 실습을 중간에 멈추지 않고 따라가기 수월했습니다.",
   ],
   [
     "A job seeker who had worried about keeping up with working professionals completed the build. People who had never used Lovable made functional prototypes. Experienced designers openly shared how they were using AI in real work. These were concrete signs that the format worked for participants with different starting points.",
-    "현직자들 사이에서 따라갈 수 있을지 걱정했던 취업 준비생도 끝까지 실습을 마쳤습니다. Lovable을 처음 쓴 참가자도 기능이 작동하는 프로토타입을 만들었습니다. 현업 디자이너들은 실제 업무에서 AI를 쓰는 과정을 숨김없이 공유했습니다. 서로 다른 출발점의 참가자가 같은 흐름을 따라갈 수 있었다는 구체적인 신호였습니다.",
+    "현업 디자이너들과 같이 실습해도 따라갈 수 있을지 걱정했던 취업 준비생도 끝까지 마쳤습니다. Lovable을 처음 쓴 참가자도 기능이 작동하는 프로토타입을 만들었습니다. 현업 디자이너들은 실제 업무에서 AI를 쓰는 과정을 솔직하게 공유했습니다.",
   ],
   [
     "Feedback reinforced the same pattern. Participants valued seeing real workflows, building within a clear time limit, and learning alongside people with different levels of experience.",
-    "후기에서도 같은 흐름을 확인할 수 있었습니다. 실제 작업 방식을 보고, 정해진 시간 안에 직접 만들고, 경험이 다른 사람들과 함께 배운 점이 반복해서 언급됐습니다.",
+    "후기에서는 실제 작업 방식을 직접 본 점, 정해진 시간 안에 만들어본 점, 경험이 다른 사람들과 함께 배운 점이 반복해서 언급됐습니다.",
   ],
   ["What still required a designer's judgment", "마지막까지 디자이너의 판단이 필요했습니다"],
   [
     "AI clearly changed the speed of the work. In the strongest demos I saw, however, speed followed a specific user, a real tension, and one interaction worth testing. A clever prompt could not compensate for a vague problem.",
-    "AI가 작업 속도를 바꾼 건 분명했습니다. 다만 제가 본 데모 가운데 문제와 경험이 가장 잘 드러난 결과물은 구체적인 사용자와 실제 어려움, 시험해볼 인터랙션 하나를 먼저 정한 팀에서 나왔습니다. 프롬프트만 영리하게 쓴다고 모호한 문제가 분명해지지는 않았습니다.",
+    "AI가 작업 속도를 바꾼 건 분명했습니다. 다만 제가 본 데모 중 문제와 핵심 경험이 가장 분명했던 결과물은 구체적인 사용자와 실제 어려움, 시험할 인터랙션 하나를 먼저 정한 팀에서 나왔습니다. 프롬프트만 영리하게 쓴다고 모호한 문제가 분명해지지는 않았습니다.",
   ],
   [
     "Participants completed a full loop: see a workflow, choose a problem, build with others, and share unfinished work. They did not need to leave as AI experts. The useful outcome was knowing they could start—and seeing where their own judgment still had to lead.",
-    "참가자들은 작업 방식을 보고, 문제를 정하고, 다른 사람과 함께 만들고, 미완성인 결과물을 공유하는 과정까지 경험했습니다. AI 전문가가 될 필요는 없었습니다. 직접 시작해볼 수 있다는 감각과, 어디에서 자신의 판단이 필요한지를 확인하는 일이 더 중요했습니다.",
+    "참가자들은 작업 방식을 살펴본 뒤 문제를 정하고, 다른 사람과 만들고, 미완성 결과물을 공유했습니다. AI 전문가가 될 필요는 없었습니다. 제가 중요하게 본 건 참가자들이 스스로 시작해 보고, 어느 대목에서 자기 판단이 필요한지 살펴볼 수 있었다는 점입니다.",
   ],
   [
     "That is the standard I want to carry into future AI workshops: make the tool accessible, make the work visible, and leave enough room for design judgment to be tested.",
-    "앞으로의 AI 워크숍에서도 이 기준을 이어가고 싶습니다. 도구는 쉽게 시작할 수 있게 하고, 작업 과정은 눈에 보이게 열어두며, 디자인 판단은 직접 시험할 수 있게 하는 것입니다.",
+    "앞으로도 도구를 쉽게 시작할 수 있게 돕고, 작업 과정을 공개하며, 참가자가 자신의 디자인 판단을 직접 시험해볼 수 있는 워크숍을 만들고 싶습니다.",
   ],
   [
     "I co-hosted a sold-out Korean-language workshop where 40 designers moved from real AI workflows to a 90-minute team build. The speed was useful; what it revealed about problem framing mattered more.",
-    "현업 작업 방식을 살펴보고 90분간 팀별로 프로토타입을 만드는 한국어 워크숍을 공동 주최했습니다. 디자이너 40명이 직접 만든 결과물에서 문제를 어떻게 정의했는지가 드러났습니다.",
+    "한국어 워크숍을 공동 주최했습니다. 참가자들은 현업 디자이너의 작업 방식을 살펴보고 팀을 꾸려 90분 동안 프로토타입을 만들었습니다. 참가한 디자이너는 40명이었습니다. 각 팀의 작업을 보니 어떤 문제를 풀려고 했는지 알 수 있었습니다.",
   ],
   [
     "I worked on the organizing team for Portfolio Roast, a live mock interview and fireside talk for more than 20 designers in Burnaby. Two designers presented real case studies to Carlos Melendez, Principal User Experience Designer at Oracle. The format made the questions behind portfolio evaluation visible to everyone in the room.",
-    "운영팀으로 Portfolio Roast를 함께 준비했습니다. 버나비에서 열린 이 행사에는 20명 이상의 디자이너가 참여했습니다. 두 명의 디자이너가 Oracle의 Principal User Experience Designer인 Carlos Melendez님에게 실제 케이스 스터디를 발표했고, 포트폴리오를 평가할 때 어떤 질문이 오가는지 참가자 모두가 볼 수 있었습니다.",
+    "운영팀으로 Portfolio Roast를 함께 준비했습니다. 버나비에서 열린 이 행사에는 20명 이상의 디자이너가 참여했습니다. 두 명의 디자이너가 Oracle에서 Principal User Experience Designer로 일하는 Carlos Melendez님에게 실제 케이스 스터디를 발표했습니다. 참가자 모두가 포트폴리오 평가에서 어떤 질문이 오가는지 볼 수 있었습니다.",
   ],
   [
     "A polished portfolio can still break under questions",
@@ -2089,15 +2089,15 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "The event gave designers a lower-stakes place to test that moment. Portfolio Roast put real case studies into a live interview setting, then opened the questions and feedback to the room so everyone could learn from the same conversation.",
-    "Portfolio Roast는 그 순간을 실제 인터뷰보다 부담이 적은 자리에서 먼저 시험해보도록 만든 행사였습니다. 실제 케이스 스터디를 라이브 인터뷰처럼 발표하고, 그 자리에서 나온 질문과 피드백을 모두가 함께 듣고 배울 수 있게 했습니다.",
+    "Portfolio Roast에서는 실제 면접에 가기 전에 포트폴리오를 발표하고 질문에 답하는 연습을 해볼 수 있었습니다. 실제 케이스 스터디를 라이브 인터뷰처럼 발표하고, 그 자리에서 나온 질문과 피드백을 모두가 함께 듣고 배울 수 있게 했습니다.",
   ],
   [
     "So Eun Ahn brought together the guest, presenters, and community. I worked with So Eun and Suryeon Kim on the organizing team, helping shape the program flow and support event operations. KDNEW joined as event partner. The official event page listed 25 attendees, and the event recap confirmed that more than 20 designers joined us that evening.",
-    "So Eun Ahn님이 게스트와 발표자, 커뮤니티를 한자리에 모았습니다. 저는 So Eun님, Suryeon Kim님과 운영팀으로 함께하며 프로그램 흐름을 정리하고 현장 운영을 도왔습니다. KDNEW는 이벤트 파트너로 함께했습니다. 공식 이벤트 페이지에는 25명이 참석자로 표시됐고, 행사 회고에서는 20명 이상의 디자이너가 함께했다고 확인했습니다.",
+    "So Eun Ahn님은 게스트와 발표자, 참가자들을 한자리에 모았습니다. 저는 So Eun님, Suryeon Kim님과 운영팀으로 함께하며 프로그램 흐름을 정리하고 현장 운영을 도왔습니다. KDNEW는 이벤트 파트너로 함께했습니다. 공식 이벤트 페이지에는 참석자 25명이 표시됐고, 행사 회고에도 20명 넘는 디자이너가 참여했다고 기록되어 있습니다.",
   ],
   [
     "The live format widened the value of each critique. A question asked of one presenter was useful to everyone. People could see where a polished screen still needed a clearer decision, where the outcome needed stronger evidence, and where the story became easier to follow once the presenter explained the context aloud.",
-    "라이브 형식은 한 사람에게 주어진 피드백의 범위를 넓혔습니다. 화면은 잘 정리됐지만 결정의 이유가 더 필요한 지점, 결과를 뒷받침할 근거가 부족한 지점, 발표자가 맥락을 설명하자 비로소 이해되기 시작한 지점을 모두가 함께 볼 수 있었습니다.",
+    "한 발표자에게 한 피드백을 참가자 모두가 함께 들을 수 있었습니다. 참가자들은 화면은 잘 정리됐지만 결정의 이유가 부족한 부분, 결과를 뒷받침할 근거가 필요한 부분, 발표자가 맥락을 설명하고 나서야 이해되는 부분을 함께 확인했습니다.",
   ],
   [
     "The fireside talk started from the work everyone had just seen",
@@ -2105,11 +2105,11 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "We discussed how much detail a case study needs, what makes work memorable, and how experience in graphic design or marketing can be positioned for UX roles.",
-    "먼저 케이스 스터디에는 어느 정도의 디테일이 필요한지, 무엇이 작업을 기억에 남게 하는지, 그래픽 디자인이나 마케팅 경험을 UX 경력으로 어떻게 설명할지 이야기했습니다.",
+    "먼저 케이스 스터디에는 어느 정도까지 구체적인 내용을 담아야 하는지, 어떤 작업이 기억에 남는지 이야기했습니다. 그래픽 디자인이나 마케팅 경험을 UX 경력으로 설명하는 방법도 다뤘습니다.",
   ],
   [
     "From there, the questions widened: what separates junior, intermediate, and senior designers, which interview behaviours create a negative impression, how to explain decisions to cross-functional partners, and what to focus on in a difficult job market.",
-    "그다음에는 질문의 범위를 넓혔습니다. 주니어·인터미디어트·시니어를 나누는 기준, 인터뷰에서 부정적인 인상을 주는 행동, 크로스펑셔널 파트너에게 디자인 결정을 설명하는 방법, 어려운 채용 시장에서 무엇에 집중할지를 함께 다뤘습니다.",
+    "그다음에는 질문의 범위를 넓혔습니다. 주니어·미드레벨·시니어 디자이너를 구분하는 기준과 면접에서 좋지 않은 인상을 주는 행동을 이야기했습니다. 다른 직군의 동료에게 디자인 결정을 설명하는 법과 채용이 어려울 때 무엇에 집중할지도 다뤘습니다.",
   ],
   [
     "One presenter's questions became useful to the whole room",
@@ -2117,7 +2117,7 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "In a later LinkedIn recap, Sue described Portfolio Roast as her first solo presentation of Lento. One person's post cannot represent every participant, but it shows one concrete outcome: the event gave a presenter a lower-stakes place to practise a difficult story before the next real interview.",
-    "행사 뒤 Sue님은 LinkedIn 회고에 Lento 프로젝트로 첫 단독 발표를 했다고 남겼습니다. 한 사람의 회고가 전체 참가자를 대표하지는 않습니다. 다만 다음 실제 인터뷰 전에 자신의 이야기를 부담이 덜한 자리에서 연습해볼 수 있었다는 한 가지 결과는 확인할 수 있었습니다.",
+    "행사 뒤 Sue님은 LinkedIn 회고에 Lento 프로젝트로 첫 단독 발표를 했다고 남겼습니다. Sue님은 이 자리에서 동료들 앞에 서서 면접 때처럼 자기 프로젝트를 설명해 볼 수 있었습니다.",
   ],
   ["A portfolio review has to include the questions", "포트폴리오 리뷰는 질문까지 이어져야 합니다"],
   [
@@ -2126,15 +2126,15 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "The event did not produce one portfolio template, and that was never the goal. It made the evaluation process visible: what an interviewer asks, what evidence a story needs, and where context changes how work is understood.",
-    "하나의 포트폴리오 템플릿을 만드는 것이 목적은 아니었습니다. 대신 인터뷰어가 무엇을 묻는지, 이야기에 어떤 근거가 필요한지, 맥락이 작업의 이해를 어떻게 바꾸는지를 모두가 볼 수 있게 했습니다.",
+    "하나의 포트폴리오 템플릿을 만드는 것이 목적은 아니었습니다. 대신 인터뷰어가 무엇을 묻는지, 이야기에는 어떤 근거가 필요한지, 맥락을 설명하면 작업을 이해하는 방식이 어떻게 달라지는지를 모두가 볼 수 있게 했습니다.",
   ],
   [
     "As an organizing team member, that was the outcome I cared about: giving designers a place to put unfinished stories in front of real questions, hear direct feedback, and decide what to practise next.",
-    "운영팀으로서 중요하게 본 결과도 여기에 있습니다. 아직 완성되지 않은 이야기를 실제 질문 앞에 놓아보고, 직접 피드백을 들은 뒤, 다음에 무엇을 연습할지 정할 수 있는 자리를 만드는 것입니다.",
+    "운영팀의 일원으로서 저는 디자이너들이 아직 다듬고 있는 포트폴리오를 편하게 꺼내고, 질문과 피드백을 들으며 다음에 무엇을 연습할지 정할 수 있기를 바랐습니다.",
   ],
   [
     "I helped organize a live mock interview where two designers presented real case studies and more than 20 peers could see the questions, evidence, and context behind portfolio evaluation.",
-    "두 명의 디자이너가 실제 케이스 스터디를 발표하고, 20명 이상의 동료 디자이너가 포트폴리오 평가에 필요한 질문과 근거, 맥락을 함께 확인한 라이브 모의 인터뷰를 운영팀으로 준비했습니다.",
+    "운영팀의 일원으로 공개 모의 인터뷰를 준비했습니다. 두 디자이너가 케이스 스터디를 발표했고, 동료 디자이너 20명 이상이 평가에 어떤 질문과 근거가 필요한지, 어떤 배경 설명이 작업을 이해하는 데 도움이 되는지 함께 살펴봤습니다.",
   ],
   [
     "I joined the fifth annual KDD Korean Tech Conference as a career mentor. At a conference of 211 people, the 1:2 format created space to turn broad industry uncertainty into each participant's context, direction, and next test.",
@@ -2142,23 +2142,23 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "The conference treated uncertainty as a question to work with",
-    "불확실성을 피하지 않고, 함께 다룰 질문으로 꺼냈습니다",
+    "AI와 채용 시장이 변하면 어떤 경험이 여전히 쓸모 있을까?",
   ],
   [
     "Vancouver KDD brought those questions into a full-day conference attended by 211 people. Speaker sessions offered different perspectives on change. The mentoring program then gave participants a smaller place to ask what those changes meant for their own careers.",
-    "Vancouver KDD는 이 질문들을 하루 동안 함께 다루는 컨퍼런스를 열었고, 211명이 참여했습니다. 스피커 세션에서는 변화를 바라보는 여러 관점을 들을 수 있었습니다. 이어진 멘토링에서는 그 변화가 자신의 커리어에서는 무엇을 의미하는지 더 작은 자리에서 이야기했습니다.",
+    "Vancouver KDD는 이 질문들을 하루 동안 함께 다루는 컨퍼런스를 열었고, 211명이 참여했습니다. 스피커들은 변화를 바라보는 여러 관점을 나눴습니다. 이어진 1:2 멘토링에서는 그 변화가 자신의 커리어에 어떤 의미인지 이야기했습니다.",
   ],
   [
     "I was not there to give one answer. My role was to listen for the decision each participant was actually trying to make and narrow the next step until it could be tested.",
-    "하나의 답을 건네기 위해 참여한 것은 아니었습니다. 참가자가 실제로 고민하는 결정을 듣고, 다음에 해볼 행동을 직접 확인할 수 있을 만큼 좁히는 것이 제 역할이었습니다.",
+    "하나의 정답을 건네려고 참여한 것은 아니었습니다. 참가자가 어떤 선택을 두고 고민하는지 듣고, 다음에 실제로 해볼 만한 일 하나를 함께 정하는 게 제 역할이었습니다.",
   ],
   [
     "A 211-person conference still made room for context",
-    "211명이 모인 컨퍼런스에서도 한 사람의 맥락을 들었습니다",
+    "211명이 모인 행사에서 두 사람씩 만나 각자의 고민을 들었습니다",
   ],
   [
     "We started with context, then chose one next test",
-    "지금의 상황부터 보고, 다음 행동 하나를 정했습니다",
+    "지금의 상황을 살펴보고, 다음 행동 하나를 정했습니다",
   ],
   [
     "We first looked at the experience, strengths, and constraints the participant already had. Then we clarified the kind of problem, team, and responsibility they wanted next.",
@@ -2166,37 +2166,37 @@ const portfolioKoreanTranslations = new Map([
   ],
   [
     "Finally, we chose one realistic way to test that direction through a project, conversation, or application.",
-    "마지막에는 프로젝트, 대화, 지원 가운데 그 방향을 현실적으로 시험해볼 행동 하나를 정했습니다.",
+    "마지막에는 프로젝트를 해볼지, 누군가와 이야기해 볼지, 지원해 볼지 가운데 각자 해볼 만한 일 하나를 골랐습니다.",
   ],
   ["Next test", "다음 확인"],
   [
     "The conversation did not remove uncertainty. It turned a broad concern into a smaller decision someone could work on.",
-    "불확실성이 사라진 것은 아닙니다. 다만 막연한 고민을 직접 다뤄볼 수 있는 작은 결정으로 바꿀 수 있었습니다.",
+    "불확실성이 사라진 것은 아닙니다. 다만 막연했던 고민을 직접 다뤄볼 수 있는 구체적인 결정 하나로 좁혔습니다.",
   ],
   [
     "The official event recap highlighted the mentoring program alongside the speaker sessions. That pairing explains the format's value: talks widened the field of view, while mentoring narrowed it to one person's situation.",
-    "공식 행사 회고에서도 스피커 세션과 함께 멘토링 프로그램을 주요 경험으로 다뤘습니다. 컨퍼런스가 시야를 넓혔다면, 멘토링은 그 시야를 한 사람의 상황으로 좁혀볼 수 있게 했습니다.",
+    "공식 행사 회고에서도 스피커 세션과 함께 멘토링 프로그램을 주요 경험으로 다뤘습니다. 컨퍼런스에서 여러 관점을 접했다면, 멘토링에서는 그중 무엇이 한 사람의 상황에 맞는지 살펴봤습니다.",
   ],
   [
     "The day moved from speaker and career sessions into networking and 1:2 mentoring. The order mattered. Participants first heard how experienced people were reading the industry, then discussed what those changes meant for their own situation.",
-    "이날은 스피커 세션과 커리어 세션 뒤에 네트워킹과 1:2 멘토링이 이어졌습니다. 이 순서가 중요했습니다. 참가자들은 경험 많은 실무자들이 업계를 어떻게 읽는지 먼저 듣고, 그 변화가 자신의 상황에서는 무엇을 의미하는지 이야기했습니다.",
+    "이날은 스피커 세션과 커리어 세션 뒤에 네트워킹과 1:2 멘토링이 이어졌습니다. 참가자들은 먼저 경험 많은 실무자들이 업계 변화를 어떻게 보는지 듣고, 이어 그 변화가 자신의 상황에 어떤 의미인지 이야기했습니다.",
   ],
   [
     "Talks widened the view; mentoring made it personal",
-    "큰 이야기 다음에, 각자의 상황을 이야기했습니다",
+    "강연 뒤에는 각자의 상황을 이야기했습니다",
   ],
   ["A mentor cannot choose the answer for someone else", "멘토가 대신 답을 정할 수는 없습니다"],
   [
     "A mentor cannot choose another person's career. The useful work is to listen, make trade-offs visible, and turn a broad concern into a decision the person can test.",
-    "멘토가 다른 사람의 커리어를 대신 선택할 수는 없습니다. 충분히 듣고, 각 선택에서 무엇을 얻고 포기하는지 함께 확인하고, 막연한 고민을 직접 시험해볼 결정으로 바꾸는 것이 멘토가 할 수 있는 일입니다.",
+    "멘토가 다른 사람의 커리어를 대신 선택할 수는 없습니다. 멘토가 할 수 있는 일은 충분히 듣고, 선택마다 무엇을 얻고 포기하는지 함께 살핀 뒤, 막연한 고민을 직접 시험해볼 수 있는 결정으로 좁히는 것입니다.",
   ],
   [
     "KDD showed how the two scales can work together: a conference can open new directions, while one focused conversation can help a participant decide which one to test first.",
-    "KDD에서는 큰 컨퍼런스와 작은 대화가 함께 작동했습니다. 컨퍼런스가 새로운 방향을 생각하게 했다면, 한 번의 집중된 대화는 그중 무엇부터 해볼지 정하는 데 도움을 줬습니다.",
+    "강연에서 여러 진로를 살펴본 뒤, 멘토링에서는 각자 무엇부터 시도해 볼지 이야기했습니다.",
   ],
   [
     "I joined Vancouver's KDD Korean Tech Conference as a career mentor. The 1:2 format helped turn broad industry uncertainty into each participant's context, direction, and next test.",
-    "Vancouver KDD Korean Tech Conference에 커리어 멘토로 참여했습니다. 1:2 멘토링에서 각자의 경험과 원하는 방향을 살펴보고, 다음에 무엇을 해볼지 함께 정했습니다.",
+    "Vancouver KDD Korean Tech Conference에 커리어 멘토로 참여했습니다. 1:2 멘토링에서 참가자들이 해온 일과 앞으로 하고 싶은 일을 듣고, 각자 무엇부터 해볼지 함께 정했습니다.",
   ],
 ]);
 
@@ -2510,6 +2510,12 @@ const initializePortfolioLanguage = () => {
 
     targets.forEach((target) => {
       const translation = portfolioKoreanTranslations.get(originalSource.get(target));
+
+      // A null translation marks a passage that appears only in English.
+      if (translation === null) {
+        target.hidden = isKorean;
+        return;
+      }
 
       if (isKorean && translation) {
         target.textContent = translation;
